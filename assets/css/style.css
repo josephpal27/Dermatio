@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: unset !important; /* Disable default smooth scrolling in Bootstrap */
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #faf2e7;
+}
+
+/* Navbar Start */
+.navbar{
+    padding: 1.5rem 5%;
+}
+.navbar .navbar-brand img{
+    width: 350px;
+}
+.navbar .navbar-nav{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .nav-link{
+    color: #004ce8;
+    font-weight: 600;
+    font-size: calc(0.6rem + 0.5vw);
+    position: relative;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0041c3;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:hover{
+    color: #0041c3;
+}
+.navbar-toggler{
+    border: none;
+    box-shadow: none !important;
+}
+
+.navbarOffcanvas{
+    width: 70% !important;
+    background-color: #faf2e7;
+}
+.navbarOffcanvas .nav-link{
+    color: #004ce8;
+    font-weight: 600;
+    font-size: calc(0.85rem + 0.5vw);
+}
+
+/* Media Queries */
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+    .navbar {
+        padding: 1.8rem 5%;
+    }
+    .navbar .navbar-nav {
+        gap: 2.5rem;
+    }
+    .navbar .nav-link{
+        font-size: calc(0.67rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 1400px) { 
+    .navbar {
+        padding: 2rem 5%;
+    }
+    .navbar .navbar-nav {
+        gap: 3rem;
+    }
+    .navbar .nav-link{
+        font-size: calc(0.72rem + 0.5vw);
+    }
+    .navbar .nav-link::after {
+        height: 2.5px;
+    }
+}
+
+@media screen and (max-width: 767px) { 
+    .navbar {
+        padding: 1.2rem 1rem;
+    }
+    .navbar-toggler{
+        margin-right: -0.5rem;
+    }
+}
+/* Navbar End */
