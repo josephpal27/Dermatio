@@ -114,6 +114,7 @@ body {
 footer{
     background-color: #cfef28;
     padding: 0 5%;
+    overflow: hidden;
 }
 .footer-content{
     display: flex;
