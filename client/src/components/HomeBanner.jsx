@@ -78,6 +78,7 @@ const HomeBanner = () => {
                             hover:bg-white
                             hover:text-black
                             flex
+                            center
                         ">
                             Read More 
                             <img 

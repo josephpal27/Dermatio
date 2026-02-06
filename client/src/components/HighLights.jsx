@@ -35,7 +35,7 @@ const HighLights = () => {
                 flex-wrap
                 py-[3rem]
                 px-[7%]
-                mt-[0.5rem]
+                mt-[1rem]
             ">
                 {
                     highLightsData.map((item, index) => {
