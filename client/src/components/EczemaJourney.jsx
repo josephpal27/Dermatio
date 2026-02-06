@@ -1,4 +1,4 @@
-import eczemaImage from '../assets/images/eczema.png';
+import eczemaImage from '../assets/images/eczema.avif';
 import rightArrow from "../assets/images/icons/arrow.png";
 import { Link } from "react-router-dom"
 

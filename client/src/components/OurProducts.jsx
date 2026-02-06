@@ -6,25 +6,25 @@ import "swiper/css/pagination";
 let productsData = [
     {
         id: 1,
-        image: "/images/products-slider/1.png",
+        image: "/images/products-slider/1.avif",
         name: "Oil",
         desc: "Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation, and dryness. ",
     },
     {
         id: 2,
-        image: "/images/products-slider/2.png",
+        image: "/images/products-slider/2.avif",
         name: "Shampoo",
         desc: "Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation, and dryness. ",
     },
     {
         id: 3,
-        image: "/images/products-slider/2.png",
+        image: "/images/products-slider/2.avif",
         name: "Bodywash",
         desc: "Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation, and dryness. ",
     },
     {
         id: 4,
-        image: "/images/products-slider/1.png",
+        image: "/images/products-slider/1.avif",
         name: "Supplement",
         desc: "Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation, and dryness. ",
     },

@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "../css/Navbar.css";
-import logo from "../assets/images/logo/logo.png";
+import logo from "../assets/images/logo/logo.avif";
 import { FaRegUser } from "react-icons/fa";
 import { BiShoppingBag } from "react-icons/bi";
 

@@ -8,7 +8,7 @@ const HomeBanner = () => {
                 relative
             ">
                 <img
-                    src="/images/banners/home-banner.png"
+                    src="/images/banners/home-banner.avif"
                     alt="Home Banner"
                     loading="eager"
                     className="

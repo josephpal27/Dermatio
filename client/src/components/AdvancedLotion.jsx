@@ -21,7 +21,7 @@ const AdvancedLotion = () => {
                     relative
                 ">
                     <img
-                        src="/images/featured-products/1.png"
+                        src="/images/featured-products/1.avif"
                         alt="Product Image"
                         className="
                             w-full
@@ -38,7 +38,7 @@ const AdvancedLotion = () => {
                         pb-[2rem]
                     ">
                         <img
-                            src="/images/featured-products/2.png"
+                            src="/images/featured-products/2.avif"
                             alt="Product Image"
                             className="
                                 w-full
