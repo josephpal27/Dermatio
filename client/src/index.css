@@ -11,3 +11,25 @@
 html{
   scroll-behavior: unset !important;
 }
+
+@font-face{
+  font-family: "OliGroteskL";
+  src: url("./assets/fonts/Oli\ Grotesk\ L\ Regular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "OrdinaryBoys";
+  src: url("./assets/fonts/OrdinaryBoys-Sans.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  font-family: "OliGroteskL", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "OrdinaryBoys", sans-serif !important;
+}
