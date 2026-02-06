@@ -11,26 +11,3 @@
 html{
   scroll-behavior: unset !important;
 }
-
-/* body{
-  font-family: "Oswald", sans-serif;
-} */
-
-
-.stack-section {
-  min-height: 100vh;
-  padding: 5rem 2rem;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
-  font-weight: bold;
-  color: white;
-}
-
-.bg-one { background: #111; }
-.bg-two { background: #2563eb; }
-.bg-three { background: #16a34a; }
-.bg-four { background: #ea580c; }
