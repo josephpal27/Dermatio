@@ -79,6 +79,7 @@ const HomeBanner = () => {
                             hover:text-black
                             flex
                             center
+                            group
                         ">
                             Read More 
                             <img 
@@ -89,6 +90,8 @@ const HomeBanner = () => {
                                     w-[23px]
                                     h-[23px]
                                     ml-[0.8rem]
+                                    duration-200
+                                    group-hover:ml-[1.2rem]
                             "/>
                         </Link>
                     </div>

@@ -76,11 +76,9 @@ const AdvancedLotion = () => {
                         pr-[0.5rem]
                         rounded-[30px]
                         text-[0.95rem]
-                        transition
-                        hover:bg-[#d6e021]
-                        hover:text-[#fff]
                         flex
                         items-center
+                        group
                     ">
                         Shop Now
                         <img
@@ -91,6 +89,9 @@ const AdvancedLotion = () => {
                                 w-[23px]
                                 h-[23px]
                                 ml-[0.8rem]
+                                transition-all
+                                duration-200
+                                group-hover:ml-[1.2rem]
                         "/>
                     </Link>
                 </div>
