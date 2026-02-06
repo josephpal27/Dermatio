@@ -13,6 +13,9 @@ const HomeBanner = () => {
                     loading="eager"
                     className="
                         w-full
+                        rounded-b-[45px]
+                        h-[93vh]
+                        object-cover
                 "/>
                 {/* Layer */}
                 <div className="
@@ -24,7 +27,7 @@ const HomeBanner = () => {
                     flex
                     justify-between
                     px-[7%]
-                    pb-[7rem]
+                    pb-[8rem]
                     text-[#fff]
                 ">
                     {/* Left */}

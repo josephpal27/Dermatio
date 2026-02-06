@@ -1,3 +1,4 @@
+import AdvancedLotion from "../components/AdvancedLotion"
 import HighLights from "../components/Highlights"
 import HomeBanner from "../components/HomeBanner"
 
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <HomeBanner />
       <HighLights />
+      <AdvancedLotion />
     </>
   )
 }
