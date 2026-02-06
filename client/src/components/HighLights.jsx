@@ -61,8 +61,7 @@ const HighLights = () => {
                                     mt-[1.5rem]
                                     text-center
                                     leading-[1.3]
-                                ">
-                                </span>
+                                "/>
 
                             </div>
                         )
