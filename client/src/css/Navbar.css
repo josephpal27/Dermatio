@@ -1,6 +1,6 @@
 .navbar {
   padding: 1.4rem 7% !important;
-  background: #fff;
+  background: #fdfaf5;
   width: 100%;
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.245);
   z-index: 10;
@@ -65,7 +65,7 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
   .offcanvas {
-    background: #0764f9;
+    background: #000;
     width: 70% !important;
   }
   .offcanvas .offCanvasLogo {
