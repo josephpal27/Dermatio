@@ -109,11 +109,13 @@ const OurProducts = () => {
                                                 text-center
                                                 mt-[1.5rem]
                                                 text-[1.8rem]
+                                                text-[#000]
                                             " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }} />
                                             <p className="
                                                 text-[1rem]
                                                 text-center
                                                 mt-[0.5rem]
+                                                text-[#363636]
                                             ">
                                                 {item.desc}
                                             </p>
@@ -122,7 +124,6 @@ const OurProducts = () => {
                                 )
                             })
                         }
-
                     </Swiper>
 
                     {/* Custom Pagination */}
