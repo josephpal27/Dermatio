@@ -1,7 +1,7 @@
 import rightArrow from "../assets/images/icons/arrow.png";
 import { Link } from "react-router-dom"
-import grapesImage from '../assets/images/grapes-1.png';
-import provenImage from '../assets/images/proven.png';
+import grapesImage from '../assets/images/grapes.avif';
+import provenImage from '../assets/images/proven.avif';
 
 const ClinicallyProven = () => {
     return (

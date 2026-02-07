@@ -1,4 +1,6 @@
 import AdvancedLotion from "../components/AdvancedLotion"
+import AdvisoryBoard from "../components/AdvisoryBoard"
+import ChooseCare from "../components/ChooseCare"
 import ClinicallyProven from "../components/ClinicallyProven"
 import EczemaJourney from "../components/EczemaJourney"
 import HighLights from "../components/Highlights"
@@ -16,6 +18,8 @@ const Home = () => {
       <EczemaJourney />
       <StageOfEczemaJourney />
       <ClinicallyProven />
+      <ChooseCare />
+      <AdvisoryBoard />
     </>
   )
 }
