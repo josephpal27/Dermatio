@@ -3,6 +3,7 @@ import EczemaJourney from "../components/EczemaJourney"
 import HighLights from "../components/Highlights"
 import HomeBanner from "../components/HomeBanner"
 import OurProducts from "../components/OurProducts"
+import StageOfEczemaJourney from "../components/StageOfEczemaJourney"
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <AdvancedLotion />
       <OurProducts />
       <EczemaJourney />
+      <StageOfEczemaJourney />
     </>
   )
 }
