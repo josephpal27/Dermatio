@@ -27,7 +27,7 @@ const StageOfEczemaJourney = () => {
         <>
             <section className="
                 px-[7%]
-                py-[1rem]
+                py-[0.5rem]
             ">
                 <h5 className="
                     text-[4rem]

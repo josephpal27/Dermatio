@@ -1,4 +1,5 @@
 import AdvancedLotion from "../components/AdvancedLotion"
+import ClinicallyProven from "../components/ClinicallyProven"
 import EczemaJourney from "../components/EczemaJourney"
 import HighLights from "../components/Highlights"
 import HomeBanner from "../components/HomeBanner"
@@ -14,6 +15,7 @@ const Home = () => {
       <OurProducts />
       <EczemaJourney />
       <StageOfEczemaJourney />
+      <ClinicallyProven />
     </>
   )
 }

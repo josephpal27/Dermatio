@@ -7,7 +7,7 @@ const EczemaJourney = () => {
         <>
             <section className="
                 px-[7%]
-                py-[4rem]
+                py-[4.5rem]
             ">
                 <h4 className="
                     text-[4rem]
