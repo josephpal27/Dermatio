@@ -27,35 +27,62 @@ const StageOfEczemaJourney = () => {
         <>
             <section className="
                 px-[7%]
-                py-[2rem]
+                py-[1rem]
             ">
                 <h5 className="
-
+                    text-[4rem]
+                    leading-[1]
+                    text-center
                 ">
                     We're Here For <br /> Every Stage of Eczema  Journey
                 </h5>
 
                 <div className="
-
+                    flex
+                    justify-between
+                    flex-wrap
+                    mt-[3rem]
                 ">
                     {
                         stageOfEczemaJourneyData.map((item, index) => {
                             return (
-                                <div key={index} className="
-
-                                ">
+                                <div key={index} className={`
+                                    w-[48%]
+                                    p-[2rem]
+                                    flex
+                                    justify-between
+                                    items-center
+                                    rounded-[45px]
+                                    mb-[2rem]
+                                    transition-bg
+                                    duration-300
+                                    ${index === 0 ? "bg-[#f0ede9]" : ""}
+                                    hover:bg-[#f0ede9]
+                                `}>
                                     {/*Left */}
-                                    <div>
-                                        <span>
+                                    <div className="
+                                        w-[15%]
+                                    ">
+                                        <span className="
+                                            text-[4rem]
+                                        ">
                                             0{item.id}
                                         </span>
                                     </div>
                                     {/* Right */}
-                                    <div>
-                                        <span>
+                                    <div className="
+                                        w-[80%]
+                                    ">
+                                        <span className="
+                                            text-[2.5rem]
+                                        " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }}>
                                             {item.title}
                                         </span>
-                                        <p>
+                                        <p className="
+                                            text-[#363636]
+                                            text-[1rem]
+                                            mt-[1rem]
+                                        ">
                                             {item.desc}
                                         </p>
                                     </div>
