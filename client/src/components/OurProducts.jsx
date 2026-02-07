@@ -78,11 +78,11 @@ const OurProducts = () => {
                             },
                             640: {
                                 slidesPerView: 3, // tablet
-                                spaceBetween: 30,
+                                spaceBetween: 60,
                             },
                             991: {
                                 slidesPerView: 4, // tablet and up
-                                spaceBetween: 20,
+                                spaceBetween: 40,
                             },
                         }}
                     >
