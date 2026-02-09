@@ -1,10 +1,36 @@
-import React from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import { Link } from "react-router-dom";
+import rightArrow from "../assets/images/icons/arrow.png";
+
+let AdvisoryBoardData = [
+    {
+        id: 1,
+        image: "/images/advisory-board/1.png",
+        title: "Dr. Shantanu Ray, <br/> MBBS, MD (Paediatrics)",
+    },
+    {
+        id: 2,
+        image: "/images/advisory-board/2.png",
+        title: "Dr. Ritam Mondal, <br/> MBBS, MD (Paediatrics)",
+    },
+    {
+        id: 3,
+        image: "/images/advisory-board/3.png",
+        title: "Dr. Aniruddha Ghosh, <br/> MD (Dermatology)",
+    },
+    {
+        id: 4,
+        image: "/images/advisory-board/4.png",
+        title: "Dr. Armonita, <br/> MD (Paediatrics & Neonatal-Perinatal Medicine)",
+    },
+]
 
 const AdvisoryBoard = () => {
     return (
         <>
             <section className="
-                px-[7%]
                 py-[3rem]
             ">
                 {/* Head */}
@@ -12,6 +38,7 @@ const AdvisoryBoard = () => {
                     flex
                     flex-col
                     items-center
+                    px-[7%]
                 ">
                     <h6 className="
                         text-[4rem]
@@ -29,8 +56,77 @@ const AdvisoryBoard = () => {
                         Dermatio is guided by a panel of dermatologists, pediatric experts, and formulation scientists who ensure every product is safe, evidence based, and child friendly.
                     </p>
                 </div>
+
                 {/* Slider */}
-                <div>
+                <div className="
+                    px-[7%]
+                    mt-[4rem]
+                ">
+                    <Swiper
+                        modules={[Autoplay]}
+                        slidesPerView={4}
+                        centeredSlides={false}
+                        loop={true}
+                        grabCursor={true}
+                        spaceBetween={30}
+                        speed={1000}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1, // for mobile
+                                spaceBetween: 0,
+                            },
+                            640: {
+                                slidesPerView: 3, // tablet
+                                spaceBetween: 60,
+                            },
+                            991: {
+                                slidesPerView: 4, // tablet and up
+                                spaceBetween: 40,
+                            },
+                        }}
+                    >
+
+                        {
+                            AdvisoryBoardData.map((item, index) => {
+                                return (
+                                    <SwiperSlide key={index} className="
+                                        d-flex flex-col overflow-hidden bg-[#dfdace]
+                                        rounded-[50px]
+                                    ">
+                                        <div>
+                                            <img src={item.image} alt={item.title} loading="lazy" className="
+                                                w-full
+                                            " />
+                                        </div>
+                                        <div className="
+                                            p-[1.5rem]
+                                        ">
+                                            <span dangerouslySetInnerHTML={{
+                                                __html: item.title,
+                                            }} className="
+                                                block
+                                                text-[1rem]
+                                                text-[#000]
+                                            " />
+                                            <Link to="/">
+                                                <img src={rightArrow} alt="Arrow" loading="lazy" className="
+                                                    w-[35px]
+                                                    mt-[1rem]
+                                                    border-[#1f1f1f]
+                                                    border-[2px]
+                                                    rounded-full
+                                                " />
+                                            </Link>
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+                    </Swiper>
 
                 </div>
             </section>
