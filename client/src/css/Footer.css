@@ -2,7 +2,7 @@ footer .foot-links a{
     position: relative;
     width: max-content;
 }
-footer .foot-links a::after {
+footer .foot-links a::after{
     content: "";
     position: absolute;
     bottom: -3px;
@@ -13,6 +13,6 @@ footer .foot-links a::after {
     transform: translateX(-50%);
     transition: 0.3s ease;
 }
-footer .foot-links a:hover::after {
+footer .foot-links a:hover::after{
   width: 100%;
 }
