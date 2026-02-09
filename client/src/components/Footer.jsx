@@ -69,7 +69,8 @@ const Footer = () => {
             ">
                 {/* Main */}
                 <div className="
-                    py-[3rem]
+                    pt-[3rem]
+                    pb-[2rem]
                     px-[7%]
                     flex
                     justify-between

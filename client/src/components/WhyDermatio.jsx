@@ -1,8 +1,8 @@
 import rightArrow from "../assets/images/icons/arrow.png";
 import { Link } from "react-router-dom"
-import whyDermatio1 from '../assets/images/why-dermatio/1.png';
-import whyDermatio2 from '../assets/images/why-dermatio/2.png';
-import whyDermatio3 from '../assets/images/why-dermatio/3.png';
+import whyDermatio1 from '../assets/images/why-dermatio/1.avif';
+import whyDermatio2 from '../assets/images/why-dermatio/2.avif';
+import whyDermatio3 from '../assets/images/why-dermatio/3.avif';
 
 const WhyDermatio = () => {
     return (
@@ -33,7 +33,7 @@ const WhyDermatio = () => {
                         right-[-20%]
                     " />
                     <img src={whyDermatio3} alt="Why Dermatio 2" loading="lazy" className="
-                        w-[40%]
+                        w-[32%]
                         rounded-[40px]
                         absolute
                         bottom-[-15%]

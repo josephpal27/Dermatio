@@ -7,22 +7,22 @@ import rightArrow from "../assets/images/icons/arrow.png";
 let AdvisoryBoardData = [
     {
         id: 1,
-        image: "/images/advisory-board/1.png",
+        image: "/images/advisory-board/1.avif",
         title: "Dr. Shantanu Ray, <br/> MBBS, MD (Paediatrics)",
     },
     {
         id: 2,
-        image: "/images/advisory-board/2.png",
+        image: "/images/advisory-board/2.avif",
         title: "Dr. Ritam Mondal, <br/> MBBS, MD (Paediatrics)",
     },
     {
         id: 3,
-        image: "/images/advisory-board/3.png",
+        image: "/images/advisory-board/3.avif",
         title: "Dr. Aniruddha Ghosh, <br/> MD (Dermatology)",
     },
     {
         id: 4,
-        image: "/images/advisory-board/4.png",
+        image: "/images/advisory-board/4.avif",
         title: "Dr. Armonita, <br/> MD (Paediatrics & Neonatal-Perinatal Medicine)",
     },
 ]
