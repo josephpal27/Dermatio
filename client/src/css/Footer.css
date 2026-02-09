@@ -1,0 +1,18 @@
+footer .foot-links a{
+    position: relative;
+    width: max-content;
+}
+footer .foot-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #1f1f1f;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+footer .foot-links a:hover::after {
+  width: 100%;
+}

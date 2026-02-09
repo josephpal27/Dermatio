@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo/logo.avif';
 import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
+import '../css/Footer.css';
 
 let footerData = [
     {
@@ -114,6 +115,7 @@ const Footer = () => {
                                     return (
                                         <div key={index} className="
                                             w-full sm:w-[auto]
+                                            foot-links
                                         ">
                                             <span className="
                                                 block font-[600]
@@ -145,7 +147,6 @@ const Footer = () => {
                                                             mb-[0.5rem]
                                                             block 
                                                             hover:text-black
-                                                            hover:underline
                                                         ">
                                                         {item.label}
                                                     </Link>
