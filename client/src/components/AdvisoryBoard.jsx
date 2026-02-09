@@ -94,7 +94,7 @@ const AdvisoryBoard = () => {
                             AdvisoryBoardData.map((item, index) => {
                                 return (
                                     <SwiperSlide key={index} className="
-                                        d-flex flex-col overflow-hidden bg-[#dfdace]
+                                        flex flex-col overflow-hidden bg-[#dfdace]
                                         rounded-[50px]
                                     ">
                                         <div>

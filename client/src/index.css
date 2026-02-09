@@ -34,3 +34,12 @@ body{
 h1, h2, h3, h4, h5, h6{
   font-family: "OrdinaryBoys", sans-serif !important;
 }
+
+
+/* Swiper equal height fix */
+.swiper-wrapper {
+  align-items: stretch;
+}
+.swiper-slide {
+  height: auto !important;
+}

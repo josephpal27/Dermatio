@@ -81,36 +81,34 @@ const ClinicallyProven = () => {
                             ">
                                 Clinically backed relief, felt instantly.Up to 79% less itching, up to 35% visible redness reduction, and rapid calming of burning discomfort.
                             </p>
-                            <div className="flex justify-end">
-                                <Link to="/" className="
-                                    mt-[3rem]
-                                    border-[2px]
-                                    border-black
-                                    w-max
-                                    py-[0.4rem]
-                                    pl-[1rem]
-                                    pr-[0.5rem]
-                                    rounded-[30px]
-                                    text-[0.95rem]
-                                    flex
-                                    items-center
-                                    group
-                                ">
-                                    Read More
-                                    <img
-                                        src={rightArrow}
-                                        alt="Arrow"
-                                        loading="lazy"
-                                        className=" 
-                                            w-[23px]
-                                            h-[23px]
-                                            ml-[0.8rem]
-                                            transition-all
-                                            duration-200
-                                            group-hover:ml-[1.2rem]
-                                    "/>
-                                </Link>
-                            </div>
+                            <Link to="/" className="
+                                mt-[3rem]
+                                border-[2px]
+                                border-black
+                                w-max
+                                py-[0.4rem]
+                                pl-[1rem]
+                                pr-[0.5rem]
+                                rounded-[30px]
+                                text-[0.95rem]
+                                flex
+                                items-center
+                                group
+                            ">
+                                Read More
+                                <img
+                                    src={rightArrow}
+                                    alt="Arrow"
+                                    loading="lazy"
+                                    className=" 
+                                        w-[23px]
+                                        h-[23px]
+                                        ml-[0.8rem]
+                                        transition-all
+                                        duration-200
+                                        group-hover:ml-[1.2rem]
+                                "/>
+                            </Link>
                         </div>
                     </div>
                 </div>
