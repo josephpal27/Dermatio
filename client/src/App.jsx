@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import MyNavbar from "./components/Navbar";
+import Footer from "./components/footer";
 
 const App = () => {
 
@@ -28,7 +29,7 @@ const App = () => {
       {/* <PageTitle /> */}
       <MyNavbar />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
       {/* <ScrollToTop /> */}
     </>
   );

@@ -23,7 +23,8 @@ const Testimonials = () => {
     return (
         <>
             <section className="
-                py-[3rem]
+                mt-[3rem]
+                mb-[1rem]
             ">
                 {/* Head */}
                 <div className="
