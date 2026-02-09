@@ -8,6 +8,7 @@ import HomeBanner from "../components/HomeBanner"
 import OurProducts from "../components/OurProducts"
 import StageOfEczemaJourney from "../components/StageOfEczemaJourney"
 import Testimonials from "../components/Testimonials"
+import WhyDermatio from "../components/WhyDermatio"
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <OurProducts />
       <EczemaJourney />
       <StageOfEczemaJourney />
+      <WhyDermatio />
       <ClinicallyProven />
       <ChooseCare />
       <AdvisoryBoard />
