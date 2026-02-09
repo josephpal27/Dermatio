@@ -85,7 +85,6 @@ const Footer = () => {
                         <span className="
                             mt-[2rem]
                             block
-                            text-[#000]
                             font-[600]
                             text-[1.1rem]
                         ">
@@ -176,7 +175,7 @@ const Footer = () => {
                                             text-[1.2rem]
                                             rounded-[2px]
                                             transition duration-200
-                                            text-[#fff]
+                                            text-[#363636]
                                             hover:translate-y-[-4px]
                                         ">
                                             {item.icon}
