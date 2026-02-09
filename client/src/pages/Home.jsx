@@ -7,6 +7,7 @@ import HighLights from "../components/Highlights"
 import HomeBanner from "../components/HomeBanner"
 import OurProducts from "../components/OurProducts"
 import StageOfEczemaJourney from "../components/StageOfEczemaJourney"
+import Testimonials from "../components/Testimonials"
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <ClinicallyProven />
       <ChooseCare />
       <AdvisoryBoard />
+      <Testimonials />
     </>
   )
 }

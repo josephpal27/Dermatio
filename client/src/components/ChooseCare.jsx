@@ -38,9 +38,8 @@ const ChooseCare = () => {
                     Choose Your Care
                 </h6>
                 <p className="
-                    text-[1.5rem]
+                    text-[1.3rem]
                     text-[#363636]
-                    italic
                     mt-[1rem]
                 ">
                     Personalised eczema care for <br /> every skin need
