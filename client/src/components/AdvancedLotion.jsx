@@ -6,7 +6,7 @@ const AdvancedLotion = () => {
         <>
             <section className="
                 px-[7%]
-                py-[1rem]
+                py-[1rem] sm:py-[1rem] lg:py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem]
                 flex
                 justify-between
                 flex-wrap
@@ -15,9 +15,9 @@ const AdvancedLotion = () => {
                 <div className="
                     w-[36%]
                     bg-[#dfdace]
-                    rounded-[80px]
-                    pt-[3rem]
-                    pb-[2rem]
+                    rounded-[80px] sm:rounded-[80px] lg:rounded-[65px] xl:rounded-[75px] 2xl:rounded-[80px]
+                    pt-[3rem] sm:pt-[3rem] lg:pt-[2.6rem] xl:pt-[2.8rem] 2xl:pt-[3rem]
+                    pb-[2rem] sm:pb-[2rem] lg:pb-[1.6rem] xl:pb-[1.8rem] 2xl:pb-[2rem]
                     relative
                 ">
                     <img
