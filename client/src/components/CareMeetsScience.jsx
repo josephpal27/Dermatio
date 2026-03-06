@@ -1,4 +1,4 @@
-import careImage from '../assets/images/care.png';
+import careImage from '../assets/images/care.avif';
 
 const CareMeetsScience = () => {
     return (

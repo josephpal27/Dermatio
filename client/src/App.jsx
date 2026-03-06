@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import MyNavbar from "./components/Navbar";
 import Footer from "./components/footer";
+import ScrollToTop from './components/ScrollToTop';
+import PageTitle from './components/PageTitle';
 
 const App = () => {
 
@@ -26,11 +28,11 @@ const App = () => {
 
   return (
     <>
-      {/* <PageTitle /> */}
+      <PageTitle />
       <MyNavbar />
       <Outlet />
       <Footer />
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
     </>
   );
 };
