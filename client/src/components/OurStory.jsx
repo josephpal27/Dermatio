@@ -1,5 +1,5 @@
-import ourStory1 from '../assets/images/our-story-1.png';
-import ourStory2 from '../assets/images/our-story-2.png';
+import ourStory1 from '../assets/images/our-story-1.avif';
+import ourStory2 from '../assets/images/our-story-2.avif';
 
 const OurStory = () => {
     return (
