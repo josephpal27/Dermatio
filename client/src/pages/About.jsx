@@ -3,6 +3,7 @@ import CareMeetsScience from "../components/CareMeetsScience";
 import OurPhilosophy from "../components/OurPhilosophy";
 import OurStory from "../components/OurStory";
 import OurVision from "../components/OurVision";
+import WhyDermatioDetails from "../components/WhyDermatioDetails";
 
 const About = () => {
     return (
@@ -12,6 +13,7 @@ const About = () => {
             <OurStory />
             <OurPhilosophy />
             <OurVision />
+            <WhyDermatioDetails />
         </>
     )
 }
