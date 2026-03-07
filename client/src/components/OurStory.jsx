@@ -36,6 +36,7 @@ const OurStory = () => {
                         <p className="
                             text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                             mb-[0.9rem] sm:mb-[0.9rem] lg:mb-[0.7rem] xl:mb-[0.8rem] 2xl:mb-[0.9rem]
+                            text-[#363636]
                         ">
                             Dermatio was born as a 360° solution for eczema care. One that cares for skin before, during, and after flare-ups. We combine
                             clinically backed ingredients, gentle
@@ -45,6 +46,7 @@ const OurStory = () => {
                         </p>
                         <p className="
                             text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                            text-[#363636]
                         ">
                             With over 20 years in the pharmaceutical and nutraceutical industry, our founder had the science, the manufacturing expertise, and the network. But this time, he had something more, a father's determination
                         </p>
@@ -62,6 +64,7 @@ const OurStory = () => {
                 <p className="
                     text-[1.7rem]
                     mt-[2rem]
+                    text-[#363636]
                 ">
                     Because we understand: eczema doesn't just affect skin — it affects lives.
                 </p>

@@ -25,18 +25,21 @@ const CareMeetsScience = () => {
                             text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                             mt-[1.5rem] sm:mt-[1.5rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                             mb-[0.9rem] sm:mb-[0.9rem] lg:mb-[0.7rem] xl:mb-[0.8rem] 2xl:mb-[0.9rem]
+                            text-[#363636]
                         ">
                             Our founder, a pharmaceutical and nutraceutical expert, watched his young son struggle with eczema, relentless itching, broken skin, sleepless nights, and constant restrictions.
                         </p>
                         <p className="
                             text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                             mb-[0.9rem] sm:mb-[0.9rem] lg:mb-[0.7rem] xl:mb-[0.8rem] 2xl:mb-[0.9rem]
+                            text-[#363636]
                         ">
                             After trying countless creams that were either too harsh, too
                             expensive, or incomplete for long-term care, he realized what was missing in India: a brand that truly understood eczema as a journey, with flare-ups, calm phases, and the emotional weight families carry.
                         </p>
                         <p className="
                             text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                            text-[#363636]
                         ">
                             So he decided to change the story. Not just for his son, but for every child and parent living with eczema.
                         </p>

@@ -2,6 +2,7 @@ import AboutBanner from "../components/AboutBanner";
 import CareMeetsScience from "../components/CareMeetsScience";
 import OurPhilosophy from "../components/OurPhilosophy";
 import OurStory from "../components/OurStory";
+import OurVision from "../components/OurVision";
 
 const About = () => {
     return (
@@ -10,6 +11,7 @@ const About = () => {
             <CareMeetsScience />
             <OurStory />
             <OurPhilosophy />
+            <OurVision />
         </>
     )
 }
