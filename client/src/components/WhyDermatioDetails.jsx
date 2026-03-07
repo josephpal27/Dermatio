@@ -1,9 +1,9 @@
-import icon1 from '../assets/images/icons/why-dermatio/1.png';
-import icon2 from '../assets/images/icons/why-dermatio/2.png';
-import icon3 from '../assets/images/icons/why-dermatio/3.png';
-import icon4 from '../assets/images/icons/why-dermatio/4.png';
-import icon5 from '../assets/images/icons/why-dermatio/5.png';
-import icon6 from '../assets/images/icons/why-dermatio/6.png';
+import icon1 from '../assets/images/icons/ph.png';
+import icon2 from '../assets/images/icons/steroid.png';
+import icon3 from '../assets/images/icons/proven.png';
+import icon4 from '../assets/images/icons/formula.png';
+import icon5 from '../assets/images/icons/360deg.png';
+import icon6 from '../assets/images/icons/leg.png';
 
 const whyDermatioData = [
     {
@@ -114,4 +114,4 @@ const WhyDermatioDetails = () => {
     )
 }
 
-export default WhyDermatioDetails
+export default WhyDermatioDetails;

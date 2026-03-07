@@ -50,4 +50,4 @@ const AboutBanner = () => {
     )
 }
 
-export default AboutBanner
+export default AboutBanner;

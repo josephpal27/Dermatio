@@ -25,7 +25,7 @@ const OurStory = () => {
                         w-[24%]
                     ">
                         <img src={ourStory1} alt="Our Story 1" loading="lazy" className="
-                            w-full
+                            w-full shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
                             rounded-[35px]
                         " />
                     </div>
@@ -56,7 +56,7 @@ const OurStory = () => {
                         w-[24%]
                     ">
                         <img src={ourStory2} alt="Our Story 2" loading="lazy" className="
-                            w-full z-1 relative
+                            w-full z-1 relative shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
                             rounded-[35px]
                         " />
                     </div>
