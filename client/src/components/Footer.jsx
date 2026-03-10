@@ -70,29 +70,27 @@ const Footer = () => {
             ">
                 {/* Main */}
                 <div className="
-                    pt-[3rem]
-                    pb-[2rem]
+                    pt-[3rem] sm:pt-[3rem] lg:pt-[2.6rem] xl:pt-[2.8rem] 2xl:pt-[3rem]
+                    pb-[2rem] sm:pb-[2rem] lg:pb-[1.6rem] xl:pb-[1.8rem] 2xl:pb-[2rem]
                     px-[7%]
-                    flex
-                    justify-between
+                    flex justify-between
                 ">
                     {/* Left */}
                     <div className="
                         w-[30%]
                     ">
                         <img src={logo} alt="Logo" loading="lazy" className="
-                            w-[170px]
+                            w-[170px] sm:w-[170px] lg:w-[150px] xl:w-[160px] 2xl:w-[170px]
                         " />
                         <span className="
-                            mt-[2rem]
-                            block
-                            font-[600]
-                            text-[1.1rem]
+                            mt-[2rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
+                            block font-[600]
+                            text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                         ">
                             We See You, We Support You
                         </span>
                         <p className="
-                            text-[0.9rem]
+                            text-[0.9rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                             text-[#363636]
                             mt-[0.5rem]
                         ">
@@ -106,9 +104,7 @@ const Footer = () => {
                     ">
                         {/* Content */}
                         <div className="
-                            flex
-                            justify-between
-                            flex-wrap
+                            flex justify-between flex-wrap
                         ">
                             {
                                 footerData.map((item, index) => {
@@ -119,8 +115,8 @@ const Footer = () => {
                                         ">
                                             <span className="
                                                 block font-[600]
-                                                text-[1.5rem]
-                                                mb-[1.2rem]
+                                                text-[1.5rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
+                                                mb-[1.2rem] sm:mb-[1.2rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
                                             ">
                                                 {item.title}
                                             </span>
@@ -128,7 +124,7 @@ const Footer = () => {
                                             {item.type === "text" &&
                                                 item.items.map((item, idx) => (
                                                     <p key={idx} className="
-                                                        text-[1.1rem] 
+                                                        text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                                                         text-[#363636] 
                                                         mb-[0.5rem]
                                                     ">
@@ -142,11 +138,9 @@ const Footer = () => {
                                                         key={idx}
                                                         to={item.to}
                                                         className="
-                                                            text-[1.1rem] 
-                                                            text-[#363636] 
+                                                            text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                                                            text-[#363636] hover:text-black block 
                                                             mb-[0.5rem]
-                                                            block 
-                                                            hover:text-black
                                                         ">
                                                         {item.label}
                                                     </Link>
@@ -158,24 +152,18 @@ const Footer = () => {
                         </div>
                         {/* Social Icons */}
                         <div className="
-                            mt-[2rem]
-                            flex
-                            justify-end
-                            gap-[1rem]
+                            mt-[2rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
+                            flex justify-end
+                            gap-[1rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]
                         ">
                             {
                                 footerSocialHandles.map((item, index) => {
                                     return (
                                         <a href={item.link} target="_blank" key={index} className="
-                                            w-[40px]
-                                            h-[40px]
-                                            flex
-                                            justify-center
-                                            items-center
-                                            bg-[#d4e01c]
-                                            text-[1.2rem]
-                                            rounded-[2px]
-                                            transition duration-200
+                                            w-[40px] sm:w-[40px] lg:w-[34px] xl:w-[37px] 2xl:w-[40px]
+                                            h-[40px] sm:h-[40px] lg:h-[34px] xl:h-[37px] 2xl:h-[40px]
+                                            flex justify-center items-center bg-[#d4e01c] transition duration-200 rounded-[2px]
+                                            text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                             text-[#363636]
                                             hover:translate-y-[-4px]
                                         ">
@@ -198,7 +186,7 @@ const Footer = () => {
                     <p className="
                         text-center
                         text-[#363636]
-                        text-[0.9rem]
+                        text-[0.9rem] sm:text-[1.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                     ">
                         Copyright © 2025 | Dermatio | All Rights Reserved
                     </p>

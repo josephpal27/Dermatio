@@ -31,27 +31,24 @@ const AdvisoryBoard = () => {
     return (
         <>
             <section className="
-                py-[3rem]
+                py-[3rem] sm:py-[3rem] lg:py-[2rem] xl:py-[2.5rem] 2xl:py-[3rem]
             ">
                 {/* Head */}
                 <div className="
-                    flex
-                    flex-col
-                    items-center
+                    flex flex-col items-center
                     px-[7%]
                 ">
                     <h6 className="
-                        text-[4rem]
+                        text-[1.4rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
                     ">
                         Our Advisory Board
                     </h6>
                     <p className="
-                        text-[1.2rem]
-                        text-[#363636]
-                        mt-[1.5rem]
+                        text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                        text-[#363636] text-center
+                        mt-[1.5rem] sm:mt-[1.5rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                         w-[65%]
-                        text-center
                     ">
                         Dermatio is guided by a panel of dermatologists, pediatric experts, and formulation scientists who ensure every product is safe, evidence based, and child friendly.
                     </p>
@@ -60,7 +57,7 @@ const AdvisoryBoard = () => {
                 {/* Slider */}
                 <div className="
                     px-[7%]
-                    mt-[4rem]
+                    mt-[4rem] sm:mt-[4rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
                 ">
                     <Swiper
                         modules={[Autoplay]}
@@ -95,30 +92,25 @@ const AdvisoryBoard = () => {
                                 return (
                                     <SwiperSlide key={index} className="
                                         flex flex-col overflow-hidden bg-[#dfdace]
-                                        rounded-[50px]
+                                        rounded-[50px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
                                     ">
                                         <div>
-                                            <img src={item.image} alt={item.title} loading="lazy" className="
-                                                w-full
-                                            " />
+                                            <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
                                         </div>
                                         <div className="
-                                            p-[1.5rem]
+                                            p-[1.5rem] sm:p-[1.5rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
                                         ">
                                             <span dangerouslySetInnerHTML={{
                                                 __html: item.title,
                                             }} className="
-                                                block
-                                                text-[1rem]
-                                                text-[#000]
+                                                block text-[#000]
+                                                text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.95rem] 2xl:text-[1rem]
                                             " />
                                             <Link to="/">
                                                 <img src={rightArrow} alt="Arrow" loading="lazy" className="
-                                                    w-[35px]
-                                                    mt-[1rem]
-                                                    border-[#1f1f1f]
-                                                    border-[2px]
-                                                    rounded-full
+                                                    w-[35px] sm:w-[35px] lg:w-[25px] xl:w-[30px] 2xl:w-[35px]
+                                                    mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                                                    border-[#1f1f1f] border-[2px] rounded-full
                                                 " />
                                             </Link>
                                         </div>
