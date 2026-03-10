@@ -30,9 +30,7 @@ const HighLights = () => {
     return (
         <>
             <section className="
-                flex
-                justify-between
-                flex-wrap
+                flex justify-between flex-wrap
                 py-[3rem] sm:py-[2rem] lg:py-[2.2rem] xl:py-[2.7rem] 2xl:py-[3rem]
                 px-[7%]
                 mt-[1rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
@@ -42,9 +40,7 @@ const HighLights = () => {
                         return (
                             <div key={index} className="
                                 w-[23%]
-                                flex
-                                flex-col
-                                items-center
+                                flex flex-col items-center
                             ">
                                 <img 
                                     src={item.image} 
@@ -56,11 +52,9 @@ const HighLights = () => {
                                     "
                                 />
                                 <span dangerouslySetInnerHTML={{ __html: item.title }} className="
-                                    text-[#363636]
+                                    text-[#363636] text-center leading-[1.3]
                                     text-[1.6rem] sm:text-[1.6rem] lg:text-[1.3rem] xl:text-[1.5rem] 2xl:text-[1.6rem]
                                     mt-[1.5rem] sm:mt-[1.5rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
-                                    text-center
-                                    leading-[1.3]
                                 "/>
 
                             </div>

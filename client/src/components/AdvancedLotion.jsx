@@ -49,7 +49,7 @@ const AdvancedLotion = () => {
                     </h2>
                     <p className="
                         mt-[2rem]
-                        text-[1.1rem] sm:text-[1.2rem] lg:text
+                        text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         w-[50%] text-[#363636]
                     ">
                         Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation.
@@ -88,4 +88,4 @@ const AdvancedLotion = () => {
     )
 }
 
-export default AdvancedLotion
+export default AdvancedLotion;
