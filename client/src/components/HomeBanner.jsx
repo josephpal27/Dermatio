@@ -13,23 +13,22 @@ const HomeBanner = () => {
                     loading="eager"
                     className="
                         w-full object-cover
-                        rounded-b-[45px] sm:rounded-b-[40px] lg:rounded-b-[35px] xl:rounded-b-[40px] 2xl:rounded-b-[45px]
-                        h-[93vh]
+                        rounded-b-[15px] sm:rounded-b-[20px] lg:rounded-b-[35px] xl:rounded-b-[40px] 2xl:rounded-b-[45px]
+                        h-[auto] sm:h-[50vh] lg:h-[93vh]
                 "/>
                 {/* Layer */}
                 <div className="
-                    absolute
-                    top-0 left-0 w-full h-full text-[#fff]
-                    flex
-                    justify-between
-                    px-[7%]
+                    relative sm:absolute
+                    top-0 left-0 w-full h-full text-[#363636] sm:text-[#fff]
+                    flex justify-between flex-wrap
+                    px-[1rem] sm:px-[5%] lg:px-[7%]
                     pb-[8rem] sm:pb-[6rem] lg:pb-[6rem] xl:pb-[7rem] 2xl:pb-[8rem]
                 ">
                     {/* Left */}
                     <div className="
-                        w-[40%]
-                        flex flex-col
-                        justify-end
+                        w-[100%] sm:w-[40%]
+                        flex flex-col justify-end
+                        mt-[1rem] sm:mt-0
                     ">
                         <span className="
                             text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
@@ -37,7 +36,7 @@ const HomeBanner = () => {
                             #1st product to <br /> fight 4 signs of eczema
                         </span>
                         <h1 className="
-                            text-[1.4rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                            text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                             mt-[1rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
                             leading-[1]
                         ">
@@ -46,33 +45,30 @@ const HomeBanner = () => {
                     </div>
                     {/* Right */}
                     <div className="
-                        w-[34%]
-                        flex flex-col
-                        justify-center
+                        w-[100%] sm:w-[34%]
+                        flex flex-col justify-center
                     ">
                         <span className="
-                            text-[1.5rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
+                            text-[1.3rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
                             leading-[1.2]
-                            mt-[10rem] sm:mt-[8rem] lg:mt-[8rem] xl:mt-[9rem] 2xl:mt-[10rem]
+                            mt-[2rem] sm:mt-[3rem] lg:mt-[8rem] xl:mt-[9rem] 2xl:mt-[10rem]
                         ">
                             Eczema relief for <br /> every stage of Childhood
                         </span>
                         <Link to="/" className="
-                            mt-[1.5rem] sm:mt-[1rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
+                            mt-[1.4rem] sm:mt-[1rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                             border-[2px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
-                            border-white
+                            border-black sm:border-white
                             w-max
                             py-[0.4rem] sm:py-[0.4rem] lg:py-[0.3rem] xl:py-[0.35rem] 2xl:py-[0.4rem]
-                            pl-[1rem] sm:pl-[1rem] lg:pl-[0.9rem] xl:pl-[0.95rem] 2xl:pl-[1rem]
+                            pl-[0.7rem] sm:pl-[1rem] lg:pl-[0.9rem] xl:pl-[0.95rem] 2xl:pl-[1rem]
                             pr-[0.5rem] sm:pr-[0.5rem] lg:pr-[0.4rem] xl:pr-[0.45rem] 2xl:pr-[0.5rem]
                             rounded-[30px]
                             text-[0.9rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.88rem] 2xl:text-[0.95rem]
                             transition
                             hover:bg-white
                             hover:text-black
-                            flex
-                            center
-                            group
+                            flex items-center group
                         ">
                             Read More 
                             <img 
@@ -80,8 +76,8 @@ const HomeBanner = () => {
                                 alt="Arrow" 
                                 loading="lazy"
                                 className=" 
-                                    w-[20px] sm:w-[20px] lg:w-[19px] xl:w-[21px] 2xl:w-[23px]
-                                    h-[20px] sm:h-[20px] lg:h-[19px] xl:h-[21px] 2xl:h-[23px]
+                                    w-[23px] sm:w-[20px] lg:w-[19px] xl:w-[21px] 2xl:w-[23px]
+                                    h-[23px] sm:h-[20px] lg:h-[19px] xl:h-[21px] 2xl:h-[23px]
                                     ml-[0.8rem] sm:ml-[0.8rem] lg:ml-[0.6rem] xl:ml-[0.7rem] 2xl:ml-[0.8rem]
                                     duration-200
                                     group-hover:2xl:ml-[1.2rem]
