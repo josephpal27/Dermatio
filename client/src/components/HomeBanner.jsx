@@ -22,7 +22,7 @@ const HomeBanner = () => {
                     top-0 left-0 w-full h-full text-[#363636] sm:text-[#fff]
                     flex justify-between flex-wrap
                     px-[1rem] sm:px-[5%] lg:px-[7%]
-                    pb-[8rem] sm:pb-[6rem] lg:pb-[6rem] xl:pb-[7rem] 2xl:pb-[8rem]
+                    pb-[1rem] sm:pb-[3rem] lg:pb-[6rem] xl:pb-[7rem] 2xl:pb-[8rem]
                 ">
                     {/* Left */}
                     <div className="
@@ -58,7 +58,7 @@ const HomeBanner = () => {
                         <Link to="/" className="
                             mt-[1.4rem] sm:mt-[1rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                             border-[2px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
-                            border-black sm:border-white
+                            border-[#000] sm:border-[#fff]
                             w-max
                             py-[0.4rem] sm:py-[0.4rem] lg:py-[0.3rem] xl:py-[0.35rem] 2xl:py-[0.4rem]
                             pl-[0.7rem] sm:pl-[1rem] lg:pl-[0.9rem] xl:pl-[0.95rem] 2xl:pl-[1rem]
@@ -76,8 +76,8 @@ const HomeBanner = () => {
                                 alt="Arrow" 
                                 loading="lazy"
                                 className=" 
-                                    w-[23px] sm:w-[20px] lg:w-[19px] xl:w-[21px] 2xl:w-[23px]
-                                    h-[23px] sm:h-[20px] lg:h-[19px] xl:h-[21px] 2xl:h-[23px]
+                                    w-[21px] sm:w-[20px] lg:w-[19px] xl:w-[21px] 2xl:w-[23px]
+                                    h-[21px] sm:h-[20px] lg:h-[19px] xl:h-[21px] 2xl:h-[23px]
                                     ml-[0.8rem] sm:ml-[0.8rem] lg:ml-[0.6rem] xl:ml-[0.7rem] 2xl:ml-[0.8rem]
                                     duration-200
                                     group-hover:2xl:ml-[1.2rem]
