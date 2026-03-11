@@ -7,7 +7,7 @@ const EczemaJourney = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[2.5rem] sm:py-[4rem] lg:py-[3.5rem] xl:py-[4rem] 2xl:py-[4.5rem]
+                py-[3rem] sm:py-[4rem] lg:py-[3.5rem] xl:py-[4rem] 2xl:py-[4.5rem]
             ">
                 <h4 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
@@ -20,7 +20,7 @@ const EczemaJourney = () => {
                 <div className="
                     flex justify-between items-center flex-wrap bg-[#f0ede9] overflow-hidden
                     mt-[1.8rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
-                    rounded-[40px] sm:rounded-[70px] lg:rounded-[55px] xl:rounded-[65px] 2xl:rounded-[70px]
+                    rounded-[35px] sm:rounded-[70px] lg:rounded-[55px] xl:rounded-[65px] 2xl:rounded-[70px]
                 ">
                     {/* Image */}
                     <div className="

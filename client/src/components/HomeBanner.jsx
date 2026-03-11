@@ -31,13 +31,13 @@ const HomeBanner = () => {
                         mt-[1rem] sm:mt-0
                     ">
                         <span className="
-                            text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                            text-[0.8rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         ">
                             #1st product to <br /> fight 4 signs of eczema
                         </span>
                         <h1 className="
                             text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
-                            mt-[1rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
+                            mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
                             leading-[1]
                         ">
                             Gentle Care <br /> Proven Science
@@ -49,9 +49,9 @@ const HomeBanner = () => {
                         flex flex-col justify-center
                     ">
                         <span className="
-                            text-[1.3rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
+                            text-[1.25rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
                             leading-[1.2]
-                            mt-[2rem] sm:mt-[3rem] lg:mt-[8rem] xl:mt-[9rem] 2xl:mt-[10rem]
+                            mt-[1.8rem] sm:mt-[3rem] lg:mt-[8rem] xl:mt-[9rem] 2xl:mt-[10rem]
                         ">
                             Eczema relief for <br /> every stage of Childhood
                         </span>

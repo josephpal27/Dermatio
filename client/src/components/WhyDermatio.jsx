@@ -8,58 +8,60 @@ const WhyDermatio = () => {
     return (
         <>
             <section className="
-                px-[7%]
-                pb-[8rem] sm:pb-[8rem] lg:pb-[6rem] xl:pb-[7rem] 2xl:pb-[8rem]
-                mt-[4rem] sm:mt-[4rem] lg:mt-[3.6rem] xl:mt-[3.8rem] 2xl:mt-[4rem]
+                px-[1rem] sm:px-[5%] lg:px-[7%]
+                pb-[1rem] sm:pb-[8rem] lg:pb-[6rem] xl:pb-[7rem] 2xl:pb-[8rem]
+                mt-[2rem] sm:mt-[4rem] lg:mt-[3.6rem] xl:mt-[3.8rem] 2xl:mt-[4rem]
                 flex justify-between flex-wrap items-center
             ">
                 {/* Images */}
                 <div className="
-                    w-[40%]
+                    w-[100%] sm:w-[40%]
                     relative
                 ">
                     <img src={whyDermatio1} alt="Why Dermatio Main" loading="lazy" className="
-                        w-full
-                        rounded-[60px] sm:rounded-[50px] lg:rounded-[50px] xl:rounded-[55px] 2xl:rounded-[60px]
+                        w-[80%] sm:w-[100%]
+                        mx-[auto] sm:mx-0
+                        rounded-[35px] sm:rounded-[50px] lg:rounded-[50px] xl:rounded-[55px] 2xl:rounded-[60px]
                     " />
                     <img src={whyDermatio2} alt="Why Dermatio 1" loading="lazy" className="
-                        w-[40%]
-                        rounded-[40px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
+                        w-[37%] sm:w-[40%]
+                        rounded-[25px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         absolute
                         top-[-8%]
-                        right-[-20%]
+                        right-[0] sm:right-[-20%]
                     " />
                     <img src={whyDermatio3} alt="Why Dermatio 2" loading="lazy" className="
-                        w-[32%]
-                        rounded-[40px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
+                        w-[30%] sm:w-[32%]
+                        rounded-[18px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         absolute
                         bottom-[-15%]
-                        left-[-10%]
+                        left-[0] sm:left-[-10%]
                     " />
                 </div>
                 {/* Content */}
                 <div className="
-                    w-[42%]
+                    w-[100%] sm:w-[42%]
+                    mt-[5rem] sm:mt-0
                 ">
                     <h6 className="
-                        text-[1.4rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                        text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
                     ">
                         Why <br /> Dermatio™ ?
                     </h6>
                     <p className="
-                        text-[1.5rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
+                        text-[1.3rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
                         text-[#363636]
-                        mt-[1.4rem] sm:mt-[1.4rem] lg:mt-[1.2rem] xl:mt-[1.3rem] 2xl:mt-[1.4rem]
+                        mt-[1rem] sm:mt-[1.4rem] lg:mt-[1.2rem] xl:mt-[1.3rem] 2xl:mt-[1.4rem]
                     ">
                         Advance Dermal Therapy
                     </p>
                     <Link to="/" className="
-                        mt-[2.5rem] sm:mt-[2.5rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem]
-                        border-[2px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
+                        mt-[1.8rem] sm:mt-[2.5rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem]
+                        border-[1.5px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
                         border-black w-max
                         py-[0.4rem] sm:py-[0.4rem] lg:py-[0.3rem] xl:py-[0.35rem] 2xl:py-[0.4rem]
-                        pl-[1rem] sm:pl-[1rem] lg:pl-[0.9rem] xl:pl-[0.95rem] 2xl:pl-[1rem]
+                        pl-[0.7rem] sm:pl-[1rem] lg:pl-[0.9rem] xl:pl-[0.95rem] 2xl:pl-[1rem]
                         pr-[0.5rem] sm:pr-[0.5rem] lg:pr-[0.4rem] xl:pr-[0.45rem] 2xl:pr-[0.5rem]
                         rounded-[30px]
                         text-[0.9rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.88rem] 2xl:text-[0.95rem]
@@ -71,8 +73,8 @@ const WhyDermatio = () => {
                             alt="Arrow"
                             loading="lazy"
                             className=" 
-                                w-[20px] sm:w-[20px] lg:w-[19px] xl:w-[21px] 2xl:w-[23px]
-                                h-[20px] sm:h-[20px] lg:h-[19px] xl:h-[21px] 2xl:h-[23px]
+                                w-[21px] sm:w-[20px] lg:w-[19px] xl:w-[21px] 2xl:w-[23px]
+                                h-[21px] sm:h-[20px] lg:h-[19px] xl:h-[21px] 2xl:h-[23px]
                                 ml-[0.8rem] sm:ml-[0.8rem] lg:ml-[0.6rem] xl:ml-[0.7rem] 2xl:ml-[0.8rem]
                                 transition-all duration-200
                                 group-hover:2xl:ml-[1.2rem]

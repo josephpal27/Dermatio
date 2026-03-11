@@ -16,3 +16,10 @@ footer .foot-links a::after{
 footer .foot-links a:hover::after{
   width: 100%;
 }
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    footer .foot-links a::after{
+        height: 1px;
+    }
+}

@@ -95,7 +95,7 @@ const OurProducts = () => {
                                     ">
                                         <div className="
                                             bg-[#dfdace]
-                                            rounded-[40px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
+                                            rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
                                         ">
                                             <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
                                         </div>
