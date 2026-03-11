@@ -30,7 +30,7 @@ const OurPhilosophy = () => {
     return (
         <>
             <section className="
-                py-[4rem]
+                py-[4rem] sm:py-[3rem] lg:py-[3.2rem] xl:py-[3.7rem] 2xl:py-[4rem]
                 px-[7%]
                 bg-[#ebe3d8]
             ">
@@ -56,24 +56,24 @@ const OurPhilosophy = () => {
                 {/* Row */}
                 <div className="
                     flex justify-between items-center flex-wrap
-                    mt-[4rem]
+                    mt-[4rem] sm:mt-[4rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
                 ">
                     {/* Left */}
                     <div className="
                         w-[30%]
                         flex flex-col
-                        gap-[4rem]
+                        gap-[4rem] sm:gap-[4rem] lg:gap-[3rem] xl:gap-[3.5rem] 2xl:gap-[4rem]
                     ">
                         {ourPhilosophyData.leftItems.map((item, index) => (
                             <div key={index}>
                                 <span className="
-                                    text-[1.4rem]
+                                    text-[1.4rem] sm:text-[1.4rem] lg:text-[1.1rem] xl:text-[1.25rem] 2xl:text-[1.4rem]
                                     font-bold
                                 ">
                                     {item.title}
                                 </span>
                                 <p className="
-                                    text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                                    text-[1.1rem] sm:text-[1.1rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
                                     mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                                     text-[#363636]
                                 ">
@@ -106,19 +106,19 @@ const OurPhilosophy = () => {
                     <div className="
                         w-[30%]
                         flex flex-col
-                        gap-[4rem]
+                        gap-[4rem] sm:gap-[4rem] lg:gap-[3rem] xl:gap-[3.5rem] 2xl:gap-[4rem]
                         text-right
                     ">
                         {ourPhilosophyData.rightItems.map((item, index) => (
                             <div key={index}>
                                 <span className="
-                                    text-[1.4rem]
+                                    text-[1.4rem] sm:text-[1.4rem] lg:text-[1.1rem] xl:text-[1.25rem] 2xl:text-[1.4rem]
                                     font-bold
                                 ">
                                     {item.title}
                                 </span>
                                 <p className="
-                                    text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                                    text-[1.1rem] sm:text-[1.1rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
                                     mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                                     text-[#363636]
                                 ">
@@ -130,8 +130,8 @@ const OurPhilosophy = () => {
                 </div>
 
                 <p className="
-                    text-[1.2rem]
-                    mt-[3.5rem]
+                    text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                    mt-[3.5rem] sm:mt-[3.5rem] lg:mt-[3.1rem] xl:mt-[3.3rem] 2xl:mt-[3.5rem]
                     text-[#363636] mx-auto text-center font-bold
                     w-[50%]
                 ">

@@ -18,7 +18,7 @@ const OurStory = () => {
                 {/* Row */}
                 <div className="
                     flex justify-between flex-wrap
-                    mt-[3rem]
+                    mt-[2rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                 ">
                     {/* Left Image */}
                     <div className="
@@ -26,7 +26,7 @@ const OurStory = () => {
                     ">
                         <img src={ourStory1} alt="Our Story 1" loading="lazy" className="
                             w-full shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
-                            rounded-[35px]
+                            rounded-[35px] sm:rounded-[30px] lg:rounded-[25px] xl:rounded-[30px] 2xl:rounded-[35px]
                         " />
                     </div>
                     {/* Content */}
@@ -57,20 +57,21 @@ const OurStory = () => {
                     ">
                         <img src={ourStory2} alt="Our Story 2" loading="lazy" className="
                             w-full z-1 relative shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
-                            rounded-[35px]
+                            rounded-[35px] sm:rounded-[30px] lg:rounded-[25px] xl:rounded-[30px] 2xl:rounded-[35px]
                         " />
                     </div>
                 </div>
                 <p className="
-                    text-[1.7rem]
-                    mt-[2rem]
+                    text-[1.7rem] sm:text-[1.7rem] lg:text-[1.4rem] xl:text-[1.55rem] 2xl:text-[1.7rem]
+                    mt-[2rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                     text-[#363636]
                 ">
                     Because we understand: eczema doesn't just affect skin — it affects lives.
                 </p>
                 <span className="
-                    text-[8rem]
-                    font-[400] text-[#e4e2dd] absolute top-[3rem] right-0 z-0
+                    text-[8rem] sm:text-[7rem] lg:text-[7.6rem] xl:text-[7.8rem] 2xl:text-[8rem]
+                    font-[400] text-[#e4e2dd] absolute right-0 z-0
+                    top-[3rem] sm:top-[3rem] lg:top-[2.2rem] xl:top-[2.6rem] 2xl:top-[3rem]
                 " style={{fontFamily: `"OrdinaryBoys", sans-serif`}}>
                     Story
                 </span>

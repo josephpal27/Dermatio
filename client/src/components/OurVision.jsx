@@ -5,7 +5,7 @@ const OurVision = () => {
         <>
             <section className="
                 px-[7%]
-                py-[4rem]
+                py-[4rem] sm:py-[3rem] lg:py-[3.2rem] xl:py-[3.7rem] 2xl:py-[4rem]
                 flex justify-between items-end flex-wrap relative overflow-hidden
             ">
                 {/* Image */}
@@ -14,19 +14,21 @@ const OurVision = () => {
                 ">
                     <div>
                         <img src={vision1} alt="Our Vision 1" loading="lazy" className="
-                            rounded-[50px] shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
+                            rounded-[50px] sm:rounded-[50px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
+                            shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
                         " />
                     </div>
                     <div className="
-                        flex justify-between items-center mt-[1.2rem]
+                        flex justify-between items-center 
+                        mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]
                     ">
                         <img src={vision1} alt="Our Vision 2" loading="lazy" className="
                             w-[48.5%] shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
-                            rounded-[40px]
+                            rounded-[40px] sm:rounded-[40px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         " />
                         <img src={vision1} alt="Our Vision 3" loading="lazy" className="
                             w-[48.5%] shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
-                            rounded-[40px]
+                            rounded-[40px] sm:rounded-[40px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         " />
                     </div>
                 </div>

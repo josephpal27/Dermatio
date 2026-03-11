@@ -186,7 +186,7 @@ const Footer = () => {
                 ">
                     <p className="
                         text-center text-[#363636]
-                        text-[0.83rem] sm:text-[1.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                        text-[0.83rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                     ">
                         Copyright © 2025 | Dermatio | All Rights Reserved
                     </p>

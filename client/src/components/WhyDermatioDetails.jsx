@@ -48,7 +48,7 @@ const WhyDermatioDetails = () => {
     return (
         <>
             <section className="
-                py-[4rem]
+                py-[4rem] sm:py-[3rem] lg:py-[3.2rem] xl:py-[3.7rem] 2xl:py-[4rem]
                 px-[7%]
             ">
                 <h6 className="
@@ -67,7 +67,7 @@ const WhyDermatioDetails = () => {
 
                 {/* Row */}
                 <div className="
-                    mt-[2rem]
+                    mt-[2rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                     flex justify-between flex-wrap
                 ">
                     {
@@ -76,24 +76,24 @@ const WhyDermatioDetails = () => {
                                 <div className="
                                     w-[32.4%]
                                     bg-[#f6f1ea] rounded-[10px]
-                                    p-[1.7rem]
-                                    mb-[1.2rem]
+                                    p-[1.7rem] sm:p-[1.7rem] lg:p-[1.5rem] xl:p-[1.6rem] 2xl:p-[1.7rem]
+                                    mb-[1.2rem] sm:mb-[1.2rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
                                     hover:scale-[1.02] transition duration-300 hover:shadow-[0px_3px_8px_rgba(0,0,0,0.10)]
                                 " key={index}>
                                     <div className="
                                         bg-[#fff] rounded-full
-                                        p-[0.7rem]
-                                        w-[60px]
-                                        h-[60px]
+                                        p-[0.7rem] sm:p-[0.5rem] lg:p-[0.5rem] xl:p-[0.6rem] 2xl:p-[0.7rem]
+                                        w-[60px] sm:w-[50px] lg:w-[50px] xl:w-[55px] 2xl:w-[60px]
+                                        h-[60px] sm:h-[50px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
                                     ">
                                         <img src={item.icon} alt="" loading="lazy" className="
                                             w-full h-full object-contain
                                         "/>
                                     </div>
                                     <span className="
-                                        mt-[1.3rem]
+                                        mt-[1.3rem] sm:mt-[1.2rem] lg:mt-[1.1rem] xl:mt-[1.2rem] 2xl:mt-[1.3rem]
                                         block font-bold
-                                        text-[1.1rem]
+                                        text-[1rem] sm:text-[1.1rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
                                     ">
                                         {item.title}
                                     </span>

@@ -18,10 +18,8 @@ const AboutBanner = () => {
                 <div className="
                     absolute
                     top-0 left-0 w-full h-full text-[#fff]
-                    flex
-                    flex-col
-                    justify-end
-                    px-[7%]
+                    flex flex-col justify-end
+                    px-[1rem] sm:px-[5%] lg:px-[7%]
                     pb-[8rem] sm:pb-[6rem] lg:pb-[6rem] xl:pb-[7rem] 2xl:pb-[8rem]
                 ">
                     <span className="
