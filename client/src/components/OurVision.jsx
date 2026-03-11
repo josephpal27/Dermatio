@@ -4,70 +4,71 @@ const OurVision = () => {
     return (
         <>
             <section className="
-                px-[7%]
-                py-[4rem] sm:py-[3rem] lg:py-[3.2rem] xl:py-[3.7rem] 2xl:py-[4rem]
+                px-[1rem] sm:px-[5%] lg:px-[7%]
+                py-[3rem] sm:py-[3rem] lg:py-[3.2rem] xl:py-[3.7rem] 2xl:py-[4rem]
                 flex justify-between items-end flex-wrap relative overflow-hidden
             ">
                 {/* Image */}
                 <div className="
-                    w-[40%]
+                    w-[100%] sm:w-[40%]
                 ">
                     <div>
                         <img src={vision1} alt="Our Vision 1" loading="lazy" className="
-                            rounded-[50px] sm:rounded-[50px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
+                            rounded-[32px] sm:rounded-[50px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
                             shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
-                        " />
+                        " data-aos="fade" />
                     </div>
                     <div className="
                         flex justify-between items-center 
-                        mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]
+                        mt-[0.7rem] sm:mt-[1.2rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]
                     ">
                         <img src={vision1} alt="Our Vision 2" loading="lazy" className="
                             w-[48.5%] shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
-                            rounded-[40px] sm:rounded-[40px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
-                        " />
+                            rounded-[25px] sm:rounded-[40px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
+                        " data-aos="fade" />
                         <img src={vision1} alt="Our Vision 3" loading="lazy" className="
                             w-[48.5%] shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
-                            rounded-[40px] sm:rounded-[40px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
-                        " />
+                            rounded-[25px] sm:rounded-[40px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
+                        " data-aos="fade"/>
                     </div>
                 </div>
                 {/* Content */}
                 <div className="
-                    w-[53%]
+                    w-[100%] sm:w-[53%]
+                    mt-[2rem] sm:mt-0
                 ">
                     <h5 className="
-                        text-[1.4rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                        text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
-                    ">
+                    " data-aos="fade-up">
                         Our Vision
                     </h5>
                     <p className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                        mt-[1.5rem] sm:mt-[1.2rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
+                        mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                         text-[#363636]
-                    ">
+                    " data-aos="fade">
                         To become India's first and most trusted eczema-focused brand offering science-led, affordable, and complete care that supports both skin and soul.
                     </p>
                     <p className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                        mt-[0.9rem] sm:mt-[0.9rem] lg:mt-[0.7rem] xl:mt-[0.8rem] 2xl:mt-[0.9rem]
+                        mt-[0.8rem] sm:mt-[0.9rem] lg:mt-[0.7rem] xl:mt-[0.8rem] 2xl:mt-[0.9rem]
                         text-[#363636]
-                    ">
+                    " data-aos="fade">
                         We imagine a future where no child misses playtime, feels the need to hide their skin, or dreads their daily routine. A future where no parent feels helpless watching their child struggle.
                     </p>
                     <p className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                        mt-[0.9rem] sm:mt-[0.9rem] lg:mt-[0.7rem] xl:mt-[0.8rem] 2xl:mt-[0.9rem]
+                        mt-[0.8rem] sm:mt-[0.9rem] lg:mt-[0.7rem] xl:mt-[0.8rem] 2xl:mt-[0.9rem]
                         text-[#363636]
-                    ">
+                    " data-aos="fade">
                         We remember our own carefree childhoods, sunny afternoons, scraped knees, unfiltered joy. At Dermatio, we’re working every day to give that same Freedom and comfort back to children with eczema.
                     </p>
                 </div>
                 {/* Pink Background */}
                 <div className="
-                    w-full h-[87%] absolute bg-[#fbf4ea]
-                    top-[13%] left-0 -z-10 rounded-tl-[220px] rounded-tr-[550px]
+                    w-full h-[77%] sm:h-[87%] absolute bg-[#fbf4ea]
+                    top-[23%] sm:top-[13%] left-0 -z-10 rounded-tl-[50px] sm:rounded-tl-[220px] rounded-tr-[550px]
                 "></div>
             </section>
         </>

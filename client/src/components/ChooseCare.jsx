@@ -34,14 +34,14 @@ const ChooseCare = () => {
                 <h6 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1]
-                ">
+                " data-aos="fade-up">
                     Choose Your Care
                 </h6>
                 <p className="
                     text-[1.1rem] sm:text-[1.3rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                     text-[#363636]
                     mt-[1rem]
-                ">
+                " data-aos="fade">
                     Personalised eczema care for <br /> every skin need
                 </p>
 
@@ -59,7 +59,7 @@ const ChooseCare = () => {
                     ">
                         <img src={playIcon} alt="Play Icon" loading="lazy" className="
                             w-[50px] sm:w-[70px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
-                        " />
+                        " data-aos="zoom-in" />
                     </div>
                     {/* Images */}
                     <div className="
@@ -75,7 +75,7 @@ const ChooseCare = () => {
                                         rounded-[35px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                                         overflow-hidden bg-[#eeeeee]
                                         mb-[1.3rem] sm:mb-0
-                                    ">
+                                    " data-aos="fade">
                                         <img src={item.image} alt={item.title} loading="lazy" className="w-full aspect-[1/1]" />
                                         <div className="
                                             p-[1.4rem] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]

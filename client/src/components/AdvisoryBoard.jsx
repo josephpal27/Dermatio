@@ -41,7 +41,7 @@ const AdvisoryBoard = () => {
                     <h6 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
-                    ">
+                    " data-aos="fade-up">
                         Our Advisory Board
                     </h6>
                     <p className="
@@ -49,7 +49,7 @@ const AdvisoryBoard = () => {
                         text-[#363636] text-center
                         mt-[1rem] sm:mt-[1.5rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                         w-[100%] sm:w-[65%]
-                    ">
+                    " data-aos="fade">
                         Dermatio is guided by a panel of dermatologists, pediatric experts, and formulation scientists who ensure every product is safe, evidence based, and child friendly.
                     </p>
                 </div>
@@ -93,7 +93,7 @@ const AdvisoryBoard = () => {
                                     <SwiperSlide key={index} className="
                                         flex flex-col overflow-hidden bg-[#dfdace]
                                         rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
-                                    ">
+                                    " data-aos="fade">
                                         <div>
                                             <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
                                         </div>

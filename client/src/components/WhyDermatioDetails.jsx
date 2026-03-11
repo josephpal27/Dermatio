@@ -48,60 +48,60 @@ const WhyDermatioDetails = () => {
     return (
         <>
             <section className="
-                py-[4rem] sm:py-[3rem] lg:py-[3.2rem] xl:py-[3.7rem] 2xl:py-[4rem]
-                px-[7%]
+                py-[3rem] sm:py-[3rem] lg:py-[3.2rem] xl:py-[3.7rem] 2xl:py-[4rem]
+                px-[1rem] sm:px-[5%] lg:px-[7%]
             ">
                 <h6 className="
-                    text-[1.4rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                    text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1]
-                ">
+                " data-aos="fade-up">
                     Why Dermatio
                 </h6>
                 <p className="
                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                    mt-[1.5rem] sm:mt-[1.2rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
-                    text-[#363636] w-[40%]
-                ">
+                    mt-[1rem] sm:mt-[1.2rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
+                    text-[#363636] w-[100%] sm:w-[40%]
+                " data-aos="fade">
                     Six commitments that guide every product, every formulation, and every decision we make.
                 </p>
 
                 {/* Row */}
                 <div className="
-                    mt-[2rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
+                    mt-[1.8rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                     flex justify-between flex-wrap
                 ">
                     {
                         whyDermatioData.map((item, index) => {
                             return (
                                 <div className="
-                                    w-[32.4%]
+                                    w-[100%] sm:w-[32.4%]
                                     bg-[#f6f1ea] rounded-[10px]
-                                    p-[1.7rem] sm:p-[1.7rem] lg:p-[1.5rem] xl:p-[1.6rem] 2xl:p-[1.7rem]
-                                    mb-[1.2rem] sm:mb-[1.2rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
+                                    p-[1.1rem] sm:p-[1.7rem] lg:p-[1.5rem] xl:p-[1.6rem] 2xl:p-[1.7rem]
+                                    mb-[1.1rem] sm:mb-[1.2rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
                                     hover:scale-[1.02] transition duration-300 hover:shadow-[0px_3px_8px_rgba(0,0,0,0.10)]
                                 " key={index}>
                                     <div className="
                                         bg-[#fff] rounded-full
                                         p-[0.7rem] sm:p-[0.5rem] lg:p-[0.5rem] xl:p-[0.6rem] 2xl:p-[0.7rem]
-                                        w-[60px] sm:w-[50px] lg:w-[50px] xl:w-[55px] 2xl:w-[60px]
-                                        h-[60px] sm:h-[50px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
-                                    ">
+                                        w-[58px] sm:w-[50px] lg:w-[50px] xl:w-[55px] 2xl:w-[60px]
+                                        h-[58px] sm:h-[50px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
+                                    " data-aos="zoom-in">
                                         <img src={item.icon} alt="" loading="lazy" className="
                                             w-full h-full object-contain
                                         "/>
                                     </div>
                                     <span className="
-                                        mt-[1.3rem] sm:mt-[1.2rem] lg:mt-[1.1rem] xl:mt-[1.2rem] 2xl:mt-[1.3rem]
+                                        mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1.1rem] xl:mt-[1.2rem] 2xl:mt-[1.3rem]
                                         block font-bold
-                                        text-[1rem] sm:text-[1.1rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                                    ">
+                                        text-[1.1rem] sm:text-[1.1rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                                    " data-aos="fade">
                                         {item.title}
                                     </span>
                                     <p className="
                                         text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
-                                        mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
+                                        mt-[0.4rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                                         text-[#363636]
-                                    ">
+                                    " data-aos="fade">
                                         {item.desc}
                                     </p>
                                 </div>

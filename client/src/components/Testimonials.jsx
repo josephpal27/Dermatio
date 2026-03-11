@@ -34,7 +34,7 @@ const Testimonials = () => {
                     <h6 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
-                    ">
+                    " data-aos="fade-up">
                         Testimonials
                     </h6>
                     <p className="
@@ -42,7 +42,7 @@ const Testimonials = () => {
                         text-[#363636] text-center
                         mt-[1rem] sm:mt-[1.5rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                         w-[100%] sm:w-[65%]
-                    ">
+                    " data-aos="fade">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. 
                     </p>
                 </div>
@@ -59,7 +59,7 @@ const Testimonials = () => {
                                 <div key={index} className="
                                     w-[100%] sm:w-[27%]
                                     mb-[1.5rem] sm:mb-0 last:mb-0
-                                ">
+                                " data-aos="fade">
                                     <div className="
                                         w-[100%] bg-[#fff] aspect-square
                                         rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]

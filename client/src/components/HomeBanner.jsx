@@ -32,14 +32,14 @@ const HomeBanner = () => {
                     ">
                         <span className="
                             text-[0.8rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                        ">
+                        " data-aos="fade">
                             #1st product to <br /> fight 4 signs of eczema
                         </span>
                         <h1 className="
                             text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                             mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
                             leading-[1]
-                        ">
+                        " data-aos="fade-up">
                             Gentle Care <br /> Proven Science
                         </h1>
                     </div>
@@ -47,7 +47,7 @@ const HomeBanner = () => {
                     <div className="
                         w-[100%] sm:w-[34%]
                         flex flex-col justify-center
-                    ">
+                    " data-aos="fade">
                         <span className="
                             text-[1.25rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
                             leading-[1.2]

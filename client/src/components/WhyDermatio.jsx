@@ -29,14 +29,14 @@ const WhyDermatio = () => {
                         absolute
                         top-[-8%]
                         right-[0] sm:right-[-20%]
-                    " />
+                    " data-aos="fade-down"/>
                     <img src={whyDermatio3} alt="Why Dermatio 2" loading="lazy" className="
                         w-[30%] sm:w-[32%]
                         rounded-[18px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         absolute
                         bottom-[-15%]
                         left-[0] sm:left-[-10%]
-                    " />
+                    " data-aos="fade-left"/>
                 </div>
                 {/* Content */}
                 <div className="
@@ -46,14 +46,14 @@ const WhyDermatio = () => {
                     <h6 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
-                    ">
+                    " data-aos="fade-up">
                         Why <br /> Dermatio™ ?
                     </h6>
                     <p className="
                         text-[1.3rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
                         text-[#363636]
                         mt-[1rem] sm:mt-[1.4rem] lg:mt-[1.2rem] xl:mt-[1.3rem] 2xl:mt-[1.4rem]
-                    ">
+                    " data-aos="fade">
                         Advance Dermal Therapy
                     </p>
                     <Link to="/" className="
@@ -66,7 +66,7 @@ const WhyDermatio = () => {
                         rounded-[30px]
                         text-[0.9rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.88rem] 2xl:text-[0.95rem]
                         flex items-center group
-                    ">
+                    " data-aos="fade">
                         Read More
                         <img
                             src={rightArrow}

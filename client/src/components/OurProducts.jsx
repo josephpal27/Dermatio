@@ -43,7 +43,7 @@ const OurProducts = () => {
                     <h3 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
-                    ">
+                    " data-aos="fade-up">
                         Our Products
                     </h3>
                 </div>
@@ -92,7 +92,7 @@ const OurProducts = () => {
                                 return (
                                     <SwiperSlide key={index} className="
                                         d-flex flex-col items-center
-                                    ">
+                                    " data-aos="fade">
                                         <div className="
                                             bg-[#dfdace]
                                             rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]

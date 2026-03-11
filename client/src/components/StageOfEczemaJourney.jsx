@@ -33,7 +33,7 @@ const StageOfEczemaJourney = () => {
                 <h5 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1] text-center
-                ">
+                " data-aos="fade-up">
                     We're Here For <br className="hidden sm:block" /> Every <br className="sm:hidden" /> Stage of Eczema  Journey
                 </h5>
 
@@ -59,7 +59,8 @@ const StageOfEczemaJourney = () => {
                                     ">
                                         <span className="
                                             text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
-                                        ">
+                                            block
+                                        " data-aos="zoom-in">
                                             0{item.id}
                                         </span>
                                     </div>
@@ -69,14 +70,15 @@ const StageOfEczemaJourney = () => {
                                     ">
                                         <span className="
                                             text-[1.7rem] sm:text-[2.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
-                                        " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }}>
+                                            block
+                                        " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }} data-aos="fade-right">
                                             {item.title}
                                         </span>
                                         <p className="
                                             text-[#363636]
                                             text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.95rem] 2xl:text-[1rem]
                                             mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
-                                        ">
+                                        " data-aos="fade">
                                             {item.desc}
                                         </p>
                                     </div>
