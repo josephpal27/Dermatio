@@ -34,7 +34,7 @@ const App = () => {
     AOS.init({
       duration: 1000,
       offset: 100,
-      once: true,
+      // once: true,
     });
   }, []);
 
