@@ -57,7 +57,7 @@ const HomeBanner = () => {
                         </span>
                         <Link to="/" className="
                             mt-[1.4rem] sm:mt-[1rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
-                            border-[2px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
+                            border-[1.5px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
                             border-[#000] sm:border-[#fff]
                             w-max
                             py-[0.4rem] sm:py-[0.4rem] lg:py-[0.3rem] xl:py-[0.35rem] 2xl:py-[0.4rem]
