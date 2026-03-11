@@ -179,7 +179,7 @@ const Footer = () => {
                 {/* Copyright */}
                 <div className="
                     px-[7%]
-                    py-[1rem]
+                    py-[1rem] sm:py-[1rem] lg:py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem]
                     border-[#a7a7a7]
                     border-t-[1px]
                 ">

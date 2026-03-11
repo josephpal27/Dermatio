@@ -28,6 +28,7 @@ const StageOfEczemaJourney = () => {
             <section className="
                 px-[7%]
                 py-[0.5rem]
+                overflow-hidden
             ">
                 <h5 className="
                     text-[1.4rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]

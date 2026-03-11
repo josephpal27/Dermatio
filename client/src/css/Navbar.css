@@ -51,10 +51,10 @@
 /* Media Queries */
 @media (max-width: 992px) {
   .navbar {
-    padding: 1rem 1rem !important;
+    padding: 0.9rem 1rem !important;
   }
   .navbar .nav-brand img {
-    width: 100px;
+    width: 120px;
   }
   .navbar-toggler {
     border: none !important;
@@ -64,21 +64,32 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
   .offcanvas {
-    background: #000;
+    background: #a9b406;
     width: 70% !important;
   }
   .offcanvas .offCanvasLogo {
     width: 130px;
     background-color: #fff;
     padding: 0.8rem 1rem;
-    border-radius: 7px;
+    border-radius: 6px;
   }
   .offcanvas .nav-link {
     color: #fff !important;
-    margin: 0.5rem 0;
-    font-size: 1rem;
+    margin: 0.4rem 0;
+    font-size: 1.1rem;
     font-weight: 600;
     width: max-content;
+  }
+  .offcanvas .right-btn-wrapper{
+    margin-top: 1rem;
+    color: #fff;
+  }
+  .offcanvas .right-btn-wrapper .icon {
+    font-size: 1.7rem;
+  }
+  .offcanvas .right-btn-wrapper .cart-icon {
+    font-size: 1.85rem;
+    margin-top: 1.6rem;
   }
 }
 
