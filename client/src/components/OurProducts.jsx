@@ -85,6 +85,7 @@ const OurProducts = () => {
                                 spaceBetween: 40,
                             },
                         }}
+                        data-aos="fade" data-aos-once="true"
                     >
 
                         {
@@ -92,7 +93,7 @@ const OurProducts = () => {
                                 return (
                                     <SwiperSlide key={index} className="
                                         d-flex flex-col items-center
-                                    " data-aos="fade">
+                                    ">
                                         <div className="
                                             bg-[#dfdace]
                                             rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]

@@ -58,7 +58,7 @@ const AdvisoryBoard = () => {
                 <div className="
                     px-[1rem] sm:px-[5%] lg:px-[7%]
                     mt-[2rem] sm:mt-[4rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4rem]
-                ">
+                " data-aos="fade" data-aos-once="true">
                     <Swiper
                         modules={[Autoplay]}
                         slidesPerView={4}
@@ -93,7 +93,7 @@ const AdvisoryBoard = () => {
                                     <SwiperSlide key={index} className="
                                         flex flex-col overflow-hidden bg-[#dfdace]
                                         rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
-                                    " data-aos="fade">
+                                    ">
                                         <div>
                                             <img src={item.image} alt={item.title} loading="lazy" className="w-full" />
                                         </div>
