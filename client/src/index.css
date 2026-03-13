@@ -43,3 +43,27 @@ h1, h2, h3, h4, h5, h6{
 .swiper-slide {
   height: auto !important;
 }
+
+
+/* Products Tabbing */
+.tab-head .nav-link{
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  color: #000 !important;
+  padding: 0.5rem 1rem;
+}
+.tab-head .nav-link:hover{
+  border: none !important;
+}
+.tab-head .nav-link.active{
+  border: none !important;
+  border-bottom: 2px solid #22c55e !important;
+  background: transparent !important;
+  color: #000 !important;
+}
+.tab-head .nav-link:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}

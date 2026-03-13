@@ -44,10 +44,7 @@ const ProductsTabbing = () => {
                         mt-[1rem]
                         rounded-t-[40px]
                     ">
-                        <Nav variant="tabs" className="
-                            tab-head
-                            border-none outline-none shadow-none
-                        ">
+                        <Nav variant="tabs" className="tab-head border-none">
                             {
                                 productsTabsData.map((item) => (
                                     <Nav.Item key={item.id} className="
