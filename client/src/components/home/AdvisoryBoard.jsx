@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { Link } from "react-router-dom";
-import rightArrow from "../assets/images/icons/arrow.png";
+import rightArrow from "../../assets/images/icons/arrow.png";
 
 let AdvisoryBoardData = [
     {

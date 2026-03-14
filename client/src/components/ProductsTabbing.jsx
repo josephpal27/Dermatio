@@ -42,7 +42,7 @@ const ProductsTabbing = () => {
                         px-[7%]
                         py-[2rem]
                         mt-[1rem]
-                        rounded-t-[40px]
+                        rounded-[40px]
                     ">
                         <Nav variant="tabs" className="tab-head border-none">
                             {

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import rightArrow from "../assets/images/icons/arrow.png";
+import rightArrow from "../../assets/images/icons/arrow.png";
 
 const HomeBanner = () => {
     return (

@@ -1,7 +1,7 @@
-import highLight1 from '../assets/images/icons/doctor.png';
-import highLight2 from '../assets/images/icons/injection.png';
-import highLight3 from '../assets/images/icons/clinic.png';
-import highLight4 from '../assets/images/icons/safe.png';
+import highLight1 from '../../assets/images/icons/doctor.png';
+import highLight2 from '../../assets/images/icons/injection.png';
+import highLight3 from '../../assets/images/icons/clinic.png';
+import highLight4 from '../../assets/images/icons/safe.png';
 
 let highLightsData = [
     {

@@ -1,8 +1,8 @@
-import rightArrow from "../assets/images/icons/arrow.png";
+import rightArrow from "../../assets/images/icons/arrow.png";
 import { Link } from "react-router-dom"
-import whyDermatio1 from '../assets/images/why-dermatio/1.avif';
-import whyDermatio2 from '../assets/images/why-dermatio/2.avif';
-import whyDermatio3 from '../assets/images/why-dermatio/3.avif';
+import whyDermatio1 from '../../assets/images/why-dermatio/1.avif';
+import whyDermatio2 from '../../assets/images/why-dermatio/2.avif';
+import whyDermatio3 from '../../assets/images/why-dermatio/3.avif';
 
 const WhyDermatio = () => {
     return (

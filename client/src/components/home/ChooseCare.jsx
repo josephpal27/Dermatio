@@ -1,7 +1,7 @@
-import playIcon from "../assets/images/icons/play-button.png";
-import careImage1 from "../assets/images/choose-care/1.avif";
-import careImage2 from "../assets/images/choose-care/2.avif";
-import careImage3 from "../assets/images/choose-care/3.avif";
+import playIcon from "../../assets/images/icons/play-button.png";
+import careImage1 from "../../assets/images/choose-care/1.avif";
+import careImage2 from "../../assets/images/choose-care/2.avif";
+import careImage3 from "../../assets/images/choose-care/3.avif";
 
 let chooseCareData = [
     {

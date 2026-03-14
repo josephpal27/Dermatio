@@ -1,4 +1,4 @@
-import rightArrow from "../assets/images/icons/arrow.png";
+import rightArrow from "../../assets/images/icons/arrow.png";
 import { Link } from "react-router-dom"
 
 const AdvancedLotion = () => {
