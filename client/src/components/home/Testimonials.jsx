@@ -59,7 +59,7 @@ const Testimonials = () => {
                                 <div key={index} className="
                                     w-[100%] sm:w-[27%]
                                     mb-[1.5rem] sm:mb-0 last:mb-0
-                                " data-aos="fade">
+                                " data-aos="fade" data-aos-once="true" >
                                     <div className="
                                         w-[100%] bg-[#fff] aspect-square
                                         rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]

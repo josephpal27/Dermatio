@@ -71,7 +71,7 @@ const StageOfEczemaJourney = () => {
                                         <span className="
                                             text-[1.7rem] sm:text-[2.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
                                             block
-                                        " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }} data-aos="fade-right">
+                                        " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }} data-aos="fade-right" data-aos-once="true">
                                             {item.title}
                                         </span>
                                         <p className="

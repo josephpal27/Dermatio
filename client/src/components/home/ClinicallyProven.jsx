@@ -29,7 +29,7 @@ const ClinicallyProven = () => {
                     ">
                         <div className="
                             w-[35%]
-                        " data-aos="zoom-in">
+                        " data-aos="zoom-in" data-aos-once="true" >
                             <img src={grapesImage} alt="Grapes" loading="lazy" className="w-full" />
                         </div>
                         <div className="
@@ -52,7 +52,7 @@ const ClinicallyProven = () => {
                     ">
                         <div className="
                             w-[19%]
-                        " data-aos="zoom-in">
+                        " data-aos="zoom-in" data-aos-once="true" >
                             <img src={provenImage} alt="Proven" loading="lazy" className="w-full" />
                         </div>
                         <div className="

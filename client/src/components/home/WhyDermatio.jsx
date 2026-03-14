@@ -29,14 +29,14 @@ const WhyDermatio = () => {
                         absolute
                         top-[-8%]
                         right-[0] sm:right-[-20%]
-                    " data-aos="fade-down"/>
+                    " data-aos="fade-down" data-aos-once="true" />
                     <img src={whyDermatio3} alt="Why Dermatio 2" loading="lazy" className="
                         w-[30%] sm:w-[32%]
                         rounded-[18px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         absolute
                         bottom-[-15%]
                         left-[0] sm:left-[-10%]
-                    " data-aos="fade-left"/>
+                    " data-aos="fade-left" data-aos-once="true" />
                 </div>
                 {/* Content */}
                 <div className="

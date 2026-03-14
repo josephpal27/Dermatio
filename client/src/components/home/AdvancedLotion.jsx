@@ -29,7 +29,7 @@ const AdvancedLotion = () => {
                         right-[-24%] sm:right-[-4rem] lg:right-[-3rem] xl:right-[-3.5rem] 2xl:right-[-4rem]
                         rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
                         py-[1.2rem] sm:py-[2rem] lg:py-[1.6rem] xl:py-[1.8rem] 2xl:py-[2rem]
-                    " data-aos="fade-down">
+                    " data-aos="fade-down" data-aos-once="true">
                         <img
                             src="/images/featured-products/2.avif"
                             alt="Product Image"

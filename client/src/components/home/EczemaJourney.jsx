@@ -25,7 +25,7 @@ const EczemaJourney = () => {
                     {/* Image */}
                     <div className="
                         sm:w-[40%]
-                    " data-aos="fade-right">
+                    " data-aos="fade-right" data-aos-once="true">
                         <img src={eczemaImage} alt="Eczema Journey" loading="lazy" className="w-full" />
                     </div>
                     {/* Content */}

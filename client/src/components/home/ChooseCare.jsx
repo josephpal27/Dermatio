@@ -59,7 +59,7 @@ const ChooseCare = () => {
                     ">
                         <img src={playIcon} alt="Play Icon" loading="lazy" className="
                             w-[50px] sm:w-[70px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
-                        " data-aos="zoom-in" />
+                        " data-aos="zoom-in" data-aos-once="true" />
                     </div>
                     {/* Images */}
                     <div className="
