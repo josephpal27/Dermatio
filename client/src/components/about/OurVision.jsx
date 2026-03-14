@@ -16,7 +16,7 @@ const OurVision = () => {
                         <img src={vision1} alt="Our Vision 1" loading="lazy" className="
                             rounded-[32px] sm:rounded-[50px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
                             shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
-                        " data-aos="fade" />
+                        " data-aos="fade" data-aos-once="true" />
                     </div>
                     <div className="
                         flex justify-between items-center 
@@ -25,11 +25,11 @@ const OurVision = () => {
                         <img src={vision1} alt="Our Vision 2" loading="lazy" className="
                             w-[48.5%] shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
                             rounded-[25px] sm:rounded-[40px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
-                        " data-aos="fade" />
+                        " data-aos="fade" data-aos-once="true" />
                         <img src={vision1} alt="Our Vision 3" loading="lazy" className="
                             w-[48.5%] shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
                             rounded-[25px] sm:rounded-[40px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
-                        " data-aos="fade"/>
+                        " data-aos="fade" data-aos-once="true" />
                     </div>
                 </div>
                 {/* Content */}
@@ -47,21 +47,21 @@ const OurVision = () => {
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                         text-[#363636]
-                    " data-aos="fade">
+                    " data-aos="fade" data-aos-once="true" >
                         To become India's first and most trusted eczema-focused brand offering science-led, affordable, and complete care that supports both skin and soul.
                     </p>
                     <p className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         mt-[0.8rem] sm:mt-[0.9rem] lg:mt-[0.7rem] xl:mt-[0.8rem] 2xl:mt-[0.9rem]
                         text-[#363636]
-                    " data-aos="fade">
+                    " data-aos="fade" data-aos-once="true" >
                         We imagine a future where no child misses playtime, feels the need to hide their skin, or dreads their daily routine. A future where no parent feels helpless watching their child struggle.
                     </p>
                     <p className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         mt-[0.8rem] sm:mt-[0.9rem] lg:mt-[0.7rem] xl:mt-[0.8rem] 2xl:mt-[0.9rem]
                         text-[#363636]
-                    " data-aos="fade">
+                    " data-aos="fade" data-aos-once="true" >
                         We remember our own carefree childhoods, sunny afternoons, scraped knees, unfiltered joy. At Dermatio, we’re working every day to give that same Freedom and comfort back to children with eczema.
                     </p>
                 </div>

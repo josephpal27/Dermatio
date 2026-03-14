@@ -65,7 +65,7 @@ const OurPhilosophy = () => {
                         gap-[1.5rem] sm:gap-[4rem] lg:gap-[3rem] xl:gap-[3.5rem] 2xl:gap-[4rem]
                     ">
                         {ourPhilosophyData.leftItems.map((item, index) => (
-                            <div key={index} data-aos="fade">
+                            <div key={index} data-aos="fade" data-aos-once="true">
                                 <span className="
                                     text-[1.2rem] sm:text-[1.4rem] lg:text-[1.1rem] xl:text-[1.25rem] 2xl:text-[1.4rem]
                                     font-bold
@@ -92,7 +92,7 @@ const OurPhilosophy = () => {
                         <img src={drop1} alt="Water Drop 1" loading="lazy" className="
                             w-[10%]
                             ml-[-40%]
-                        " data-aos="zoom-in" />
+                        " data-aos="zoom-in" data-aos-once="true" />
                         <img src={coloredLogo} alt="Dermatio" loading="lazy" className="
                             w-[65%]
                             mt-[1.5rem]
@@ -100,7 +100,7 @@ const OurPhilosophy = () => {
                         <img src={drop2} alt="Water Drop 2" loading="lazy" className="
                             w-[25%]
                             ml-[4rem]
-                        " data-aos="zoom-in"/>
+                        " data-aos="zoom-in" data-aos-once="true" />
                     </div>
 
                     {/* Right */}
@@ -112,7 +112,7 @@ const OurPhilosophy = () => {
                         mt-[2rem] sm:mt-0
                     ">
                         {ourPhilosophyData.rightItems.map((item, index) => (
-                            <div key={index} data-aos="fade">
+                            <div key={index} data-aos="fade" data-aos-once="true">
                                 <span className="
                                     text-[1.2rem] sm:text-[1.4rem] lg:text-[1.1rem] xl:text-[1.25rem] 2xl:text-[1.4rem]
                                     font-bold
@@ -136,7 +136,7 @@ const OurPhilosophy = () => {
                     mt-[2.5rem] sm:mt-[3.5rem] lg:mt-[3.1rem] xl:mt-[3.3rem] 2xl:mt-[3.5rem]
                     text-[#363636] mx-auto text-center font-bold
                     w-[100%] sm:w-[50%]
-                " data-aos="fade">
+                " data-aos="fade" data-aos-once="true" >
                     We’re not here just to offer products. We’re here to redefine eczema care in a way that is holistic, mindful, and truly supportive.
                 </p>
 

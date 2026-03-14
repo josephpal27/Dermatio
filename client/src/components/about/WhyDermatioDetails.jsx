@@ -85,7 +85,7 @@ const WhyDermatioDetails = () => {
                                         p-[0.7rem] sm:p-[0.5rem] lg:p-[0.5rem] xl:p-[0.6rem] 2xl:p-[0.7rem]
                                         w-[58px] sm:w-[50px] lg:w-[50px] xl:w-[55px] 2xl:w-[60px]
                                         h-[58px] sm:h-[50px] lg:h-[50px] xl:h-[55px] 2xl:h-[60px]
-                                    " data-aos="zoom-in">
+                                    " data-aos="zoom-in" data-aos-once="true" >
                                         <img src={item.icon} alt="" loading="lazy" className="
                                             w-full h-full object-contain
                                         "/>
@@ -94,14 +94,14 @@ const WhyDermatioDetails = () => {
                                         mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1.1rem] xl:mt-[1.2rem] 2xl:mt-[1.3rem]
                                         block font-bold
                                         text-[1.1rem] sm:text-[1.1rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                                    " data-aos="fade">
+                                    " data-aos="fade" data-aos-once="true" >
                                         {item.title}
                                     </span>
                                     <p className="
                                         text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                                         mt-[0.4rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                                         text-[#363636]
-                                    " data-aos="fade">
+                                    " data-aos="fade" data-aos-once="true" >
                                         {item.desc}
                                     </p>
                                 </div>
