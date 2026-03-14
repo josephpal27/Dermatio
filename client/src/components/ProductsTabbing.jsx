@@ -95,4 +95,4 @@ const ProductsTabbing = () => {
     )
 }
 
-export default ProductsTabbing
+export default ProductsTabbing;
