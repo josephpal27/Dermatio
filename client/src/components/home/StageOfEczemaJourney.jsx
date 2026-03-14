@@ -33,7 +33,7 @@ const StageOfEczemaJourney = () => {
                 <h5 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1] text-center
-                " data-aos="fade-up">
+                " data-aos="fade-up" data-aos-once="true">
                     We're Here For <br className="hidden sm:block" /> Every <br className="sm:hidden" /> Stage of Eczema  Journey
                 </h5>
 
@@ -60,7 +60,7 @@ const StageOfEczemaJourney = () => {
                                         <span className="
                                             text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                                             block
-                                        " data-aos="zoom-in">
+                                        " data-aos="zoom-in" data-aos-once="true">
                                             0{item.id}
                                         </span>
                                     </div>
@@ -78,7 +78,7 @@ const StageOfEczemaJourney = () => {
                                             text-[#363636]
                                             text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.95rem] 2xl:text-[1rem]
                                             mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
-                                        " data-aos="fade">
+                                        " data-aos="fade" data-aos-once="true">
                                             {item.desc}
                                         </p>
                                     </div>

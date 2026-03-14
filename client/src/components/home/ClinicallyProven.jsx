@@ -13,14 +13,14 @@ const ClinicallyProven = () => {
                 <h6 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1.2]
-                " data-aos="fade-up">
+                " data-aos="fade-up" data-aos-once="true">
                     Clinically Proven Ingredient <br /> Tazman Pepper™
                 </h6>
                 {/* Row */}
                 <div className="
                     flex justify-between flex-wrap
                     mt-[2rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
-                " data-aos="fade">
+                " data-aos="fade" data-aos-once="true">
                     {/* Left */}
                     <div className="
                         sm:w-[48%]

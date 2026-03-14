@@ -41,7 +41,7 @@ const AdvisoryBoard = () => {
                     <h6 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
-                    " data-aos="fade-up">
+                    " data-aos="fade-up" data-aos-once="true">
                         Our Advisory Board
                     </h6>
                     <p className="
@@ -49,7 +49,7 @@ const AdvisoryBoard = () => {
                         text-[#363636] text-center
                         mt-[1rem] sm:mt-[1.5rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                         w-[100%] sm:w-[65%]
-                    " data-aos="fade">
+                    " data-aos="fade" data-aos-once="true">
                         Dermatio is guided by a panel of dermatologists, pediatric experts, and formulation scientists who ensure every product is safe, evidence based, and child friendly.
                     </p>
                 </div>

@@ -45,14 +45,14 @@ const AdvancedLotion = () => {
                     <h2 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
-                    " data-aos="fade-up">
+                    " data-aos="fade-up" data-aos-once="true">
                         Advance Dermal <br /> Therapy Lotion
                     </h2>
                     <p className="
                         mt-[1.5rem] sm:mt-[2rem]
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         w-[100%] sm:w-[50%] text-[#363636]
-                    " data-aos="fade">
+                    " data-aos="fade" data-aos-once="true">
                         Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation.
                     </p>
                     <Link to="/" className="
@@ -65,7 +65,7 @@ const AdvancedLotion = () => {
                         rounded-[30px]
                         text-[0.9rem] sm:text-[0.9rem] lg:text-[0.8rem] xl:text-[0.88rem] 2xl:text-[0.95rem]
                         flex items-center group
-                    " data-aos="fade">
+                    " data-aos="fade" data-aos-once="true">
                         Shop Now
                         <img
                             src={rightArrow}

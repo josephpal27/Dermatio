@@ -42,7 +42,7 @@ const HighLights = () => {
                                 w-[48%] sm:w-[23%]
                                 flex flex-col items-center
                                 mb-[1.4rem] sm:mb-0
-                            " data-aos="fade">
+                            " data-aos="fade" data-aos-once="true">
                                 <img 
                                     src={item.image} 
                                     alt={item.title}

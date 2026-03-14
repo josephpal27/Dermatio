@@ -40,7 +40,7 @@ const OurPhilosophy = () => {
                     <h4 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
-                    " data-aos="fade-up">
+                    " data-aos="fade-up" data-aos-once="true">
                         Our Philosophy
                     </h4>
                     <p className="
@@ -48,7 +48,7 @@ const OurPhilosophy = () => {
                         mt-[1rem] sm:mt-[1.2rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                         w-[100%] sm:w-[35%] 
                         text-[#363636] text-center
-                    " data-aos="fade">
+                    " data-aos="fade" data-aos-once="true">
                         We believe that every child deserves the freedom to feel comfortable in their own skin.
                     </p>
                 </div>
