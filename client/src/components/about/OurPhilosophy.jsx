@@ -1,6 +1,6 @@
-import coloredLogo from '../assets/images/logo/colored-logo.avif';
-import drop1 from '../assets/images/icons/water-drop-1.avif';
-import drop2 from '../assets/images/icons/water-drop-2.avif';
+import coloredLogo from '../../assets/images/logo/colored-logo.avif';
+import drop1 from '../../assets/images/icons/water-drop-1.avif';
+import drop2 from '../../assets/images/icons/water-drop-2.avif';
 
 const ourPhilosophyData = {
     leftItems: [

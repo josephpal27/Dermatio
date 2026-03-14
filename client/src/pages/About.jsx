@@ -1,9 +1,9 @@
-import AboutBanner from "../components/AboutBanner";
-import CareMeetsScience from "../components/CareMeetsScience";
-import OurPhilosophy from "../components/OurPhilosophy";
-import OurStory from "../components/OurStory";
-import OurVision from "../components/OurVision";
-import WhyDermatioDetails from "../components/WhyDermatioDetails";
+import AboutBanner from "../components/about/AboutBanner";
+import CareMeetsScience from "../components/about/CareMeetsScience";
+import OurPhilosophy from "../components/about/OurPhilosophy";
+import OurStory from "../components/about/OurStory";
+import OurVision from "../components/about/OurVision";
+import WhyDermatioDetails from "../components/about/WhyDermatioDetails";
 
 const About = () => {
     return (

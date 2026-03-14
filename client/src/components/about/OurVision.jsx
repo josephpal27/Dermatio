@@ -1,4 +1,4 @@
-import vision1 from '../assets/images/our-vision/1.avif';
+import vision1 from '../../assets/images/our-vision/1.avif';
 
 const OurVision = () => {
     return (
