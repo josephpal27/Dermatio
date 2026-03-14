@@ -1,5 +1,5 @@
-import ProductsBanner from "../components/ProductsBanner"
-import ProductsTabbing from "../components/ProductsTabbing"
+import ProductsBanner from "../components/products/ProductsBanner"
+import ProductsTabbing from "../components/products/ProductsTabbing"
 
 const Products = () => {
     return (
