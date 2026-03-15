@@ -28,6 +28,7 @@ const App = () => {
     };
   }, []);
 
+  
   // AOS Init
   useEffect(() => {
     AOS.init({
