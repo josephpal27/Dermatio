@@ -6,7 +6,7 @@ export const productsData = [
     type: "Lotion",
     price: 799,
     image: "/images/products/1.avif",
-    slug: "advance-dermal-therapy-lotion"
+    slug: "advance-dermal-therapy-lotion",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const productsData = [
     type: "Body Wash",
     price: 699,
     image: "/images/products/1.avif",
-    slug: "daily-care-body-wash"
+    slug: "advance-dermal-therapy-lotion",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const productsData = [
     type: "Oil",
     price: 899,
     image: "/images/products/1.avif",
-    slug: "flare-up-therapy-oil"
+    slug: "advance-dermal-therapy-lotion",
   },
   {
     id: 4,
@@ -33,6 +33,15 @@ export const productsData = [
     type: "Shampoo",
     price: 599,
     image: "/images/products/1.avif",
-    slug: "baby-gentle-shampoo"
+    slug: "advance-dermal-therapy-lotion",
+  },
+  {
+    id: 5,
+    name: "Advance Dermal Therapy",
+    collection: "Baby & Toddler",
+    type: "Shampoo",
+    price: 599,
+    image: "/images/products/1.avif",
+    slug: "advance-dermal-therapy-lotion",
   },
 ];

@@ -1,3 +1,4 @@
+import KeyIngredients from "../components/products/KeyIngredients"
 import ProductsBanner from "../components/products/ProductsBanner"
 import ProductsTabbing from "../components/products/ProductsTabbing"
 
@@ -6,6 +7,7 @@ const Products = () => {
         <>
             <ProductsBanner />
             <ProductsTabbing />
+            <KeyIngredients />
         </>
     )
 }

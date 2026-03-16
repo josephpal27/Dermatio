@@ -89,20 +89,39 @@ const ProductsTabbing = () => {
                         Filter Options
                     </span>
 
-                    <ul className="mt-4 flex flex-col gap-2">
-                        {filters.map((item) => (
-                            <li
-                                key={item}
-                                onClick={() => setActiveFilter(item)}
-                                className={`cursor-pointer ${activeFilter === item
-                                    ? "font-semibold text-[#becb0c]"
-                                    : ""
-                                    }`}
-                            >
-                                {item}
-                            </li>
-                        ))}
-                    </ul>
+                    <div className="
+                        mt-[1.5rem]
+                        bg-[#eeeae4]
+                        p-[1.3rem]
+                        rounded-[10px]
+                    ">
+                        <span className="
+                            text-[1rem]
+                            font-[600]
+                        ">
+                            By Category
+                        </span>
+
+                        <ul className="mt-[0.5rem] flex flex-col">
+                            {filters.map((item) => (
+                                <li
+                                    key={item}
+                                    onClick={() => setActiveFilter(item)}
+                                    className={`
+                                        cursor-pointer 
+                                        border-b-[1px] border-[#d9d8d8] last:border-none
+                                        py-[0.8rem]
+                                        px-[0.7rem]
+                                        text-[1rem]
+                                        ${activeFilter === item ? "font-semibold text-[#becb0c]" : ""
+                                        }`}
+                                >
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+
+                    </div>
 
                 </div>
 

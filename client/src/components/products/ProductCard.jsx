@@ -28,7 +28,7 @@ const ProductCard = ({ product }) => {
             ">
 
                 <span className="
-                    text-[1.2rem] 
+                    text-[1.25rem] 
                     text-[#363636]
                 ">
                     {product.name}
