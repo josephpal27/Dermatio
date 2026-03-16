@@ -1,47 +1,38 @@
 export const productsData = [
   {
     id: 1,
-    name: "Advance Dermal Therapy Lotion",
+    name: "Advance Dermal Therapy",
     collection: "Daily Care",
     type: "Lotion",
     price: 799,
-    image: "/images/products/product1.png",
+    image: "/images/products/1.avif",
     slug: "advance-dermal-therapy-lotion"
   },
   {
     id: 2,
-    name: "Daily Care Body Wash",
+    name: "Daily Care",
     collection: "Daily Care",
     type: "Body Wash",
     price: 699,
-    image: "/images/products/product2.png",
+    image: "/images/products/1.avif",
     slug: "daily-care-body-wash"
   },
   {
     id: 3,
-    name: "Flare Up Therapy Oil",
+    name: "Flare Up Therapy",
     collection: "Flare Up",
     type: "Oil",
     price: 899,
-    image: "/images/products/product3.png",
+    image: "/images/products/1.avif",
     slug: "flare-up-therapy-oil"
   },
   {
     id: 4,
-    name: "Baby Gentle Shampoo",
+    name: "Baby Gentle",
     collection: "Baby & Toddler",
     type: "Shampoo",
     price: 599,
-    image: "/images/products/product4.png",
+    image: "/images/products/1.avif",
     slug: "baby-gentle-shampoo"
   },
-  {
-    id: 5,
-    name: "Baby Body Cleanser",
-    collection: "Baby & Toddler",
-    type: "Body Cleanser",
-    price: 649,
-    image: "/images/products/product5.png",
-    slug: "baby-body-cleanser"
-  }
 ];

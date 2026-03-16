@@ -39,17 +39,16 @@ const ProductsTabbing = () => {
 
     return (
         <section>
-
             {/* Header Tabs */}
             <div className="
-        bg-[#eee7dd]
-        px-[7%]
-        py-[2rem]
-        mt-[1rem]
-        rounded-[40px]
-        flex gap-6
-        flex-wrap
-      ">
+                bg-[#eee7dd]
+                px-[7%]
+                py-[2rem]
+                mt-[1rem]
+                rounded-[40px]
+                flex flex-wrap gap-[1.5rem]
+                
+            ">
 
                 {collections.map((item) => (
                     <button
@@ -58,9 +57,13 @@ const ProductsTabbing = () => {
                             setActiveCollection(item);
                             setActiveFilter("All");
                         }}
-                        className={`pb-1 border-b-2 transition ${activeCollection === item
-                                ? "border-[#d4e01c]"
-                                : "border-transparent"
+                        className={`
+                                text-[1.1rem]
+                                py-[0.3rem] 
+                                px-[1rem]
+                                border-b-[2.5px] 
+                                transition font-[500] 
+                                ${activeCollection === item ? "border-[#becb0c]" : "border-transparent"
                             }`}
                     >
                         {item}
@@ -71,47 +74,43 @@ const ProductsTabbing = () => {
 
             {/* Content Area */}
             <div className="
-        flex
-        justify-between
-        flex-wrap
-        px-[7%]
-        py-[2rem]
-      ">
+                flex justify-between flex-wrap
+                px-[7%]
+                py-[3rem]
+            ">
 
                 {/* Filters */}
                 <div className="w-[20%]">
 
-                    <span className="font-medium">
+                    <span className="
+                        text-[1.4rem]
+                        font-[600]
+                    ">
                         Filter Options
                     </span>
 
                     <ul className="mt-4 flex flex-col gap-2">
-
                         {filters.map((item) => (
                             <li
                                 key={item}
                                 onClick={() => setActiveFilter(item)}
                                 className={`cursor-pointer ${activeFilter === item
-                                        ? "font-semibold text-green-700"
-                                        : ""
+                                    ? "font-semibold text-[#becb0c]"
+                                    : ""
                                     }`}
                             >
                                 {item}
                             </li>
                         ))}
-
                     </ul>
 
                 </div>
 
                 {/* Products */}
                 <div className="
-          w-[75%]
-          flex
-          flex-wrap
-          gap-6
-        ">
-
+                    w-[75%]
+                    flex flex-wrap gap-6
+                ">
                     {filteredProducts.length > 0 ? (
                         filteredProducts.map((product) => (
                             <ProductCard
@@ -120,13 +119,11 @@ const ProductsTabbing = () => {
                             />
                         ))
                     ) : (
-                        <p>No products found</p>
+                        <p>No Products Found !</p>
                     )}
-
                 </div>
 
             </div>
-
         </section>
     );
 };
