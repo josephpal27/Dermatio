@@ -109,7 +109,7 @@ const ProductsTabbing = () => {
                 {/* Products */}
                 <div className="
                     w-[75%]
-                    flex flex-wrap gap-6
+                    flex flex-wrap gap-[2.5%]
                 ">
                     {filteredProducts.length > 0 ? (
                         filteredProducts.map((product) => (
@@ -119,7 +119,12 @@ const ProductsTabbing = () => {
                             />
                         ))
                     ) : (
-                        <p>No Products Found !</p>
+                        <p className="
+                            text-[1.1rem]
+                            text-[#363636]
+                        ">
+                            No Products Found !
+                        </p>
                     )}
                 </div>
 

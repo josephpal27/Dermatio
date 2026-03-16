@@ -10,7 +10,7 @@ export const productsData = [
   },
   {
     id: 2,
-    name: "Daily Care",
+    name: "Advance Dermal Therapy",
     collection: "Daily Care",
     type: "Body Wash",
     price: 699,
@@ -19,7 +19,7 @@ export const productsData = [
   },
   {
     id: 3,
-    name: "Flare Up Therapy",
+    name: "Advance Dermal Therapy",
     collection: "Flare Up",
     type: "Oil",
     price: 899,
@@ -28,7 +28,7 @@ export const productsData = [
   },
   {
     id: 4,
-    name: "Baby Gentle",
+    name: "Advance Dermal Therapy",
     collection: "Baby & Toddler",
     type: "Shampoo",
     price: 599,

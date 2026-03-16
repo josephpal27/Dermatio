@@ -2,35 +2,64 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
     return (
-        <div className="w-[250px] bg-white rounded-[20px] p-4 shadow-sm">
+        <div className="
+            w-[31.5%]
+            mb-[1.5rem]
+        ">
 
-            <div className="bg-[#f5f5f5] rounded-[16px] p-6 flex justify-center">
+            <div className="
+                bg-[#fbf4eb] flex justify-center items-center
+                rounded-[30px] 
+                pt-[2.5rem]
+                pb-[2rem]
+                shadow-[-2.4px_2.4px_3.2px_rgba(0,0,0,0.25)]
+            ">
                 <img
                     src={product.image}
                     alt={product.name}
                     loading="lazy"
-                    className="h-[140px] object-contain"
+                    className="w-full"
                 />
             </div>
 
-            <div className="mt-4 flex flex-col gap-1">
+            <div className="
+                mt-4 
+                flex flex-col 
+            ">
 
-                <span className="text-[15px] font-medium">
+                <span className="
+                    text-[1.2rem] 
+                    text-[#363636]
+                ">
                     {product.name}
                 </span>
 
-                <span className="text-[13px] text-gray-500">
+                <span className="
+                    text-[1.1rem] 
+                    text-[#818181]
+                    mt-[0.1rem]
+                ">
                     {product.type}
                 </span>
 
-                <span className="text-[16px] font-semibold mt-1">
+                <span className="
+                    text-[1.2rem] 
+                    font-[600] 
+                    mt-[0.5rem]
+                ">
                     ₹ {product.price}
                 </span>
 
                 <Link
                     to={`/products/${product.slug}`}
-                    className="mt-3 text-center bg-blue-600 text-white text-[13px] py-1 rounded-md"
-                >
+                    className="
+                        w-max
+                        mt-[1rem] 
+                        bg-[#005aed] hover:bg-[#004ecb] text-[#fff] rounded-md transition
+                        text-[1rem] 
+                        py-[0.27rem]
+                        px-[1.2rem]
+                    ">
                     Explore
                 </Link>
 
