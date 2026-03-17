@@ -9,7 +9,8 @@ const RelatedProducts = () => {
         <>
             <section className="
                 px-[7%]
-                py-[4rem]
+                pt-[4rem]
+                pb-[3rem]
             ">
                 <h3 className="
                     text-[2.5rem]

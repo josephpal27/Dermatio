@@ -10,6 +10,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails.jsx';
+import Cart from './pages/Cart.jsx';
 
 let routers = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ let routers = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/products", element: <Products /> },
       { path: "/products/:slug", element: <ProductDetails /> },
+      { path: "/cart", element: <Cart /> },
     ]
   }
 ]);

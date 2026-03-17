@@ -47,7 +47,21 @@ export const productsData = [
       "/images/products/1.avif",
       "/images/products/1.avif",
     ],
-    slug: "advance-dermal-therapy-lotion",
+    tag: "REPAIRADERM",
+    desc: {
+      intro: [
+        "Advanced ceramide + oatmeal formula for continuous skin barrier support.",
+        "A lightweight yet deeply nourishing lotion that repairs the skin's natural barrier, calms inflammation, and delivers long-lasting hydration.",
+      ],
+      points: [
+        "Rapidly reduces inflammation & Prevents Dryness (Xerosis)",
+        "Soothes flare up, itching, redness & tightness",
+        "Strengthens & builds the skin's natural barrier",
+        "Nourishes with potent antioxidants omega",
+        "Helps prevent recurrence with consistent daily use",
+      ],
+    },
+    slug: "advance-dermal-therapy-body-wash",
   },
   {
     id: 3,
@@ -65,7 +79,21 @@ export const productsData = [
       "/images/products/1.avif",
       "/images/products/1.avif",
     ],
-    slug: "advance-dermal-therapy-lotion",
+    tag: "REPAIRADERM",
+    desc: {
+      intro: [
+        "Advanced ceramide + oatmeal formula for continuous skin barrier support.",
+        "A lightweight yet deeply nourishing lotion that repairs the skin's natural barrier, calms inflammation, and delivers long-lasting hydration.",
+      ],
+      points: [
+        "Rapidly reduces inflammation & Prevents Dryness (Xerosis)",
+        "Soothes flare up, itching, redness & tightness",
+        "Strengthens & builds the skin's natural barrier",
+        "Nourishes with potent antioxidants omega",
+        "Helps prevent recurrence with consistent daily use",
+      ],
+    },
+    slug: "advance-dermal-therapy-oil",
   },
   {
     id: 4,
@@ -83,7 +111,21 @@ export const productsData = [
       "/images/products/1.avif",
       "/images/products/1.avif",
     ],
-    slug: "advance-dermal-therapy-lotion",
+    tag: "REPAIRADERM",
+    desc: {
+      intro: [
+        "Advanced ceramide + oatmeal formula for continuous skin barrier support.",
+        "A lightweight yet deeply nourishing lotion that repairs the skin's natural barrier, calms inflammation, and delivers long-lasting hydration.",
+      ],
+      points: [
+        "Rapidly reduces inflammation & Prevents Dryness (Xerosis)",
+        "Soothes flare up, itching, redness & tightness",
+        "Strengthens & builds the skin's natural barrier",
+        "Nourishes with potent antioxidants omega",
+        "Helps prevent recurrence with consistent daily use",
+      ],
+    },
+    slug: "advance-dermal-therapy-shampoo",
   },
   {
     id: 5,
@@ -101,6 +143,20 @@ export const productsData = [
       "/images/products/1.avif",
       "/images/products/1.avif",
     ],
-    slug: "advance-dermal-therapy-lotion",
+    tag: "REPAIRADERM",
+    desc: {
+      intro: [
+        "Advanced ceramide + oatmeal formula for continuous skin barrier support.",
+        "A lightweight yet deeply nourishing lotion that repairs the skin's natural barrier, calms inflammation, and delivers long-lasting hydration.",
+      ],
+      points: [
+        "Rapidly reduces inflammation & Prevents Dryness (Xerosis)",
+        "Soothes flare up, itching, redness & tightness",
+        "Strengthens & builds the skin's natural barrier",
+        "Nourishes with potent antioxidants omega",
+        "Helps prevent recurrence with consistent daily use",
+      ],
+    },
+    slug: "advance-dermal-therapy-shampoo",
   },
 ];
