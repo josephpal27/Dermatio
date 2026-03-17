@@ -177,6 +177,22 @@ const ProductGallery = () => {
                 </div>
 
             </section>
+
+            {/* Product Description */}
+            <section className="
+                px-[7%]
+            ">
+                <div className="
+                    bg-[#fbf4ea]
+                    p-[1.5rem]
+                    rounded-[5px]
+                    text-[1rem]
+                ">
+                    <p>
+                        Dermatio Lotion is an advanced dermal therapy formulated to restore, protect, and maintain healthy skin barrier function. Its clinically supported actives, combined with scientifically researched ingredients and soothing botanicals, provide effective care for atopic, sensitive, and dry skin in both kids and adults.
+                    </p>
+                </div>
+            </section>
         </>
     )
 }
