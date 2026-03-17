@@ -4,8 +4,31 @@ export const productsData = [
     name: "Advance Dermal Therapy",
     collection: "Daily Care",
     type: "Lotion",
-    price: 799,
+    sizes: [
+      { size: "100 ml", price: 799 },
+      { size: "300 ml", price: 1299 },
+    ],
     image: "/images/products/1.avif",
+    galleryImages: [
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+    ],
+    tag: "REPAIRADERM",
+    desc: {
+      intro: [
+        "Advanced ceramide + oatmeal formula for continuous skin barrier support.",
+        "A lightweight yet deeply nourishing lotion that repairs the skin's natural barrier, calms inflammation, and delivers long-lasting hydration.",
+      ],
+      points: [
+        "Rapidly reduces inflammation & Prevents Dryness (Xerosis)",
+        "Soothes flare up, itching, redness & tightness",
+        "Strengthens & builds the skin's natural barrier",
+        "Nourishes with potent antioxidants omega",
+        "Helps prevent recurrence with consistent daily use",
+      ],
+    },
     slug: "advance-dermal-therapy-lotion",
   },
   {
@@ -13,8 +36,17 @@ export const productsData = [
     name: "Advance Dermal Therapy",
     collection: "Daily Care",
     type: "Body Wash",
-    price: 699,
+    sizes: [
+      { size: "100 ml", price: 699 },
+      { size: "300 ml", price: 1299 },
+    ],
     image: "/images/products/1.avif",
+    galleryImages: [
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+    ],
     slug: "advance-dermal-therapy-lotion",
   },
   {
@@ -22,8 +54,17 @@ export const productsData = [
     name: "Advance Dermal Therapy",
     collection: "Flare Up",
     type: "Oil",
-    price: 899,
+    sizes: [
+      { size: "100 ml", price: 899 },
+      { size: "300 ml", price: 1299 },
+    ],
     image: "/images/products/1.avif",
+    galleryImages: [
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+    ],
     slug: "advance-dermal-therapy-lotion",
   },
   {
@@ -31,8 +72,17 @@ export const productsData = [
     name: "Advance Dermal Therapy",
     collection: "Baby & Toddler",
     type: "Shampoo",
-    price: 599,
+    sizes: [
+      { size: "100 ml", price: 599 },
+      { size: "300 ml", price: 1299 },
+    ],
     image: "/images/products/1.avif",
+    galleryImages: [
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+    ],
     slug: "advance-dermal-therapy-lotion",
   },
   {
@@ -40,8 +90,17 @@ export const productsData = [
     name: "Advance Dermal Therapy",
     collection: "Baby & Toddler",
     type: "Shampoo",
-    price: 599,
+    sizes: [
+      { size: "100 ml", price: 599 },
+      { size: "300 ml", price: 1299 },
+    ],
     image: "/images/products/1.avif",
+    galleryImages: [
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+      "/images/products/1.avif",
+    ],
     slug: "advance-dermal-therapy-lotion",
   },
 ];

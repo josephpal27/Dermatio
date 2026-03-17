@@ -47,7 +47,7 @@ const ProductCard = ({ product }) => {
                     font-[600] 
                     mt-[0.5rem]
                 ">
-                    ₹ {product.price}
+                    ₹ {product.sizes[0].price}
                 </span>
 
                 <Link
