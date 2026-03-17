@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const ProductCard = ({ product }) => {
     return (
         <div className="
-            w-[31.5%]
             mb-[1.5rem]
         ">
 

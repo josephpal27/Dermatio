@@ -132,10 +132,11 @@ const ProductsTabbing = () => {
                 ">
                     {filteredProducts.length > 0 ? (
                         filteredProducts.map((product) => (
-                            <ProductCard
-                                key={product.id}
-                                product={product}
-                            />
+                            <div className="
+                                w-[31.5%]
+                            ">
+                                <ProductCard key={product.id} product={product} />
+                            </div>
                         ))
                     ) : (
                         <p className="
