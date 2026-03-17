@@ -47,7 +47,7 @@ const ProductsTabbing = () => {
                 mt-[1rem]
                 rounded-[40px]
                 flex flex-wrap gap-[1.5rem]
-                
+                shadow-[0_6.5px_6px_-5px_rgba(0,0,0,0.25)]
             ">
 
                 {collections.map((item) => (

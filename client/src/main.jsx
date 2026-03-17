@@ -9,6 +9,7 @@ import App from './App.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Products from './pages/Products';
+import ProductDetails from './pages/ProductDetails.jsx';
 
 let routers = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ let routers = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/about", element: <About /> },
       { path: "/products", element: <Products /> },
+      { path: "/products/:slug", element: <ProductDetails /> },
     ]
   }
 ]);
