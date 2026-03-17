@@ -1,5 +1,5 @@
 import { Tab, Nav } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { productsData } from "../../data/productsData"
 
@@ -162,10 +162,12 @@ const ProductGallery = () => {
                         ))}
                     </div>
 
-                    <div>
+                    <div className="
+                        mt-[2.5rem]
+                        flex items-center gap-[1rem]
+                    ">
                         <button className="
                             bg-[#005aed] hover:bg-[#004ecb] text-[#fff] transition
-                            mt-[2.5rem]
                             px-[1.8rem]
                             py-[0.55rem]
                             rounded-[10px]
@@ -173,6 +175,15 @@ const ProductGallery = () => {
                         ">
                             Add to Cart
                         </button>
+                        <Link to="/checkout" className="
+                            bg-[#becb0c] hover:bg-[#aeba05] text-[#fff] transition
+                            px-[1.8rem]
+                            py-[0.55rem]
+                            rounded-[10px]
+                            text-[1.3rem]
+                        ">
+                            Buy Now
+                        </Link>
                     </div>
                 </div>
 
