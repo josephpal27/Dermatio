@@ -12,7 +12,7 @@ const CartProductCard = () => {
             ">
                 {/* Image */}
                 <div className="
-                    w-[15%]
+                    w-[19%]
                     bg-[#eee7dd]
                     py-[2rem]
                     rounded-[15px]
@@ -22,7 +22,7 @@ const CartProductCard = () => {
                 </div>
                 {/* Content */}
                 <div className="
-                    w-[82%]
+                    w-[78%]
                 ">
                     <div className="flex justify-between">
                         <span className="
@@ -48,7 +48,7 @@ const CartProductCard = () => {
 
                     {/* Quantity Selector */}
                     <div className="
-                        mt-[1.5rem]
+                        mt-[1.2rem]
                         w-max 
                         shadow-[rgba(0,0,0,0.09)_0_0_0_1px,theme(colors.gray.400)_0_0_0_1px_inset]
                         flex items-center
@@ -76,14 +76,14 @@ const CartProductCard = () => {
 
                     {/* Buy Now & Remove Btn */}
                     <div className="
-                        mt-[1.5rem]
+                        mt-[1.2rem]
                         flex justify-between items-center
                     ">
                         {/* Buy Now */}
                         <Link to="/checkout" className="
                             bg-[#005aed] hover:bg-[#004ecb] text-[#fff] transition
                             px-[1.1rem]
-                            py-[0.4rem]
+                            py-[0.35rem]
                             rounded-[10px]
                             text-[1rem]
                         ">

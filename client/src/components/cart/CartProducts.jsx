@@ -8,9 +8,23 @@ const CartProducts = () => {
                 pt-[2rem]
                 pb-[5rem]
             ">
-                {/* Cart Products List */}
-                <CartProductCard />
-                <CartProductCard />
+                <div className="
+                    flex justify-between flex-wrap
+                ">
+                    {/* Cart Products List */}
+                    <div className="
+                        w-[70%]
+                    ">
+                        <CartProductCard />
+                        <CartProductCard />
+                    </div>
+                    {/* Cart Summary */}
+                    <div className="
+                        w-[28%]
+                    ">
+
+                    </div>
+                </div>
             </section>
         </>
     )

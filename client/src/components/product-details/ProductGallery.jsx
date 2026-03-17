@@ -145,7 +145,7 @@ const ProductGallery = () => {
                                 onClick={() => setSelectedSize(item)}
                                 className={`
                                     px-[1rem]
-                                    pt-[0.35rem]
+                                    pt-[0.4rem]
                                     pb-[0.25rem]
                                     rounded-full
                                     text-[0.85rem]
