@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
 
@@ -6,7 +6,16 @@ export const useCart = () => useContext(CartContext);
 
 export const CartProvider = ({ children }) => {
 
-    const [cart, setCart] = useState([]);
+    // Load from localStorage
+    const [cart, setCart] = useState(() => {
+        const storedCart = localStorage.getItem("cart");
+        return storedCart ? JSON.parse(storedCart) : [];
+    });
+
+    // Save to localStorage whenever cart changes
+    useEffect(() => {
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }, [cart]);
 
     // Add to Cart
     const addToCart = (product, selectedSize) => {
@@ -18,10 +27,8 @@ export const CartProvider = ({ children }) => {
                     item.size === selectedSize.size
             );
 
-            // If already exists
             if (existing) {
 
-                // Prevent > 10
                 if (existing.quantity >= 10) return prevCart;
 
                 return prevCart.map(item =>
@@ -31,7 +38,6 @@ export const CartProvider = ({ children }) => {
                 );
             }
 
-            // New product
             return [
                 ...prevCart,
                 {
@@ -59,12 +65,10 @@ export const CartProvider = ({ children }) => {
 
                 if (item.id === id && item.size === size) {
 
-                    // Increase (max 10)
                     if (type === "inc" && item.quantity < 10) {
                         return { ...item, quantity: item.quantity + 1 };
                     }
 
-                    // Decrease (min 1)
                     if (type === "dec" && item.quantity > 1) {
                         return { ...item, quantity: item.quantity - 1 };
                     }
@@ -83,12 +87,17 @@ export const CartProvider = ({ children }) => {
         );
     };
 
-    // Total items count
+    // Total items
     const getTotalItems = () => {
         return cart.reduce(
             (acc, item) => acc + item.quantity,
             0
         );
+    };
+
+    // Clear cart (for future checkout)
+    const clearCart = () => {
+        setCart([]);
     };
 
     return (
@@ -99,7 +108,8 @@ export const CartProvider = ({ children }) => {
                 removeFromCart,
                 updateQuantity,
                 getTotal,
-                getTotalItems
+                getTotalItems,
+                clearCart
             }}
         >
             {children}

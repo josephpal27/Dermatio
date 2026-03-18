@@ -64,7 +64,7 @@ const CartProducts = () => {
                     {cart.length > 0 && (
                         <div className="
                             w-[29%] 
-                            py-[2rem]
+                            py-[2rem] sm:py-[1.5rem] lg:py-[1.6rem] xl:py-[1.8rem] 2xl:py-[2rem]
                         ">
                             <CartSummary />
                         </div>
