@@ -96,7 +96,7 @@ const CartSummary = () => {
                     onClick={() => navigate("/checkout", { state: { cart } })}
                     className="
                         mt-[1.5rem]
-                        block bg-[#becb0c] hover:bg-[#aeba05] text-[#fff] text-center transition rounded-full
+                        block bg-[#becb0c] hover:bg-[#aeba05] text-[#fff] text-center transition rounded-full select-none
                         py-[0.7rem] 
                         text-[1.1rem]
                 ">
