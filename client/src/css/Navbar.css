@@ -7,9 +7,6 @@
 .navbar .nav-brand img {
   width: 130px;
 }
-.navbar .nav {
-  padding-left: 2rem;
-}
 .navbar .nav-link {
   color: #000 !important;
   font-weight: 500;
@@ -44,8 +41,8 @@
   font-size: 1.4rem;
 }
 .navbar .right-btn-wrapper .cart-icon {
-  font-size: 1.65rem;
-  margin-top: -2.3px;
+  font-size: 1.9rem;
+  margin-top: -2.5px;
 }
 
 /* Media Queries */
@@ -88,8 +85,8 @@
     font-size: 1.7rem;
   }
   .offcanvas .right-btn-wrapper .cart-icon {
-    font-size: 1.9rem;
-    margin-top: 1.6rem;
+    font-size: 2.2rem;
+    margin-top: 1rem;
   }
 }
 
@@ -111,8 +108,8 @@
     font-size: 1.3rem;
   }
   .navbar .right-btn-wrapper .cart-icon {
-    font-size: 1.5rem;
-    margin-top: -2.2px;
+    font-size: 1.75rem;
+    margin-top: -2.4px;
   }
 }
 
@@ -122,9 +119,6 @@
   }
   .navbar .nav-brand img {
     width: 105px;
-  }
-  .navbar .nav {
-    padding-left: 1.8rem;
   }
   .navbar .nav-link {
     font-size: 0.95rem;
@@ -140,7 +134,7 @@
     font-size: 1.2rem;
   }
   .navbar .right-btn-wrapper .cart-icon {
-    font-size: 1.4rem;
-    margin-top: -2px;
+    font-size: 1.6rem;
+    margin-top: -2.2px;
   }
 }
