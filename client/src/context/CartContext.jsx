@@ -8,62 +8,100 @@ export const CartProvider = ({ children }) => {
 
     const [cart, setCart] = useState([]);
 
-    // ✅ Add to Cart
+    // Add to Cart
     const addToCart = (product, selectedSize) => {
-        const existing = cart.find(
-            item =>
-                item.id === product.id &&
-                item.size === selectedSize.size
-        );
 
-        if (existing) {
-            setCart(cart.map(item =>
-                item.id === product.id && item.size === selectedSize.size
-                    ? { ...item, quantity: item.quantity + 1 }
-                    : item
-            ));
-        } else {
-            setCart([
-                ...cart,
+        setCart(prevCart => {
+            const existing = prevCart.find(
+                item =>
+                    item.id === product.id &&
+                    item.size === selectedSize.size
+            );
+
+            // If already exists
+            if (existing) {
+
+                // Prevent > 10
+                if (existing.quantity >= 10) return prevCart;
+
+                return prevCart.map(item =>
+                    item.id === product.id && item.size === selectedSize.size
+                        ? { ...item, quantity: item.quantity + 1 }
+                        : item
+                );
+            }
+
+            // New product
+            return [
+                ...prevCart,
                 {
                     ...product,
                     size: selectedSize.size,
                     price: selectedSize.price,
                     quantity: 1
                 }
-            ]);
-        }
+            ];
+        });
     };
 
-    // ✅ Remove
+    // Remove
     const removeFromCart = (id, size) => {
-        setCart(cart.filter(item => !(item.id === id && item.size === size)));
+        setCart(prevCart =>
+            prevCart.filter(item => !(item.id === id && item.size === size))
+        );
     };
 
-    // ✅ Quantity update
+    // Quantity update
     const updateQuantity = (id, size, type) => {
-        setCart(cart.map(item => {
-            if (item.id === id && item.size === size) {
-                if (type === "inc") return { ...item, quantity: item.quantity + 1 };
-                if (type === "dec" && item.quantity > 1) return { ...item, quantity: item.quantity - 1 };
-            }
-            return item;
-        }));
+
+        setCart(prevCart =>
+            prevCart.map(item => {
+
+                if (item.id === id && item.size === size) {
+
+                    // Increase (max 10)
+                    if (type === "inc" && item.quantity < 10) {
+                        return { ...item, quantity: item.quantity + 1 };
+                    }
+
+                    // Decrease (min 1)
+                    if (type === "dec" && item.quantity > 1) {
+                        return { ...item, quantity: item.quantity - 1 };
+                    }
+                }
+
+                return item;
+            })
+        );
     };
 
-    // ✅ Total
+    // Total price
     const getTotal = () => {
-        return cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+        return cart.reduce(
+            (acc, item) => acc + item.price * item.quantity,
+            0
+        );
+    };
+
+    // Total items count
+    const getTotalItems = () => {
+        return cart.reduce(
+            (acc, item) => acc + item.quantity,
+            0
+        );
     };
 
     return (
-        <CartContext.Provider value={{
-            cart,
-            addToCart,
-            removeFromCart,
-            updateQuantity,
-            getTotal
-        }}>
+        <CartContext.Provider
+            value={{
+                cart,
+                addToCart,
+                removeFromCart,
+                updateQuantity,
+                getTotal,
+                getTotalItems
+            }}
+        >
             {children}
         </CartContext.Provider>
     );
