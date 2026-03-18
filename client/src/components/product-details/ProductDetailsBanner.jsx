@@ -22,8 +22,8 @@ const ProductDetailsBanner = () => {
                         Shop
                     </h1>
                     <p className="
-                        mt-[0.7rem]
-                        text-[0.9rem]
+                        mt-[0.7rem] sm:mt-[0.5rem] lg:mt-[0.5rem] xl:mt-[0.6rem] 2xl:mt-[0.7rem]
+                        text-[0.9rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                     ">
                         <Link to="/" className="hover:underline">Home</Link> / Shop
                     </p>

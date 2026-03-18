@@ -7,9 +7,7 @@ import { productsData } from "../../data/productsData"
 const ProductGallery = () => {
 
     const { slug } = useParams();
-
     const product = productsData.find(p => p.slug === slug);
-
     if (!product) return <p>Product Not Found !</p>;
 
     const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
@@ -21,7 +19,7 @@ const ProductGallery = () => {
         <>
             <section className="
                 px-[7%]
-                py-[4rem]
+                py-[4rem] sm:py-[2.5rem] lg:py-[3.3rem] xl:py-[3.6rem] 2xl:py-[4rem]
                 flex justify-between flex-wrap
             ">
 
@@ -33,7 +31,8 @@ const ProductGallery = () => {
                         <div className="flex items-center">
                             {/* Side Thumbnails */}
                             <Nav className="
-                                flex flex-col gap-[0.8rem]
+                                flex flex-col 
+                                gap-[0.8rem] sm:gap-[0.8rem] lg:gap-[0.6rem] xl:gap-[0.7rem] 2xl:gap-[0.8rem]
                                 w-[17%]
                             ">
                                 {product.galleryImages.map((img, index) => (
@@ -57,7 +56,7 @@ const ProductGallery = () => {
                             {/* Main Image */}
                             <Tab.Content className="
                                 w-[80%] 
-                                pt-[1rem]
+                                pt-[1rem] sm:pt-[1rem] lg:pt-[0.8rem] xl:pt-[0.9rem] 2xl:pt-[1rem]
                             ">
                                 {product.galleryImages.map((img, index) => (
                                     <Tab.Pane key={index} eventKey={index}>
@@ -78,21 +77,21 @@ const ProductGallery = () => {
                     w-[47%]
                 ">
                     <span className="
-                        text-[1.1rem]
+                        text-[1.1rem] sm:text-[1.1rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
                         tracking-[1px]
                         text-[#becb0c] font-[600]
                     ">
                         {product.tag}
                     </span>
                     <h2 className="
-                        text-[2.5rem]
-                        mt-[0.5rem]
+                        text-[2.5rem] sm:text-[2rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
+                        mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                         text-[#131313]
                     ">
                         {product.name}
                     </h2>
                     <span className="
-                        text-[2rem]
+                        text-[2rem] sm:text-[2rem] lg:text-[1.5rem] xl:text-[1.75rem] 2xl:text-[2rem]
                         uppercase font-[600]
                     ">
                         {product.type}
@@ -100,11 +99,11 @@ const ProductGallery = () => {
 
                     {/* Description */}
                     <div className="
-                        mt-[1rem]
+                        mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                     ">
                         {product.desc.intro.map((text, i) => (
                             <p key={i} className="
-                                text-[0.95rem]
+                                text-[0.9rem] sm:text-[0.9rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]
                                 mb-[0.3rem]
                                 text-[#4b4b4b]
                             ">
@@ -113,10 +112,10 @@ const ProductGallery = () => {
                         ))}
 
                         <ul className="
-                            mt-[0.5rem] 
+                            mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                             list-disc 
-                            pl-[1rem]
-                            text-[0.95rem]
+                            pl-[1rem] sm:pl-[1rem] lg:pl-[0.8rem] xl:pl-[0.9rem] 2xl:pl-[1rem]
+                            text-[0.9rem] sm:text-[0.9rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]
                             text-[#4b4b4b]
                         ">
                             {product.desc.points.map((point, i) => (
@@ -126,8 +125,8 @@ const ProductGallery = () => {
                     </div>
 
                     <span className="
-                        text-[2.2rem]
-                        mt-[1rem]
+                        text-[2.2rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.9rem] 2xl:text-[2.2rem]
+                        mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                         font-[600] text-[#131313] block
                     ">
                         ₹ {selectedSize.price}
@@ -139,7 +138,7 @@ const ProductGallery = () => {
                         flex items-center
                     ">
                         <span className="
-                            text-[1rem]
+                            text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                         ">
                             Size :
                         </span>
@@ -148,12 +147,12 @@ const ProductGallery = () => {
                                 key={index}
                                 onClick={() => setSelectedSize(item)}
                                 className={`
-                                    px-[1rem]
-                                    pt-[0.4rem]
-                                    pb-[0.25rem]
+                                    px-[1rem] sm:px-[1rem] lg:px-[0.8rem] xl:px-[0.9rem] 2xl:px-[1rem]
+                                    pt-[0.4rem] sm:pt-[0.4rem] lg:pt-[0.3rem] xl:pt-[0.38rem] 2xl:pt-[0.4rem]
+                                    pb-[0.2rem] sm:pb-[0.2rem] lg:pb-[0.26rem] xl:pb-[0.24rem] 2xl:pb-[0.25rem]
                                     rounded-full
-                                    text-[0.85rem]
-                                    ml-[1rem]
+                                    text-[0.8rem] sm:text-[0.8rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.85rem]
+                                    ml-[1rem] sm:ml-[1rem] lg:ml-[0.8rem] xl:ml-[0.9rem] 2xl:ml-[1rem]
                                     transition
                                     ${selectedSize.size === item.size
                                         ? "bg-[#becb0c] text-white"
@@ -167,15 +166,16 @@ const ProductGallery = () => {
                     </div>
 
                     <div className="
-                        mt-[2.5rem]
-                        flex items-center gap-[1rem]
+                        mt-[2.5rem] sm:mt-[2rem] lg:mt-[1.9rem] xl:mt-[2.2rem] 2xl:mt-[2.5rem]
+                        flex items-center 
+                        gap-[1rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]
                     ">
                         <button className="
                             bg-[#005aed] hover:bg-[#004ecb] text-[#fff] transition
-                            px-[1.8rem]
-                            py-[0.55rem]
+                            px-[1.8rem] sm:px-[1.8rem] lg:px-[1.6rem] xl:px-[1.7rem] 2xl:px-[1.8rem]
+                            py-[0.55rem] sm:py-[0.5rem] lg:py-[0.45rem] xl:py-[0.5rem] 2xl:py-[0.55rem]
                             rounded-[10px]
-                            text-[1.3rem]
+                            text-[1.3rem] sm:text-[1rem] lg:text-[1.05rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                         " onClick={() => {
                                 addToCart(product, selectedSize);
                                 navigate("/cart");
@@ -184,10 +184,10 @@ const ProductGallery = () => {
                         </button>
                         <Link to="/checkout" className="
                             bg-[#becb0c] hover:bg-[#aeba05] text-[#fff] transition
-                            px-[1.8rem]
-                            py-[0.55rem]
+                            px-[1.8rem] sm:px-[1.8rem] lg:px-[1.6rem] xl:px-[1.7rem] 2xl:px-[1.8rem]
+                            py-[0.55rem] sm:py-[0.5rem] lg:py-[0.45rem] xl:py-[0.5rem] 2xl:py-[0.55rem]
                             rounded-[10px]
-                            text-[1.3rem]
+                            text-[1.3rem] sm:text-[1rem] lg:text-[1.05rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                         ">
                             Buy Now
                         </Link>
@@ -202,9 +202,9 @@ const ProductGallery = () => {
             ">
                 <div className="
                     bg-[#fbf4ea]
-                    p-[1.5rem]
+                    p-[1.5rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
                     rounded-[5px]
-                    text-[1.04rem]
+                    text-[1.1rem] sm:text-[1rem] lg:text-[0.85rem] xl:text-[0.98rem] 2xl:text-[1.04rem]
                 ">
                     <p>
                         Dermatio Lotion is an advanced dermal therapy formulated to restore, protect, and maintain healthy skin barrier function. Its clinically supported actives, combined with scientifically researched ingredients and soothing botanicals, provide effective care for atopic, sensitive, and dry skin in both kids and adults.
