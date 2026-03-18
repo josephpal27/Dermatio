@@ -54,7 +54,7 @@ const WhyDermatioDetails = () => {
                 <h6 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1]
-                " data-aos="fade-up" data-aos-once="true">
+                " data-aos="fade-up">
                     Why Dermatio
                 </h6>
                 <p className="

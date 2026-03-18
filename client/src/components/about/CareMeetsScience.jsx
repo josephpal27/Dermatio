@@ -18,7 +18,7 @@ const CareMeetsScience = () => {
                             text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                             leading-[1]
                             mt-[1.8rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
-                        " data-aos="fade-up" data-aos-once="true">
+                        " data-aos="fade-up">
                             Where Care <br /> Meets Science
                         </h2>
                         <p className="

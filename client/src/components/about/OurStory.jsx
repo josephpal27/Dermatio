@@ -12,7 +12,7 @@ const OurStory = () => {
                 <h3 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1]
-                " data-aos="fade-up" data-aos-once="true">
+                " data-aos="fade-up">
                     Our Story
                 </h3>
                 {/* Row */}
@@ -71,7 +71,7 @@ const OurStory = () => {
                     text-[4rem] sm:text-[7rem] lg:text-[7.6rem] xl:text-[7.8rem] 2xl:text-[8rem]
                     font-[400] text-[#e4e2dd] absolute right-0 z-0
                     top-[2.5rem] sm:top-[3rem] lg:top-[2.2rem] xl:top-[2.6rem] 2xl:top-[3rem]
-                " style={{fontFamily: `"OrdinaryBoys", sans-serif`}} data-aos="fade-left" data-aos-once="true" >
+                " style={{fontFamily: `"OrdinaryBoys", sans-serif`}} >
                     Story
                 </span>
             </section>
