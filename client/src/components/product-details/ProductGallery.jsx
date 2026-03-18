@@ -129,7 +129,7 @@ const ProductGallery = () => {
                         mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                         font-[600] text-[#131313] block
                     ">
-                        ₹ {selectedSize.price}
+                        ₹ {selectedSize.price.toLocaleString("en-IN")}
                     </span>
 
                     {/* Size */}

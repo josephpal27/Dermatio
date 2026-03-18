@@ -14,7 +14,7 @@ const RelatedProducts = () => {
             ">
                 <h3 className="
                     text-[2.5rem] sm:text-[2rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
-                ">
+                " data-aos="fade-right" data-aos-once="true">
                     Related Products
                 </h3>
 

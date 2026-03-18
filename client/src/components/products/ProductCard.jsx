@@ -46,7 +46,7 @@ const ProductCard = ({ product }) => {
                     font-[600] 
                     mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                 ">
-                    ₹ {product.sizes[0].price}
+                    ₹ {product.sizes[0].price.toLocaleString("en-IN")}
                 </span>
 
                 <Link

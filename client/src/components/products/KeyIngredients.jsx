@@ -33,7 +33,7 @@ const KeyIngredients = () => {
                 px-[7%]
                 py-[3rem] sm:py-[2.5rem] lg:py-[2.5rem] xl:py-[2.8rem] 2xl:py-[3rem]
                 mt-[1.5rem] sm:mt-[1.5rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
-                bg-[#eeebe7] border-b-[#becb0c]
+                bg-[#eeebe7] border-b-[#becb0c] overflow-hidden
                 border-b-[8px]
                 mb-[1rem] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
             ">
@@ -41,7 +41,7 @@ const KeyIngredients = () => {
                 <h2 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[2.2rem] xl:text-[2.6rem] 2xl:text-[3rem]
                     leading-[1]
-                ">
+                " data-aos="fade-right" data-aos-once="true">
                     Key Ingredients We Trust
                 </h2>
 

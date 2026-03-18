@@ -40,7 +40,7 @@ const CartProductCard = ({item}) => {
                             w-[15%] block text-end font-[600]
                             text-[1.4rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.25rem] 2xl:text-[1.4rem]
                         ">
-                            ₹ {item.price * item.quantity}
+                            ₹ {(item.price * item.quantity).toLocaleString("en-IN")}
                         </span>
                     </div>
                     <span className="
