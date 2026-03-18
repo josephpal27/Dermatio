@@ -1,6 +1,7 @@
 import { Tab, Nav } from "react-bootstrap";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useCart } from "../../context/CartContext";
 import { productsData } from "../../data/productsData"
 
 const ProductGallery = () => {
@@ -12,6 +13,9 @@ const ProductGallery = () => {
     if (!product) return <p>Product Not Found !</p>;
 
     const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
+
+    const { addToCart } = useCart();
+    const navigate = useNavigate();
 
     return (
         <>
@@ -172,7 +176,10 @@ const ProductGallery = () => {
                             py-[0.55rem]
                             rounded-[10px]
                             text-[1.3rem]
-                        ">
+                        " onClick={() => {
+                                addToCart(product, selectedSize);
+                                navigate("/cart");
+                            }}>
                             Add to Cart
                         </button>
                         <Link to="/checkout" className="

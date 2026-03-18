@@ -1,7 +1,11 @@
 import CartProductCard from "./CartProductCard";
 import CartSummary from './CartSummary';
+import { useCart } from "../../context/CartContext";
 
 const CartProducts = () => {
+
+    const { cart } = useCart();
+
     return (
         <>
             <section className="
@@ -16,8 +20,11 @@ const CartProducts = () => {
                     <div className="
                         w-[67%]
                     ">
-                        <CartProductCard /> 
-                        <CartProductCard />
+                        {
+                            cart.map((item, index) => (
+                                <CartProductCard key={index} item={item} />
+                            ))
+                        }
                     </div>
                     {/* Cart Summary */}
                     <div className="
