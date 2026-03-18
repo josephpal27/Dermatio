@@ -14,7 +14,7 @@ const CartProductCard = () => {
                 <div className="
                     w-[19%]
                     bg-[#eee7dd]
-                    py-[2rem]
+                    py-[1.5rem]
                     rounded-[15px]
                     shadow-[-2.4px_2.4px_3.2px_rgba(0,0,0,0.25)]
                 ">
@@ -27,20 +27,20 @@ const CartProductCard = () => {
                     <div className="flex justify-between">
                         <span className="
                             w-[80%] block text-[#131313]
-                            text-[1.5rem]
+                            text-[1.4rem]
                         ">
                             Advance Dermal Therapy
                         </span>
 
                         <span className="
                             w-[15%] block text-end font-[600]
-                            text-[1.5rem]
+                            text-[1.4rem]
                         ">
                             ₹ 799
                         </span>
                     </div>
                     <span className="
-                        text-[1.3rem]
+                        text-[1.2rem]
                         text-[#565656]
                     ">
                         LOTION
@@ -48,13 +48,13 @@ const CartProductCard = () => {
 
                     {/* Quantity Selector */}
                     <div className="
-                        mt-[1.2rem]
+                        mt-[0.8rem]
                         w-max 
                         shadow-[rgba(0,0,0,0.09)_0_0_0_1px,theme(colors.gray.400)_0_0_0_1px_inset]
                         flex items-center
                         gap-[1.3rem]
-                        px-[1.1rem]
-                        py-[0.35rem]
+                        px-[1rem]
+                        py-[0.3rem]
                         rounded-full
                     ">
                         <button>
@@ -76,14 +76,14 @@ const CartProductCard = () => {
 
                     {/* Buy Now & Remove Btn */}
                     <div className="
-                        mt-[1.2rem]
+                        mt-[1.1rem]
                         flex justify-between items-center
                     ">
                         {/* Buy Now */}
                         <Link to="/checkout" className="
                             bg-[#005aed] hover:bg-[#004ecb] text-[#fff] transition
                             px-[1.1rem]
-                            py-[0.35rem]
+                            py-[0.3rem]
                             rounded-[10px]
                             text-[1rem]
                         ">

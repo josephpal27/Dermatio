@@ -1,4 +1,5 @@
 import CartProductCard from "./CartProductCard";
+import CartSummary from './CartSummary';
 
 const CartProducts = () => {
     return (
@@ -13,16 +14,17 @@ const CartProducts = () => {
                 ">
                     {/* Cart Products List */}
                     <div className="
-                        w-[70%]
+                        w-[67%]
                     ">
-                        <CartProductCard />
+                        <CartProductCard /> 
                         <CartProductCard />
                     </div>
                     {/* Cart Summary */}
                     <div className="
-                        w-[28%]
+                        w-[29%]
+                        py-[2rem]
                     ">
-
+                        <CartSummary />
                     </div>
                 </div>
             </section>
