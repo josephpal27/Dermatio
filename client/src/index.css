@@ -56,3 +56,58 @@ h1, h2, h3, h4, h5, h6{
 .progress-bar::-moz-progress-bar {
   background-color: #becb0c; /* firefox */
 }
+
+/* Contact Form */
+.contact-form label{
+  display: block;
+  color: #363636;
+  font-size: 1.2rem;
+}
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+  color: #363636;
+  font-size: 1.1rem;
+  padding: 0.7rem 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #a0a0a0;
+  resize: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-bottom: 1px solid #444343;
+}
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+  .contact-form label{
+    font-size: 1.1rem;
+  }
+  .contact-form input,
+  .contact-form textarea{
+    font-size: 1rem;
+    padding: 0.6rem 0;
+    margin-top: 0.4rem;
+    margin-bottom: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+  .contact-form label{
+    font-size: 1rem;
+  }
+  .contact-form input,
+  .contact-form textarea{
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    margin-top: 0.3rem;
+    margin-bottom: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+    
+}
