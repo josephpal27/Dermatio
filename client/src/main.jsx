@@ -12,6 +12,7 @@ import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails.jsx';
 import Cart from './pages/Cart.jsx';
 import { CartProvider } from "./context/CartContext";
+import ComingSoon from './pages/ComingSoon';
 
 let routers = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ let routers = createBrowserRouter([
       { path: "/products", element: <Products /> },
       { path: "/products/:slug", element: <ProductDetails /> },
       { path: "/cart", element: <Cart /> },
+      { path: "*", element: <ComingSoon /> },
     ]
   }
 ]);
