@@ -33,8 +33,8 @@ const contactData = [
         id: 4,
         title: "Social Media",
         socials: [
-            { icon: <FaInstagram />, link: "https://instagram.com" },
-            { icon: <FaFacebookF />, link: "https://facebook.com" },
+            { icon: <FaInstagram />, link: "https://www.instagram.com/dermatiocare/" },
+            { icon: <FaFacebookF />, link: "https://www.facebook.com/profile.php?id=61578935669043" },
             { icon: <FaLinkedinIn />, link: "https://linkedin.com" },
         ],
     },

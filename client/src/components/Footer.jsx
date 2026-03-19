@@ -43,12 +43,12 @@ let footerSocialHandles = [
     {
         id: 1,
         icon: <FaFacebookF />,
-        link: "#"
+        link: "https://www.facebook.com/profile.php?id=61578935669043"
     },
     {
         id: 2,
         icon: <FaInstagram />,
-        link: "#"
+        link: "https://www.instagram.com/dermatiocare/"
     },
     {
         id: 3,
