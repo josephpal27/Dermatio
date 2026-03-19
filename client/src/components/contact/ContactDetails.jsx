@@ -6,7 +6,7 @@ const contactData = [
         id: 1,
         title: "Call Us",
         items: [
-            { value: "+91 0000000000", link: "tel:0000000000" },
+            { value: "+91 8657001315", link: "tel:8657001315" },
         ],
     },
     {
@@ -14,7 +14,7 @@ const contactData = [
         title: "Location",
         items: [
             {
-                value: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+                value: "Gala No. 4, 2nd Floor, Shiv Industrial Complex, Building No. 2, Survey No. 21, Sativali Palghar, Vasai East, Maharashtra-401208, India",
                 link: "https://maps.app.goo.gl/",
             },
         ],
@@ -24,8 +24,8 @@ const contactData = [
         title: "Email Us",
         items: [
             {
-                value: "example@gmail.com",
-                link: "https://mail.google.com/mail/?view=cm&fs=1&to=sales@marsonsonline.com",
+                value: "dermatiocare@gmail.com",
+                link: "https://mail.google.com/mail/?view=cm&fs=1&to=dermatiocare@gmail.com",
             },
         ],
     },
@@ -45,14 +45,14 @@ const ContactDetails = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                mt-[2rem] sm:mt-[3rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4.5rem]
+                mt-[1.7rem] sm:mt-[3rem] lg:mt-[3rem] xl:mt-[3.5rem] 2xl:mt-[4.5rem]
                 d-flex flex-wrap justify-between
             ">
                 <div className="
                     w-full sm:w-[50%]
                 ">
                     <h2 className="
-                        text-[3rem] sm:text-[3rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
+                        text-[1.8rem] sm:text-[3rem] lg:text-[2.4rem] xl:text-[2.7rem] 2xl:text-[3rem]
                         font-[600] tracking-[3px]    
                     "
                         data-aos="fade"
@@ -61,8 +61,8 @@ const ContactDetails = () => {
                         Get In Touch
                     </h2>
                     <p className="
-                        text-[1.1rem] sm:text-[1rem] lg:text-[0.95rem] xl:text-[1.05rem] 2xl:text-[1.15rem]
-                        mt-[1.5rem] sm:mt-[1.5rem] lg:mt-[1.25rem] xl:mt-[1.35rem] 2xl:mt-[1.5rem]
+                        text-[1.1rem] sm:text-[1rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
+                        mt-[0.5rem] sm:mt-[1.5rem] lg:mt-[1.25rem] xl:mt-[1.35rem] 2xl:mt-[1.5rem]
                         text-[#363636]
                     "
                         data-aos="fade" data-aos-once="true"
@@ -70,8 +70,8 @@ const ContactDetails = () => {
                         For product queries, order assistance, or general questions, feel free to contact us.
                     </p>
                     <div className="
-                        mt-[3rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
-                        d-flex flex-wrap justify-between
+                        mt-[1.5rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                        d-flex flex-wrap justify-between 
                     ">
                         {contactData.map((item) => (
                             <div key={item.id} className="
@@ -79,12 +79,12 @@ const ContactDetails = () => {
                                 p-[1rem]
                                 shadow-sm border
                                 rounded-[12px] sm:rounded-[12px] lg:rounded-[8px] xl:rounded-[10px] 2xl:rounded-[12px]
-                                mb-[1.2rem] sm:mb-[1.2rem] lg:mb-[1.1rem] xl:mb-[1.2rem] 2xl:mb-[1.25rem]
+                                mb-[1.1rem] sm:mb-[1.2rem] lg:mb-[1.1rem] xl:mb-[1.2rem] 2xl:mb-[1.25rem]
                             "
                                 data-aos="fade" data-aos-once="true"
                             >
                                 <span className="
-                                    text-[#becb0c] font-[600] d-block
+                                    text-[#becb0c] d-block
                                     text-[1.3rem] sm:text-[1.3rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                                     mb-[1rem] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
                                 ">
@@ -108,7 +108,7 @@ const ContactDetails = () => {
                                                 href={data.link} target="_blank"
                                                 className="
                                                     text-[#363636] hover:text-[#8e9802] font-[500]
-                                                    text-[1.1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                                                    text-[1.1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1rem]
                                             ">
                                                 {data.value}
                                             </a>

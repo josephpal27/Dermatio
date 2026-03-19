@@ -10,7 +10,7 @@ const ProductDetailsBanner = () => {
                     alt="Product Details Banner" 
                     loading="eager"
                     className="
-                        w-full h-[110px] sm:h-auto
+                        w-full h-[120px] sm:h-auto
                         rounded-b-[15px] sm:rounded-b-[20px] lg:rounded-b-[20px] xl:rounded-b-[25px] 2xl:rounded-b-[30px]
                     "
                 />
