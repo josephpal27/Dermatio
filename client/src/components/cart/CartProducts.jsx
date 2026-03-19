@@ -24,7 +24,7 @@ const CartProducts = () => {
                         {cart.length === 0 ? (
                             <div className="
                                 text-center flex flex-col items-center justify-center
-                                h-[72vh]
+                                h-[82vh] sm:h-[72vh]
                             ">
                                 <span className="
                                     text-[1.75rem] sm:text-[1.5rem] lg:text-[1.45rem] xl:text-[1.65rem] 2xl:text-[1.8rem]
