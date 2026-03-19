@@ -30,16 +30,16 @@ const KeyIngredients = () => {
     return (
         <>
             <section className="
-                px-[7%]
-                py-[3rem] sm:py-[2.5rem] lg:py-[2.5rem] xl:py-[2.8rem] 2xl:py-[3rem]
-                mt-[1.5rem] sm:mt-[1.5rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
+                px-[1rem] sm:px-[5%] lg:px-[7%]
+                py-[1.5rem] sm:py-[2.5rem] lg:py-[2.5rem] xl:py-[2.8rem] 2xl:py-[3rem]
+                mt-[0] sm:mt-[1.5rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                 bg-[#eeebe7] border-b-[#becb0c] overflow-hidden
                 border-b-[8px]
-                mb-[1rem] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
+                mb-[0.6rem] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
             ">
 
                 <h2 className="
-                    text-[1.8rem] sm:text-[1rem] lg:text-[2.2rem] xl:text-[2.6rem] 2xl:text-[3rem]
+                    text-[1.5rem] sm:text-[1rem] lg:text-[2.2rem] xl:text-[2.6rem] 2xl:text-[3rem]
                     leading-[1]
                 " data-aos="fade-right" data-aos-once="true">
                     Key Ingredients We Trust
@@ -47,8 +47,8 @@ const KeyIngredients = () => {
 
                 {/* Slider */}
                 <div className="
-                    mt-[3rem] sm:mt-[3rem] lg:mt-[2.4rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
-                    mb-[1rem] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
+                    mt-[1.7rem] sm:mt-[3rem] lg:mt-[2.4rem] xl:mt-[2.7rem] 2xl:mt-[3rem]
+                    mb-[0.5rem] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
                 ">
                     <Swiper
                         modules={[Autoplay]}

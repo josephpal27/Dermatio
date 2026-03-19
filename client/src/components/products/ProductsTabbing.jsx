@@ -22,6 +22,7 @@ const ProductsTabbing = () => {
 
     const [activeCollection, setActiveCollection] = useState("All Products");
     const [activeFilter, setActiveFilter] = useState("All");
+    const [showFilters, setShowFilters] = useState(false);
 
     const filteredProducts = productsData.filter((product) => {
 
@@ -86,17 +87,18 @@ const ProductsTabbing = () => {
 
                     <span className="
                         text-[1.3rem] sm:text-[1.2rem] lg:text-[1.15rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
-                        font-[600]
-                    ">
+                        font-[600] select-none
+                    " onClick={() => setShowFilters(prev => !prev)}>
                         Filter Options
                     </span>
 
-                    <div className="
+                    <div className={`
                         mt-[1rem] sm:mt-[1.5rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                         bg-[#eeeae4]
                         p-[1rem] sm:p-[1.3rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem]
                         rounded-[15px] sm:rounded-[10px]
-                    ">
+                        ${showFilters ? "block" : "hidden"} sm:block
+                    `}>
                         <span className="
                             text-[1.05rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                             font-[600]
@@ -130,14 +132,14 @@ const ProductsTabbing = () => {
                 {/* Products */}
                 <div className="
                     w-[100%] sm:w-[75%]
-                    flex flex-wrap 
-                    gap-[4%] sm:gap-[2.5%]
-                    mt-[2rem] sm:mt-0
+                    flex flex-wrap justify-between sm:justify-normal
+                    gap-[0] sm:gap-[2.5%]
+                    mt-[1.5rem] sm:mt-0
                 ">
                     {filteredProducts.length > 0 ? (
                         filteredProducts.map((product) => (
                             <div className="
-                                w-[48%] sm:w-[31.5%]
+                                w-[47.5%] sm:w-[31.5%]
                             ">
                                 <ProductCard key={product.id} product={product} />
                             </div>
@@ -146,6 +148,7 @@ const ProductsTabbing = () => {
                         <p className="
                             text-[1.1rem] sm:text-[1.1rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
                             text-[#363636] text-center sm:text-start w-full sm:w-max
+                            mt-[0.5rem] sm:mt-0
                         ">
                             No Products Found !
                         </p>
