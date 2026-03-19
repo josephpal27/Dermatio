@@ -8,19 +8,19 @@ const RelatedProducts = () => {
     return (
         <>
             <section className="
-                px-[7%]
-                pt-[4rem] sm:pt-[2.5rem] lg:pt-[3.3rem] xl:pt-[3.6rem] 2xl:pt-[4rem]
-                pb-[3rem] sm:pb-[2rem] lg:pb-[2.2rem] xl:pb-[2.5rem] 2xl:pb-[3rem]
+                px-[1rem] sm:px-[5%] lg:px-[7%]
+                pt-[3rem] sm:pt-[2.5rem] lg:pt-[3.3rem] xl:pt-[3.6rem] 2xl:pt-[4rem]
+                pb-[1.5rem] sm:pb-[2rem] lg:pb-[2.2rem] xl:pb-[2.5rem] 2xl:pb-[3rem]
             ">
                 <h3 className="
-                    text-[2.5rem] sm:text-[2rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
+                    text-[1.7rem] sm:text-[2rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
                 " data-aos="fade-right" data-aos-once="true">
                     Related Products
                 </h3>
 
                 {/* Slider */}
                 <div className="
-                    mt-[2rem] sm:mt-[2rem] lg:mt-[1.5rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
+                    mt-[1rem] sm:mt-[2rem] lg:mt-[1.5rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                 ">
                     <Swiper
                         modules={[Autoplay]}
@@ -36,8 +36,8 @@ const RelatedProducts = () => {
                         }}
                         breakpoints={{
                             0: {
-                                slidesPerView: 1, // for mobile
-                                spaceBetween: 12,
+                                slidesPerView: 2, // for mobile
+                                spaceBetween: 3,
                             },
                             640: {
                                 slidesPerView: 3, // tablet
