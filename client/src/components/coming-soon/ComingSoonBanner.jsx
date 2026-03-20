@@ -1,28 +1,31 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { useState, useEffect } from "react"
 
 const ComingSoonBanner = () => {
 
-    const [progress, setProgress] = useState(0)
+    const [progress, setProgress] = useState(0);
+    const location = useLocation(); // Track route change
 
     useEffect(() => {
-        const target = 80
-        const duration = 2700 // 2.7 seconds
-        const steps = 100
-        const stepTime = duration / steps
+        setProgress(0); // Reset when route changes
+
+        const target = 80;
+        const duration = 2700;
+        const steps = 100;
+        const stepTime = duration / steps;
 
         const interval = setInterval(() => {
             setProgress(prev => {
                 if (prev >= target) {
-                    clearInterval(interval)
-                    return target
+                    clearInterval(interval);
+                    return target;
                 }
-                return prev + 1
-            })
-        }, stepTime)
+                return prev + 1;
+            });
+        }, stepTime);
 
-        return () => clearInterval(interval)
-    }, [])
+        return () => clearInterval(interval);
+    }, [location.pathname]); // Dependency added
 
     return (
         <>
@@ -39,14 +42,14 @@ const ComingSoonBanner = () => {
                         text-center text-[#fff] font-[600] uppercase
                         tracking-[2px] sm:tracking-[4px] lg:tracking-[5px] xl:tracking-[5px] 2xl:tracking-[6px]
                     ">
-                        Page Under <br /> 
+                        Page Under <br />
                         <span className="
                             tracking-[4px] sm:tracking-[6px] lg:tracking-[6px] xl:tracking-[8px] 2xl:tracking-[10px]
                         ">
                             Construction
                         </span>
                     </h1>
-                    
+
                     <p className="
                         mt-[0.8rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                         text-[#fff] uppercase font-[500]

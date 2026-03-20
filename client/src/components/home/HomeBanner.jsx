@@ -22,7 +22,7 @@ const HomeBanner = () => {
                     top-0 left-0 w-full h-full text-[#363636] sm:text-[#fff]
                     flex justify-between flex-wrap
                     px-[1rem] sm:px-[5%] lg:px-[7%]
-                    pb-[1rem] sm:pb-[3rem] lg:pb-[6rem] xl:pb-[7rem] 2xl:pb-[8rem]
+                    pb-[1rem] sm:pb-[7rem] lg:pb-[10rem] xl:pb-[11rem] 2xl:pb-[12rem]
                 ">
                     {/* Left */}
                     <div className="
@@ -51,7 +51,7 @@ const HomeBanner = () => {
                         <span className="
                             text-[1.25rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
                             leading-[1.2]
-                            mt-[1.8rem] sm:mt-[3rem] lg:mt-[8rem] xl:mt-[9rem] 2xl:mt-[10rem]
+                            mt-[1.8rem] sm:mt-[13rem] lg:mt-[15.5rem] xl:mt-[18rem] 2xl:mt-[20rem]
                         ">
                             Eczema relief for <br /> every stage of Childhood
                         </span>
