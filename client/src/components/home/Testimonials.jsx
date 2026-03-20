@@ -2,20 +2,20 @@ let testimonialsData = [
     {
         id: 1,
         image: "",
-        name: "Lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        name: "Rupesh Patil - Mumbai",
+        desc: "My child has eczema . We tried multiple products, but Dermatio lotion actually made a visible difference within a week. The dryness and redness reduced a lot, and my son finally stopped scratching all night. It’s become a part of our daily routine now.",
     },
     {
         id: 2,
         image: "",
-        name: "Lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        name: "Reshma Shah - Pune",
+        desc: "My kid had these dry itchy patches behind the knees and on the arms… after a few days of using Dermatio, it started improving.",
     },
     {
         id: 3,
         image: "",
-        name: "Lorem Ipsum",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        name: "Pritam Paul - Kolkata",
+        desc: "The best part about Dermatio is that it doesn’t feel heavy or sticky. My son hates creams because of that, but he’s okay with this one. We’re still using it, but so far so good.",
     },
 ]
 
