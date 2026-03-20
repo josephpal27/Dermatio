@@ -14,24 +14,23 @@ const AdvancedLotion = () => {
                     w-[80%] sm:w-[36%]
                     bg-[#dfdace] relative
                     rounded-[45px] sm:rounded-[80px] lg:rounded-[65px] xl:rounded-[75px] 2xl:rounded-[80px]
-                    pt-[2rem] sm:pt-[3rem] lg:pt-[2.6rem] xl:pt-[2.8rem] 2xl:pt-[3rem]
-                    pb-[1rem] sm:pb-[2rem] lg:pb-[1.6rem] xl:pb-[1.8rem] 2xl:pb-[2rem]
+                    pt-[2rem] sm:pt-[1rem] lg:pt-[0.6rem] xl:pt-[0.8rem] 2xl:pt-[1rem]
+                    pb-[1rem] sm:pb-[3rem] lg:pb-[3.6rem] xl:pb-[3.8rem] 2xl:pb-[4rem]
                 ">
                     <img
-                        src="/images/featured-products/1.png"
+                        src="/images/featured-products/3.png"
                         alt="Product Image"
                         className="w-full" />
                     {/* Floating Image */}
                     <div className="
                         w-[60%] sm:w-[200px] lg:w-[210px] xl:w-[230px] 2xl:w-[250px]
-                        absolute bg-[#dfdace]
+                        absolute bg-[#dfdace] shadow-md
                         bottom-[-4.5rem] sm:bottom-[-5rem] lg:bottom-[-4.5rem] xl:bottom-[-5.5rem] 2xl:bottom-[-6rem]
                         right-[-24%] sm:right-[-4rem] lg:right-[-3rem] xl:right-[-3.5rem] 2xl:right-[-4rem]
                         rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
-                        py-[1.2rem] sm:py-[2rem] lg:py-[1.6rem] xl:py-[1.8rem] 2xl:py-[2rem]
                     " data-aos="fade-down" data-aos-once="true">
                         <img
-                            src="/images/featured-products/2.png"
+                            src="/images/featured-products/1.png"
                             alt="Product Image"
                             className="w-full" />
                     </div>

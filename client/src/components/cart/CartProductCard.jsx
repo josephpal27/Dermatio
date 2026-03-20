@@ -18,7 +18,6 @@ const CartProductCard = ({ item }) => {
                 <div className="
                     w-[28%] sm:w-[19%]
                     bg-[#eee7dd] select-none
-                    py-[1rem] sm:py-[1.2rem] lg:py-[1.15rem] xl:py-[1.35rem] 2xl:py-[1.5rem]
                     rounded-[15px] sm:rounded-[12px] lg:rounded-[11px] xl:rounded-[13px] 2xl:rounded-[15px]
                     shadow-[-2.4px_2.4px_3.2px_rgba(0,0,0,0.25)]
                     flex justify-center items-center

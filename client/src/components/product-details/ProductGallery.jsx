@@ -17,6 +17,8 @@ const ProductGallery = () => {
     )
 
     const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
+    const images = product.galleryImages[selectedSize.size] || [];
+    const [activeKey, setActiveKey] = useState("0");
 
     const { addToCart } = useCart();
     const navigate = useNavigate();
@@ -33,7 +35,7 @@ const ProductGallery = () => {
                 <div className="
                     w-[100%] sm:w-[50%]
                 ">
-                    <Tab.Container defaultActiveKey="0">
+                    <Tab.Container activeKey={activeKey} onSelect={(k) => setActiveKey(k)}>
                         <div className="flex flex-wrap justify-between flex-col-reverse sm:flex-row">
                             {/* Side Thumbnails */}
                             <Nav className="
@@ -41,9 +43,9 @@ const ProductGallery = () => {
                                 w-[100%] sm:w-[17%]
                                 mt-[0.8rem] sm:mt-0
                             ">
-                                {product.galleryImages.map((img, index) => (
+                                {images.map((img, index) => (
                                     <Nav.Item key={index} className="w-[22.2%] sm:w-full">
-                                        <Nav.Link eventKey={index} className="p-[0]">
+                                        <Nav.Link eventKey={index.toString()} className="p-[0]">
                                             <img
                                                 src={img}
                                                 alt={"Thumbnail " + index}
@@ -60,8 +62,8 @@ const ProductGallery = () => {
                             <Tab.Content className="
                                 w-[100%] sm:w-[80%]                                
                             ">
-                                {product.galleryImages.map((img, index) => (
-                                    <Tab.Pane key={index} eventKey={index}>
+                                {images.map((img, index) => (
+                                    <Tab.Pane key={index} eventKey={index.toString()}>
                                         <img
                                             src={img}
                                             alt={product.name}
@@ -148,7 +150,10 @@ const ProductGallery = () => {
                         {product.sizes.map((item, index) => (
                             <button
                                 key={index}
-                                onClick={() => setSelectedSize(item)}
+                                onClick={() => {
+                                    setSelectedSize(item);
+                                    setActiveKey("0"); // reset image to first
+                                }}
                                 className={`
                                     px-[1rem] sm:px-[1rem] lg:px-[0.8rem] xl:px-[0.9rem] 2xl:px-[1rem]
                                     pt-[0.35rem] sm:pt-[0.4rem] lg:pt-[0.3rem] xl:pt-[0.38rem] 2xl:pt-[0.4rem]
