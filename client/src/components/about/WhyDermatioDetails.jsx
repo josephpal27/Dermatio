@@ -10,7 +10,7 @@ const whyDermatioData = [
         id: 1,
         icon: icon1,
         title: "Hypoallergenic & pH Balanced",
-        desc: "Every formula is developed in collaboration with dermatologists who specialize in paediatric skin conditions."
+        desc: "Formulated to minimize allergic reactions, with each ingredient chosen for its gentleness on reactive skin."
     },
     {
         id: 2,

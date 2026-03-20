@@ -14,8 +14,8 @@ const AdvancedLotion = () => {
                     w-[80%] sm:w-[36%]
                     bg-[#dfdace] relative
                     rounded-[45px] sm:rounded-[80px] lg:rounded-[65px] xl:rounded-[75px] 2xl:rounded-[80px]
-                    pt-[2rem] sm:pt-[1rem] lg:pt-[0.6rem] xl:pt-[0.8rem] 2xl:pt-[1rem]
-                    pb-[1rem] sm:pb-[3rem] lg:pb-[3.6rem] xl:pb-[3.8rem] 2xl:pb-[4rem]
+                    pt-[0] sm:pt-[1rem] lg:pt-[0.6rem] xl:pt-[0.8rem] 2xl:pt-[1rem]
+                    pb-[2rem] sm:pb-[3rem] lg:pb-[3.6rem] xl:pb-[3.8rem] 2xl:pb-[4rem]
                 ">
                     <img
                         src="/images/featured-products/3.png"
@@ -28,6 +28,7 @@ const AdvancedLotion = () => {
                         bottom-[-4.5rem] sm:bottom-[-5rem] lg:bottom-[-4.5rem] xl:bottom-[-5.5rem] 2xl:bottom-[-6rem]
                         right-[-24%] sm:right-[-4rem] lg:right-[-3rem] xl:right-[-3.5rem] 2xl:right-[-4rem]
                         rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
+                        p-[0.8rem] sm:p-0
                     " data-aos="fade-down" data-aos-once="true">
                         <img
                             src="/images/featured-products/1.png"
@@ -54,7 +55,7 @@ const AdvancedLotion = () => {
                     " data-aos="fade" data-aos-once="true">
                         Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation.
                     </p>
-                    <Link to="/" className="
+                    <Link to="/products" className="
                         mt-[2rem] sm:mt-[2.5rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                         border-[1.5px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
                         border-black w-max

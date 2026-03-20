@@ -56,7 +56,7 @@ const WhyDermatio = () => {
                     " data-aos="fade" data-aos-once="true">
                         Advance Dermal Therapy
                     </p>
-                    <Link to="/" className="
+                    <Link to="/about" className="
                         mt-[1.8rem] sm:mt-[2.5rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem]
                         border-[1.5px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
                         border-black w-max

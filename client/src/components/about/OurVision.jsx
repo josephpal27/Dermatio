@@ -1,4 +1,3 @@
-import vision1 from '../../assets/images/our-vision/1.avif';
 
 const OurVision = () => {
     return (
@@ -13,7 +12,7 @@ const OurVision = () => {
                     w-[100%] sm:w-[40%]
                 ">
                     <div>
-                        <img src={vision1} alt="Our Vision 1" loading="lazy" className="
+                        <img src="/images/vision/1.avif" alt="Our Vision 1" loading="lazy" className="
                             rounded-[32px] sm:rounded-[50px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]
                             shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
                         " data-aos="fade" data-aos-once="true" />
@@ -22,11 +21,11 @@ const OurVision = () => {
                         flex justify-between items-center 
                         mt-[0.7rem] sm:mt-[1.2rem] lg:mt-[1rem] xl:mt-[1.1rem] 2xl:mt-[1.2rem]
                     ">
-                        <img src={vision1} alt="Our Vision 2" loading="lazy" className="
+                        <img src="/images/vision/2.avif" alt="Our Vision 2" loading="lazy" className="
                             w-[48.5%] shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
                             rounded-[25px] sm:rounded-[40px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         " data-aos="fade" data-aos-once="true" />
-                        <img src={vision1} alt="Our Vision 3" loading="lazy" className="
+                        <img src="/images/vision/3.avif" alt="Our Vision 3" loading="lazy" className="
                             w-[48.5%] shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
                             rounded-[25px] sm:rounded-[40px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         " data-aos="fade" data-aos-once="true" />
