@@ -6,7 +6,7 @@ const ComingSoonBanner = () => {
     const [progress, setProgress] = useState(0)
 
     useEffect(() => {
-        const target = 70
+        const target = 80
         const duration = 2700 // 2.7 seconds
         const steps = 100
         const stepTime = duration / steps
@@ -66,7 +66,7 @@ const ComingSoonBanner = () => {
                             progress-bar w-full
                             h-[10px] sm:h-[8px] lg:h-[8.5px] xl:h-[9.5px] 2xl:h-[10px]
                         " />
-                        <span className="absolute -bottom-7 left-0">0%</span>
+                        <span className="absolute -bottom-7 left-0">{progress}%</span>
                         <span className="absolute -bottom-7 right-0">100%</span>
                     </div>
 
