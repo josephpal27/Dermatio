@@ -18,7 +18,7 @@ const ProductDescription = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                mt-[1rem] sm:mt-0
                 product-desc-tabbing
             ">
                 <Tab.Container defaultActiveKey="description">

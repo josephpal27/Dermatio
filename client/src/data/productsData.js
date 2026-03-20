@@ -10,10 +10,10 @@ export const productsData = [
     ],
     image: "/images/products/1.png",
     galleryImages: [
-      "/images/products/1-1.png",
-      "/images/products/1-2.png",
-      "/images/products/1-3.png",
-      "/images/products/1-4.png",
+      "/images/products/1-1.jpg",
+      "/images/products/1-2.jpg",
+      "/images/products/1-3.jpg",
+      "/images/products/1-4.jpg",
     ],
     tag: "REPAIRADERM",
     desc: {

@@ -34,26 +34,23 @@ const ProductGallery = () => {
                     w-[100%] sm:w-[50%]
                 ">
                     <Tab.Container defaultActiveKey="0">
-                        <div className="flex flex-wrap items-center">
+                        <div className="flex flex-wrap justify-between flex-col-reverse sm:flex-row">
                             {/* Side Thumbnails */}
                             <Nav className="
-                                flex flex-col 
-                                gap-[0.8rem] sm:gap-[0.8rem] lg:gap-[0.6rem] xl:gap-[0.7rem] 2xl:gap-[0.8rem]
-                                w-[20%] sm:w-[17%]
+                                flex sm:flex-col justify-between
+                                w-[100%] sm:w-[17%]
+                                mt-[0.8rem] sm:mt-0
                             ">
                                 {product.galleryImages.map((img, index) => (
-                                    <Nav.Item key={index}>
+                                    <Nav.Item key={index} className="w-[22.2%] sm:w-full">
                                         <Nav.Link eventKey={index} className="p-[0]">
                                             <img
                                                 src={img}
                                                 alt={"Thumbnail " + index}
                                                 className="
                                                     w-full
-                                                    aspect-square object-cover bg-[#eee7dd]
-                                                    rounded-[5px]
-                                                    px-[2px] sm:px-[7px]
-                                                    py-[7px] sm:py-[10px]
-                                        "/>
+                                                    rounded-[7px]
+                                            "/>
                                         </Nav.Link>
                                     </Nav.Item>
                                 ))}
@@ -61,15 +58,14 @@ const ProductGallery = () => {
 
                             {/* Main Image */}
                             <Tab.Content className="
-                                w-[80%]
-                                pt-[0.5rem] sm:pt-[1rem] lg:pt-[0.8rem] xl:pt-[0.9rem] 2xl:pt-[1rem]
+                                w-[100%] sm:w-[80%]                                
                             ">
                                 {product.galleryImages.map((img, index) => (
                                     <Tab.Pane key={index} eventKey={index}>
                                         <img
                                             src={img}
                                             alt={product.name}
-                                            className="w-full"
+                                            className="w-full rounded-[10px]"
                                         />
                                     </Tab.Pane>
                                 ))}
