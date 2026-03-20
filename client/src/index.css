@@ -57,6 +57,14 @@ h1, h2, h3, h4, h5, h6{
   background-color: #becb0c; /* firefox */
 }
 
+/* Product Details Page */
+.product-desc-tabbing .nav-link {
+  color: #868686;
+}
+.product-desc-tabbing .nav-link.active {
+  color: #005aed;
+}
+
 /* Contact Form */
 .contact-form label{
   display: block;

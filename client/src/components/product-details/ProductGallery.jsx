@@ -8,7 +8,13 @@ const ProductGallery = () => {
 
     const { slug } = useParams();
     const product = productsData.find(p => p.slug === slug);
-    if (!product) return <p>Product Not Found !</p>;
+    if (!product) return (
+        <div className="flex justify-center py-[4rem] px-[1rem] text-[1.1rem]">
+            <p>
+                Product Not Found !
+            </p>
+        </div>
+    )
 
     const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
 
@@ -195,22 +201,6 @@ const ProductGallery = () => {
                     </div>
                 </div>
 
-            </section>
-
-            {/* Product Description */}
-            <section className="
-                px-[1rem] sm:px-[5%] lg:px-[7%]
-            ">
-                <div className="
-                    bg-[#fbf4ea]
-                    p-[1rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
-                    rounded-[8px] sm:rounded-[5px]
-                    text-[1.1rem] sm:text-[1rem] lg:text-[0.85rem] xl:text-[0.98rem] 2xl:text-[1.04rem]
-                ">
-                    <p>
-                        Dermatio Lotion is an advanced dermal therapy formulated to restore, protect, and maintain healthy skin barrier function. Its clinically supported actives, combined with scientifically researched ingredients and soothing botanicals, provide effective care for atopic, sensitive, and dry skin in both kids and adults.
-                    </p>
-                </div>
             </section>
         </>
     )
