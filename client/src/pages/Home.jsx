@@ -7,7 +7,7 @@ import HighLights from "../components/home/Highlights"
 import HomeBanner from "../components/home/HomeBanner"
 import OurProducts from "../components/home/OurProducts"
 import StageOfEczemaJourney from "../components/home/StageOfEczemaJourney"
-import Testimonials from "../components/home/Testimonials"
+// import Testimonials from "../components/home/Testimonials"
 import WhyDermatio from "../components/home/WhyDermatio"
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
       <ClinicallyProven />
       <ChooseCare />
       <AdvisoryBoard />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </>
   )
 }

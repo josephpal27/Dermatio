@@ -41,7 +41,8 @@ const AdvisoryBoard = () => {
     return (
         <>
             <section className="
-                py-[0] sm:py-[3rem] lg:py-[2rem] xl:py-[2.5rem] 2xl:py-[3rem]
+                py-[0] sm:py-[2rem] lg:py-[1rem] xl:py-[1.5rem] 2xl:py-[2rem]
+                mb-[4rem] sm:mb-[3rem] lg:mb-[2.5rem] xl:mb-[3rem] 2xl:mb-[3.5rem]
             ">
                 {/* Head */}
                 <div className="

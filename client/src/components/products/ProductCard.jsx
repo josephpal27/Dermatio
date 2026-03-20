@@ -9,8 +9,6 @@ const ProductCard = ({ product }) => {
             <div className="
                 bg-[#fbf4eb] hover:bg-[#faf1e4] flex justify-center items-center transition duration-300 overflow-hidden group
                 rounded-[20px] sm:rounded-[20px] lg:rounded-[20px] xl:rounded-[25px] 2xl:rounded-[30px]
-                pt-[1.5rem] sm:pt-[2rem] lg:pt-[2rem] xl:pt-[2.2rem] 2xl:pt-[2.5rem]
-                pb-[1rem] sm:pb-[2rem] lg:pb-[1.5rem] xl:pb-[1.7rem] 2xl:pb-[2rem]
                 shadow-[-2.4px_2.4px_3.2px_rgba(0,0,0,0.25)]
             ">
                 <img
