@@ -25,6 +25,16 @@ let AdvisoryBoardData = [
         image: "/images/advisory-board/4.avif",
         title: "Dr. Armonita, <br/> MD (Paediatrics & Neonatal-Perinatal Medicine)",
     },
+    {
+        id: 5,
+        image: "/images/advisory-board/5.avif",
+        title: "Dr. Alia SK, <br/> Child Psychologist",
+    },
+    {
+        id: 6,
+        image: "/images/advisory-board/6.avif",
+        title: "Dr. Ananya Bhowmik, <br/> Ph.D. (Clinical Nutritionist)",
+    },
 ]
 
 const AdvisoryBoard = () => {

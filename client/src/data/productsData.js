@@ -8,12 +8,12 @@ export const productsData = [
       { size: "100 ml", price: 799 },
       { size: "300 ml", price: 1799 },
     ],
-    image: "/images/products/1.avif",
+    image: "/images/products/1.png",
     galleryImages: [
-      "/images/products/1.avif",
-      "/images/products/1.avif",
-      "/images/products/1.avif",
-      "/images/products/1.avif",
+      "/images/products/1-1.png",
+      "/images/products/1-2.png",
+      "/images/products/1-3.png",
+      "/images/products/1-4.png",
     ],
     tag: "REPAIRADERM",
     desc: {
