@@ -8,7 +8,10 @@ export const productsData = [
       { size: "100 ml", price: 799 },
       { size: "300 ml", price: 1799 },
     ],
-    image: "/images/products/1-main-100ml.png",
+    image: {
+      "100 ml": "/images/products/1-main-100ml.png",
+      "300 ml": "/images/products/1-main-300ml.png",
+    },
     galleryImages: {
       "100 ml": [
         "/images/products/1-1-100ml.jpg",
@@ -57,7 +60,10 @@ export const productsData = [
       { size: "100 ml", price: 799 },
       { size: "300 ml", price: 1799 },
     ],
-    image: "/images/products/1-main-100ml.png",
+    image: {
+      "100 ml": "/images/products/1-main-100ml.png",
+      "300 ml": "/images/products/1-main-300ml.png",
+    },
     galleryImages: {
       "100 ml": [
         "/images/products/1-1-100ml.jpg",
@@ -106,7 +112,10 @@ export const productsData = [
       { size: "100 ml", price: 799 },
       { size: "300 ml", price: 1799 },
     ],
-    image: "/images/products/1-main-100ml.png",
+    image: {
+      "100 ml": "/images/products/1-main-100ml.png",
+      "300 ml": "/images/products/1-main-300ml.png",
+    },
     galleryImages: {
       "100 ml": [
         "/images/products/1-1-100ml.jpg",

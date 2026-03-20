@@ -12,7 +12,7 @@ const ProductCard = ({ product }) => {
                 shadow-[-2.4px_2.4px_3.2px_rgba(0,0,0,0.25)]
             ">
                 <img
-                    src={product.image}
+                    src={product.image[product.sizes[0].size]}
                     alt={product.name}
                     loading="lazy"
                     className="w-full group-hover:scale-[1.03] transition duration-300"

@@ -22,7 +22,7 @@ const CartProductCard = ({ item }) => {
                     shadow-[-2.4px_2.4px_3.2px_rgba(0,0,0,0.25)]
                     flex justify-center items-center
                 ">
-                    <img src={item.image} alt={item.name} loading="lazy" className="w-full" />
+                    <img src={item.selectedImage} alt={item.name} loading="lazy" className="w-full" />
                 </div>
                 {/* Content */}
                 <div className="

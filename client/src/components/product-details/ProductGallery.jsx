@@ -185,7 +185,14 @@ const ProductGallery = () => {
                             rounded-[10px] text-center
                             text-[1.2rem] sm:text-[1rem] lg:text-[1.05rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                         " onClick={() => {
-                                addToCart(product, selectedSize);
+                                // addToCart(product, selectedSize);
+                                addToCart(
+                                    {
+                                        ...product,
+                                        selectedImage: product.image[selectedSize.size]
+                                    },
+                                    selectedSize
+                                );
                                 navigate("/cart");
                             }}>
                             Add to Cart
