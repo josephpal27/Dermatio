@@ -5,6 +5,7 @@ import MyNavbar from "./components/Navbar";
 import Footer from "./components/footer";
 import ScrollToTop from './components/ScrollToTop';
 import PageTitle from './components/PageTitle';
+import { ToastContainer } from "react-toastify";
 import AOS from "aos";
 
 const App = () => {
@@ -56,6 +57,7 @@ const App = () => {
       <Outlet />
       <Footer />
       <ScrollToTop />
+      <ToastContainer position="top-right" autoClose={3000} />
     </>
   );
 };

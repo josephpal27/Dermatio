@@ -1,5 +1,40 @@
+import { useState } from 'react';
+import { toast } from "react-toastify";
 
 const ContactForm = () => {
+
+    const [result, setResult] = useState("");
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        formData.append("access_key", ""); // Web3Forms access key
+        formData.append("subject", "New Contact Form Submission");
+        formData.append("from_name", "Dermatio");
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                setResult("Success!");
+                toast.success("Message Sent Successfully");
+                event.target.reset();
+            } else {
+                setResult("Error");
+                toast.error("Something Went Wrong");
+            }
+
+        } catch (error) {
+            toast.error("Network Error");
+        }
+    };
+
     return (
         <>
             <div className="
@@ -25,16 +60,16 @@ const ContactForm = () => {
                 ">
                     You’ll be heard by people who care and respond. <br /> Get in touch with our team.
                 </p>
-                <form action="" className="
+                <form onSubmit={onSubmit} className="
                     contact-form
                     mt-[2rem] sm:mt-[2.5rem] lg:mt-[2.3rem] xl:mt-[2.5rem] 2xl:mt-[2.7rem]
                 ">
                     <label htmlFor="name">Full Name</label>
-                    <input type="text" name="name" id="name" required />
+                    <input type="text" name="Name" id="name" required />
                     <label htmlFor="email">Email Id</label>
-                    <input type="email" name="email" id="email" required />
+                    <input type="email" name="Email" id="email" required />
                     <label htmlFor="msg">Message</label>
-                    <textarea name="message" id="msg" required></textarea>
+                    <textarea name="Message" id="msg" required></textarea>
                     <button type="submit" className="
                         bg-[#becb0c] hover:bg-[#aeba05] text-[#fff]
                         py-[0.6rem] sm:py-[1rem] lg:py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem]
