@@ -18,7 +18,7 @@ const AdvancedLotion = () => {
                     pb-[2rem] sm:pb-[3rem] lg:pb-[3.6rem] xl:pb-[3.8rem] 2xl:pb-[4rem]
                 ">
                     <img
-                        src="/images/featured-products/3.png"
+                        src="/images/featured-products/2.avif"
                         alt="Product Image"
                         className="w-full" />
                     {/* Floating Image */}
@@ -31,7 +31,7 @@ const AdvancedLotion = () => {
                         p-[0.8rem] sm:p-0
                     " data-aos="fade-down" data-aos-once="true">
                         <img
-                            src="/images/featured-products/1.png"
+                            src="/images/featured-products/1.avif"
                             alt="Product Image"
                             className="w-full" />
                     </div>
