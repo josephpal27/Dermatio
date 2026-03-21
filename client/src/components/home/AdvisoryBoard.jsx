@@ -28,7 +28,7 @@ let AdvisoryBoardData = [
     {
         id: 5,
         image: "/images/advisory-board/5.avif",
-        title: "Dr. Alia SK, <br/> Child Psychologist",
+        title: "Mrs. Alia SK, <br/> Child Psychologist",
     },
     {
         id: 6,
