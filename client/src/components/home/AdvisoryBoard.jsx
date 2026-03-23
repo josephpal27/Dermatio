@@ -23,12 +23,12 @@ let AdvisoryBoardData = [
     {
         id: 4,
         image: "/images/advisory-board/4.avif",
-        title: "Dr. Armonita, <br/> MD (Paediatrics & Neonatal-Perinatal Medicine)",
+        title: "Dr. Aromita Deb, <br/> MD (Paediatrics & Neonatal-Perinatal Medicine)",
     },
     {
         id: 5,
         image: "/images/advisory-board/5.avif",
-        title: "Mrs. Alia SK, <br/> Child Psychologist",
+        title: "Ms. Alia SK, <br/> Child Psychologist",
     },
     {
         id: 6,
