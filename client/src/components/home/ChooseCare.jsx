@@ -53,13 +53,18 @@ const ChooseCare = () => {
                     {/* Video */}
                     <div className="
                         w-[100%] sm:w-[48%]
-                        h-[30vh] sm:h-auto
-                        rounded-[35px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
-                        bg-[#eeeeee] flex justify-center items-center
+                        rounded-[25px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
+                        bg-[#eeeeee] flex justify-center items-center overflow-hidden
                     ">
-                        <img src={playIcon} alt="Play Icon" loading="lazy" className="
-                            w-[50px] sm:w-[70px] lg:w-[60px] xl:w-[65px] 2xl:w-[70px]
-                        " data-aos="zoom-in" data-aos-once="true" />
+                        <iframe
+                            className="w-full h-full aspect-[16/9]"
+                            src="https://www.youtube-nocookie.com/embed/nVQz3lXAj00?si=gajxZH6Tjb8CHy1R"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        ></iframe>
                     </div>
                     {/* Images */}
                     <div className="
@@ -69,7 +74,7 @@ const ChooseCare = () => {
                     ">
                         {
                             chooseCareData.map((item, index) => {
-                                return(
+                                return (
                                     <div key={index} className="
                                         w-[100%] sm:w-[31%]
                                         rounded-[35px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]

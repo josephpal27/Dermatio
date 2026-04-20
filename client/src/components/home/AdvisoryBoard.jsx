@@ -1,8 +1,10 @@
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { Link } from "react-router-dom";
 import rightArrow from "../../assets/images/icons/arrow.png";
+import { IoClose } from "react-icons/io5";
 
 let AdvisoryBoardData = [
     {
@@ -23,21 +25,27 @@ let AdvisoryBoardData = [
     {
         id: 4,
         image: "/images/advisory-board/4.avif",
-        title: "Dr. Aromita Deb, <br/> MD (Paediatrics & Neonatal-Perinatal Medicine)",
+        title: "Dr. Aromita Deb, <br/> MD (Pediatrician), Allergy Specialist (FAAI) ",
     },
-    // {
-    //     id: 5,
-    //     image: "/images/advisory-board/5.avif",
-    //     title: "Ms. Alia SK, <br/> Child Psychologist",
-    // },
     {
-        id: 6,
-        image: "/images/advisory-board/6.avif",
+        id: 5,
+        image: "/images/advisory-board/5.avif",
         title: "Dr. Ananya Bhowmik, <br/> Ph.D. (Clinical Nutritionist)",
     },
 ]
 
 const AdvisoryBoard = () => {
+
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    useEffect(() => {
+        const handleEsc = (e) => {
+            if (e.key === "Escape") setSelectedItem(null);
+        };
+        window.addEventListener("keydown", handleEsc);
+        return () => window.removeEventListener("keydown", handleEsc);
+    }, []);
+
     return (
         <>
             <section className="
@@ -117,13 +125,17 @@ const AdvisoryBoard = () => {
                                                 block text-[#000]
                                                 text-[1.1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.95rem] 2xl:text-[1rem]
                                             " />
-                                            <Link to="/">
-                                                <img src={rightArrow} alt="Arrow" loading="lazy" className="
+                                            <img
+                                                src={rightArrow}
+                                                alt="Arrow"
+                                                loading="lazy"
+                                                className="
                                                     w-[30px] sm:w-[35px] lg:w-[25px] xl:w-[30px] 2xl:w-[35px]
                                                     mt-[0.8rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
-                                                    border-[#1f1f1f] border-[2px] rounded-full
-                                                " />
-                                            </Link>
+                                                    border-[#1f1f1f] border-[2px] rounded-full cursor-pointer hover:scale-110 transition duration-300
+                                                "
+                                                onClick={() => setSelectedItem(item)}
+                                            />
                                         </div>
                                     </SwiperSlide>
                                 )
@@ -133,6 +145,69 @@ const AdvisoryBoard = () => {
 
                 </div>
             </section>
+
+            {/* Custom Modal */}
+            {selectedItem && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center px-[1rem] lg:px-0">
+
+                    {/* Backdrop */}
+                    <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setSelectedItem(null)}
+                    ></div>
+
+                    {/* Modal Content */}
+                    <div className="
+                        relative z-10 w-full lg:w-[60%] 
+                        bg-white rounded-[20px] overflow-hidden
+                        flex justify-between flex-wrap
+                        animate-[fadeIn_.3s_ease] shadow-[-4px_4px_0px_0px_#c3cc17]
+                    ">
+
+                        {/* Close Button */}
+                        <button
+                            className="
+                                absolute top-[0.7rem] lg:top-[1rem] right-[0.7rem] lg:right-[1rem] text-black 
+                                text-[1.4rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
+                            "
+                            onClick={() => setSelectedItem(null)}
+                        >
+                            <IoClose />
+                        </button>
+
+                        {/* Left Image */}
+                        <div className="w-full lg:w-[50%]">
+                            <img
+                                src={selectedItem.image}
+                                alt={selectedItem.title}
+                                className="w-full"
+                            />
+                        </div>
+
+                        {/* Right Content */}
+                        <div className="
+                            w-full lg:w-[50%] flex items-center
+                            p-[1rem] sm:p-[1.2rem] lg:p-[1rem] xl:p-[1.1rem] 2xl:p-[1.2rem]
+                        ">
+                            <div>
+                                <span
+                                    className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem] font-[600]"
+                                    dangerouslySetInnerHTML={{
+                                        __html: selectedItem.title,
+                                    }}
+                                />
+                                {/* <p className="
+                                    text-[#363636] 
+                                    text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                                    mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                                ">
+                                    Lorem ipsum dolor adipisicing sit amet consectetur adipisicing elit. Dicta labore dolore dignissimos aliquid harum! Enim. Lorem ipsum adipisicing dolor sit amet adipisicing consectetur adipisicing.
+                                </p> */}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            )}
+
         </>
     )
 }

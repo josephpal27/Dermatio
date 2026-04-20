@@ -12,7 +12,7 @@ const AdvancedLotion = () => {
                 {/* Images */}
                 <div className="
                     w-[80%] sm:w-[36%]
-                    bg-[#dfdace] relative
+                    bg-[#e5e0d5] relative
                     rounded-[45px] sm:rounded-[80px] lg:rounded-[65px] xl:rounded-[75px] 2xl:rounded-[80px]
                     pt-[0] sm:pt-[1rem] lg:pt-[0.6rem] xl:pt-[0.8rem] 2xl:pt-[1rem]
                     pb-[2rem] sm:pb-[3rem] lg:pb-[3.6rem] xl:pb-[3.8rem] 2xl:pb-[4rem]
@@ -24,7 +24,7 @@ const AdvancedLotion = () => {
                     {/* Floating Image */}
                     <div className="
                         w-[60%] sm:w-[200px] lg:w-[210px] xl:w-[230px] 2xl:w-[250px]
-                        absolute bg-[#dfdace] shadow-md
+                        absolute bg-[#e5e0d5] shadow-md
                         bottom-[-4.5rem] sm:bottom-[-5rem] lg:bottom-[-4.5rem] xl:bottom-[-5.5rem] 2xl:bottom-[-6rem]
                         right-[-24%] sm:right-[-4rem] lg:right-[-3rem] xl:right-[-3.5rem] 2xl:right-[-4rem]
                         rounded-[35px] sm:rounded-[40px] lg:rounded-[40px] xl:rounded-[45px] 2xl:rounded-[50px]

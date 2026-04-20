@@ -8,25 +8,25 @@ let productsData = [
         id: 1,
         image: "/images/products-slider/1.avif",
         name: "Oil",
-        desc: "Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation, and dryness. ",
+        desc: "Deeply nourishing Virgin Coconut Oil + Herbal Blend that soothes dry, itchy skin and strengthens your baby's and kids' delicate skin barrier.",
     },
     {
         id: 2,
         image: "/images/products-slider/2.avif",
         name: "Shampoo",
-        desc: "Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation, and dryness. ",
+        desc: "Gentle, tear-free formula that cleanses sensitive scalps without stripping natural moisture or triggering flare-ups.",
     },
     {
         id: 3,
         image: "/images/products-slider/2.avif",
         name: "Bodywash",
-        desc: "Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation, and dryness. ",
+        desc: "Soft lather, fragrance-free wash that calms eczema-prone skin while keeping your baby and kid clean and irritation-free.",
     },
     {
         id: 4,
         image: "/images/products-slider/1.avif",
         name: "Supplement",
-        desc: "Clinically backed and thoughtfully formulated for baby and toddler skin prone to eczema, irritation, and dryness. ",
+        desc: "Dermatologist-recommended daily support that nourishes skin health from within, reducing eczema flare-ups over time.",
     },
 ]
 
@@ -109,7 +109,7 @@ const OurProducts = () => {
                                                 text-[1.5em] sm:text-[1.8rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
                                             " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }} />
                                             <p className="
-                                                text-[0.95rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.95rem] 2xl:text-[1rem]
+                                                text-[1rem] sm:text-[1rem] lg:text-[0.85rem] xl:text-[0.95rem] 2xl:text-[1.1rem]
                                                 text-center text-[#363636]
                                                 mt-[0.5rem]
                                             ">
