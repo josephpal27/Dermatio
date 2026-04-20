@@ -14,14 +14,14 @@ html{
 
 @font-face{
   font-family: "OliGroteskL";
-  src: url("./assets/fonts/Oli\ Grotesk\ L\ Regular.woff2") format("woff2");
+  src: url("/fonts/Oli\ Grotesk\ L\ Regular.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face{
   font-family: "OrdinaryBoys";
-  src: url("./assets/fonts/OrdinaryBoys-Sans.woff2") format("woff2");
+  src: url("/fonts/OrdinaryBoys-Sans.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
