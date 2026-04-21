@@ -1,5 +1,5 @@
 import { Tab, Nav } from "react-bootstrap";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link, useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { useState } from "react";
 import { useCart } from "../../context/CartContext";
 import { productsData } from "../../data/productsData"
@@ -7,7 +7,10 @@ import { productsData } from "../../data/productsData"
 const ProductGallery = () => {
 
     const { slug } = useParams();
+    const [searchParams] = useSearchParams();
+
     const product = productsData.find(p => p.slug === slug);
+
     if (!product) return (
         <div className="flex justify-center py-[4rem] px-[1rem] text-[1.1rem]">
             <p>
@@ -16,9 +19,16 @@ const ProductGallery = () => {
         </div>
     )
 
-    const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
-    const images = product.galleryImages[selectedSize.size] || [];
+    const sizeParam = searchParams.get("size");
+
+    const defaultSize =
+        product.sizes.find(s => s.size === sizeParam) ||
+        product.sizes[0];
+
+    const [selectedSize, setSelectedSize] = useState(defaultSize);
     const [activeKey, setActiveKey] = useState("0");
+
+    const images = product.galleryImages[selectedSize.size] || [];
 
     const { addToCart } = useCart();
     const navigate = useNavigate();

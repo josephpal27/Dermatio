@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, size }) => {
+    
     return (
         <div className="
             mb-[1.7rem] sm:mb-[1.5rem] lg:mb-[1.25rem] xl:mb-[1.4rem] 2xl:mb-[1.5rem]
@@ -12,7 +13,7 @@ const ProductCard = ({ product }) => {
                 shadow-[-2.4px_2.4px_3.2px_rgba(0,0,0,0.25)]
             ">
                 <img
-                    src={product.image[product.sizes[0].size]}
+                    src={product.image[size.size]}
                     alt={product.name}
                     loading="lazy"
                     className="w-full group-hover:scale-[1.03] transition duration-300"
@@ -36,7 +37,7 @@ const ProductCard = ({ product }) => {
                     text-[#818181]
                     mt-[0.1rem]
                 ">
-                    {product.type}
+                    {product.type} - {size.size}
                 </span>
 
                 <span className="
@@ -44,11 +45,11 @@ const ProductCard = ({ product }) => {
                     font-[600] 
                     mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                 ">
-                    ₹ {product.sizes[0].price.toLocaleString("en-IN")}
+                    ₹ {size.price.toLocaleString("en-IN")}
                 </span>
 
                 <Link
-                    to={`/products/${product.slug}`}
+                    to={`/products/${product.slug}?size=${size.size}`}
                     className="
                         w-max
                         mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]

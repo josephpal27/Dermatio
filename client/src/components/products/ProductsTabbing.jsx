@@ -28,7 +28,7 @@ const ProductsTabbing = () => {
 
         const collectionMatch =
             activeCollection === "All Products" ||
-            product.collection === activeCollection;
+            product.collections.includes(activeCollection);
 
         const filterMatch =
             activeFilter === "All" ||
@@ -65,8 +65,8 @@ const ProductsTabbing = () => {
                             px-[0.5rem] sm:px-[1rem] lg:px-[0.8rem] xl:px-[0.9rem] 2xl:px-[1rem]
                             transition font-[500] text-start sm:text-center
                             w-[47%] sm:w-[auto]
-                            ${activeCollection === item ? "text-[#becb0c] sm:text-[#131313] border-b-0 sm:border-b-[2.5px] sm:border-[#becb0c]" 
-                            : "text-[#131313] border-b-0 sm:border-b-[2.5px] sm:border-transparent"}
+                            ${activeCollection === item ? "text-[#becb0c] sm:text-[#131313] border-b-0 sm:border-b-[2.5px] sm:border-[#becb0c]"
+                                : "text-[#131313] border-b-0 sm:border-b-[2.5px] sm:border-transparent"}
                         `}
                     >
                         {item}
@@ -137,12 +137,15 @@ const ProductsTabbing = () => {
                     mt-[1.5rem] sm:mt-0
                 ">
                     {filteredProducts.length > 0 ? (
-                        filteredProducts.map((product) => (
-                            <div className="
-                                w-[47.5%] sm:w-[31.5%]
-                            ">
-                                <ProductCard key={product.id} product={product} />
-                            </div>
+                        filteredProducts.flatMap((product) => (
+                            product.sizes.map((sizeObj) => (
+                                <div
+                                    key={`${product.id}-${sizeObj.size}`}
+                                    className="w-[47.5%] sm:w-[31.5%]"
+                                >
+                                    <ProductCard product={product} size={sizeObj} />
+                                </div>
+                            ))
                         ))
                     ) : (
                         <p className="

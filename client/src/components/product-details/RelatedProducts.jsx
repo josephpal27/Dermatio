@@ -50,17 +50,20 @@ const RelatedProducts = () => {
                         }}
                     >
 
-                        {
-                            productsData.map((product, index) => {
-                                return (
-                                    <SwiperSlide key={index}>
-                                        <div className="p-[0.5rem]">
-                                            <ProductCard key={product.id} product={product} />
-                                        </div>
-                                    </SwiperSlide>
-                                )
-                            })
-                        }
+                         {
+                        productsData.flatMap((product) =>
+                            product.sizes.map((sizeObj) => (
+                                <SwiperSlide key={`${product.id}-${sizeObj.size}`}>
+                                    <div className="p-[0.5rem]">
+                                        <ProductCard
+                                            product={product}
+                                            size={sizeObj}
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            ))
+                        )
+                    }
                     </Swiper>
                 </div>
             </section>
