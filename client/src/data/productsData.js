@@ -6,7 +6,7 @@ export const productsData = [
     type: "Lotion",
     sizes: [
       { size: "100 ml", price: 799 },
-      { size: "300 ml", price: 1799 },
+      { size: "300 ml", price: 1800 },
     ],
     image: {
       "100 ml": "/images/products/1-main-100ml.avif",

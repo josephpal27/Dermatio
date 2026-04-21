@@ -49,7 +49,7 @@ const ProductCard = ({ product, size }) => {
                 </span>
 
                 <Link
-                    to={`/products/${product.slug}?size=${size.size}`}
+                    to={`/products/${product.slug}?size=${size.size.replace(" ", "")}`}
                     className="
                         w-max
                         mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]

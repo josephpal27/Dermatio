@@ -19,11 +19,12 @@ const ProductGallery = () => {
         </div>
     )
 
-    const sizeParam = searchParams.get("size");
+    const sizeParam = searchParams.get("size")?.toLowerCase();
 
     const defaultSize =
-        product.sizes.find(s => s.size === sizeParam) ||
-        product.sizes[0];
+    product.sizes.find(
+        s => s.size.replace(" ", "").toLowerCase() === sizeParam
+    ) || product.sizes[0];
 
     const [selectedSize, setSelectedSize] = useState(defaultSize);
     const [activeKey, setActiveKey] = useState("0");
