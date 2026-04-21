@@ -11,26 +11,37 @@ let AdvisoryBoardData = [
         id: 1,
         image: "/images/advisory-board/1.avif",
         title: "Dr. Shantanu Ray, <br/> MBBS, MD (Paediatrics)",
+        desc: "With 30+ years of experience, Dr. Ray specializes in child health with a strong focus on sensitive and eczema-prone skin. He emphasizes skin barrier protection, ingredient safety, and long-term comfort for infants and young children. At Dermatio, he ensures formulations are safe, gentle, and aligned with real-world pediatric care.",
     },
     {
         id: 2,
         image: "/images/advisory-board/2.avif",
         title: "Dr. Ritam Mondal, <br/> MBBS, MD (Paediatrics)",
+        desc: "Dr. Mondal brings over a decade of clinical experience with a preventive, child-centric approach. He focuses on early-stage skin concerns like dryness, irritation, and atopic tendencies. His insights help shape gentle, practical, and everyday-use formulations for sensitive skin.",
     },
     {
         id: 3,
         image: "/images/advisory-board/3.avif",
         title: "Dr. Aniruddha Ghosh, <br/> MD (Dermatology)",
+        desc: "A leading dermatologist and academician, Dr. Ghosh specializes in eczema and barrier-compromised skin. His approach combines skin science with clinical precision, focusing on barrier repair, hydration, and inflammation control. He guides Dermatio's formulations to ensure efficacy with high skin tolerance.",
     },
     {
         id: 4,
         image: "/images/advisory-board/4.avif",
         title: "Dr. Aromita Deb, <br/> MD (Pediatrician), Allergy Specialist (FAAI) ",
+        desc: "Dr. Armonita specializes in newborn care and early-life allergies. She focuses on protecting immature skin barriers and minimizing allergen exposure. At Dermatio, she ensures formulations meet high safety and hypoallergenic standards for infants and delicate skin.",
     },
     {
         id: 5,
         image: "/images/advisory-board/5.avif",
         title: "Dr. Ananya Bhowmik, <br/> Ph.D. (Clinical Nutritionist)",
+        desc: "With 17+ years of experience, Dr. Ananya connects nutrition, immunity, and skin health. She highlights the role of diet and gut health in managing eczema and inflammation. Her expertise supports Dermatio's holistic approach to skin wellness.",
+    },
+    {
+        id: 6,
+        image: "/images/advisory-board/6.avif",
+        title: "Dr. Sharmistha Dutta, <br/> M. Sc. (Psychology)",
+        desc: "With 9+ years of experience, Sharmistha works with children across autism, ADHD, and learning disabilities. She focuses on emotional well-being, behavior, and developmental support. Her perspective adds a holistic dimension to Dermatio's approach to child care and overall wellness.",
     },
 ]
 
@@ -194,13 +205,13 @@ const AdvisoryBoard = () => {
                                         __html: selectedItem.title,
                                     }}
                                 />
-                                {/* <p className="
+                                <p className="
                                     text-[#363636] 
                                     text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                                     mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                                 ">
-                                    Lorem ipsum dolor adipisicing sit amet consectetur adipisicing elit. Dicta labore dolore dignissimos aliquid harum! Enim. Lorem ipsum adipisicing dolor sit amet adipisicing consectetur adipisicing.
-                                </p> */}
+                                    {selectedItem.desc}
+                                </p>
                             </div>
                         </div>
 
