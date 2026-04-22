@@ -14,7 +14,7 @@ const HomeBanner = () => {
                     className="
                         w-full object-cover
                         rounded-b-[15px] sm:rounded-b-[20px] lg:rounded-b-[35px] xl:rounded-b-[40px] 2xl:rounded-b-[45px]
-                        h-[auto] sm:h-[50vh] lg:h-[93vh]
+                        h-[auto] lg:h-[93vh]
                 "/>
                 {/* Layer */}
                 <div className="
@@ -22,7 +22,7 @@ const HomeBanner = () => {
                     top-0 left-0 w-full h-full text-[#363636] sm:text-[#fff]
                     flex justify-between flex-wrap
                     px-[1rem] sm:px-[5%] lg:px-[7%]
-                    pb-[1rem] sm:pb-[7rem] lg:pb-[10rem] xl:pb-[11rem] 2xl:pb-[12rem]
+                    pb-[1rem] sm:pb-[3.5rem] lg:pb-[10rem] xl:pb-[11rem] 2xl:pb-[12rem]
                 ">
                     {/* Left */}
                     <div className="
@@ -31,12 +31,12 @@ const HomeBanner = () => {
                         mt-[1rem] sm:mt-0
                     ">
                         <span className="
-                            text-[0.8rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                            text-[0.8rem] sm:text-[1.1rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         " data-aos="fade" data-aos-once="true">
                             #1st product to <br /> fight 4 signs of eczema
                         </span>
                         <h1 className="
-                            text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                            text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                             mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
                             leading-[1]
                         " data-aos="fade-up" data-aos-once="true">
@@ -49,15 +49,15 @@ const HomeBanner = () => {
                         flex flex-col justify-center
                     " data-aos="fade" data-aos-once="true">
                         <span className="
-                            text-[1.25rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
+                            text-[1.25rem] sm:text-[1.9rem] lg:text-[1.6rem] xl:text-[1.8rem] 2xl:text-[2rem]
                             leading-[1.2]
-                            mt-[1.8rem] sm:mt-[13rem] lg:mt-[15.5rem] xl:mt-[18rem] 2xl:mt-[20rem]
+                            mt-[1.8rem] sm:mt-[3rem] lg:mt-[15.5rem] xl:mt-[18rem] 2xl:mt-[20rem]
                         ">
                             Eczema relief for <br /> every stage of Childhood
                         </span>
                         <Link to="/" className="
                             mt-[1.4rem] sm:mt-[1rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
-                            border-[1.5px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
+                            border-[1.5px] sm:border-[1.2px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
                             border-[#000] sm:border-[#fff]
                             w-max
                             py-[0.4rem] sm:py-[0.4rem] lg:py-[0.3rem] xl:py-[0.35rem] 2xl:py-[0.4rem]
@@ -76,8 +76,8 @@ const HomeBanner = () => {
                                 alt="Arrow" 
                                 loading="lazy"
                                 className=" 
-                                    w-[21px] sm:w-[20px] lg:w-[19px] xl:w-[21px] 2xl:w-[23px]
-                                    h-[21px] sm:h-[20px] lg:h-[19px] xl:h-[21px] 2xl:h-[23px]
+                                    w-[21px] sm:w-[22px] lg:w-[19px] xl:w-[21px] 2xl:w-[23px]
+                                    h-[21px] sm:h-[22px] lg:h-[19px] xl:h-[21px] 2xl:h-[23px]
                                     ml-[0.8rem] sm:ml-[0.8rem] lg:ml-[0.6rem] xl:ml-[0.7rem] 2xl:ml-[0.8rem]
                                     duration-200
                                     group-hover:2xl:ml-[1.2rem]

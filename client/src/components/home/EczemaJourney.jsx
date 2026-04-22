@@ -10,7 +10,7 @@ const EczemaJourney = () => {
                 py-[3rem] sm:py-[4rem] lg:py-[3.5rem] xl:py-[4rem] 2xl:py-[4.5rem]
             ">
                 <h4 className="
-                    text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                    text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1] text-center
                 " data-aos="fade-up" data-aos-once="true">
                     Understanding <br /> the Eczema Journey
@@ -19,12 +19,12 @@ const EczemaJourney = () => {
                 {/* Box */}
                 <div className="
                     flex justify-between items-center flex-wrap bg-[#f0ede9] overflow-hidden
-                    mt-[1.8rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
-                    rounded-[35px] sm:rounded-[70px] lg:rounded-[55px] xl:rounded-[65px] 2xl:rounded-[70px]
+                    mt-[1.8rem] sm:mt-[2.2rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                    rounded-[35px] sm:rounded-[45px] lg:rounded-[55px] xl:rounded-[65px] 2xl:rounded-[70px]
                 ">
                     {/* Image */}
                     <div className="
-                        sm:w-[40%]
+                        w-full sm:w-[40%]
                     " data-aos="fade-right" data-aos-once="true">
                         <img src={eczemaImage} alt="Eczema Journey" loading="lazy" className="w-full" />
                     </div>
@@ -36,14 +36,14 @@ const EczemaJourney = () => {
                     " data-aos="fade" data-aos-once="true">
                         <p className="
                             text-[#363636]
-                            text-[1.2rem] sm:text-[1.4rem] lg:text-[1.15rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
+                            text-[1.2rem] sm:text-[1.1rem] lg:text-[1.15rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
                             sm:w-[80%]
                         ">
                             Eczema isn't just a skin condition, it's a daily journey of flare-ups, triggers, healing, and care. <br /> <br /> Each phase needs the right support, not just temporary relief.
                         </p>
                         <Link to="/" className="
-                            mt-[1.7rem] sm:mt-[2.5rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
-                            border-[1.5px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
+                            mt-[1.7rem] sm:mt-[1.5rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                            border-[1.5px] sm:border-[1.2px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
                             border-black w-max
                             py-[0.4rem] sm:py-[0.4rem] lg:py-[0.3rem] xl:py-[0.35rem] 2xl:py-[0.4rem]
                             pl-[0.7rem] sm:pl-[1rem] lg:pl-[0.9rem] xl:pl-[0.95rem] 2xl:pl-[1rem]
@@ -58,8 +58,8 @@ const EczemaJourney = () => {
                                 alt="Arrow"
                                 loading="lazy"
                                 className=" 
-                                    w-[20px] sm:w-[20px] lg:w-[19px] xl:w-[21px] 2xl:w-[23px]
-                                    h-[20px] sm:h-[20px] lg:h-[19px] xl:h-[21px] 2xl:h-[23px]
+                                    w-[20px] sm:w-[22px] lg:w-[19px] xl:w-[21px] 2xl:w-[23px]
+                                    h-[20px] sm:h-[22px] lg:h-[19px] xl:h-[21px] 2xl:h-[23px]
                                     ml-[0.8rem] sm:ml-[0.8rem] lg:ml-[0.6rem] xl:ml-[0.7rem] 2xl:ml-[0.8rem]
                                     transition-all duration-200
                                     group-hover:2xl:ml-[1.2rem]

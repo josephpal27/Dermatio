@@ -34,14 +34,14 @@ const OurProducts = () => {
     return (
         <>
             <section className="
-                mt-[2.5rem] sm:mt-[10rem] lg:mt-[8rem] xl:mt-[9rem] 2xl:mt-[10rem]
+                mt-[2.5rem] sm:mt-[6.5rem] lg:mt-[8rem] xl:mt-[9rem] 2xl:mt-[10rem]
             ">
                 {/* Header */}
                 <div className="
                     px-[1rem] sm:px-[5%] lg:px-[7%]
                 ">
                     <h3 className="
-                        text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                        text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
                     " data-aos="fade-up" data-aos-once="true">
                         Our Products
@@ -52,8 +52,8 @@ const OurProducts = () => {
                 <div className="
                     bg-[#eaf8ff]
                     px-[1rem] sm:px-[5%] lg:px-[7%]
-                    py-[2rem] sm:py-[4rem] lg:py-[3.4rem] xl:py-[3.7rem] 2xl:py-[4rem]
-                    mt-[1.7rem] sm:mt-[3rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                    py-[2rem] sm:py-[3rem] lg:py-[3.4rem] xl:py-[3.7rem] 2xl:py-[4rem]
+                    mt-[1.7rem] sm:mt-[1.8rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                 ">
                     <Swiper
                         modules={[Pagination, Autoplay]}
@@ -78,7 +78,7 @@ const OurProducts = () => {
                             },
                             640: {
                                 slidesPerView: 3, // tablet
-                                spaceBetween: 60,
+                                spaceBetween: 30,
                             },
                             991: {
                                 slidesPerView: 4, // tablet and up
@@ -105,7 +105,7 @@ const OurProducts = () => {
                                                 __html: item.name,
                                             }} className="
                                                 block text-center text-[#000]
-                                                mt-[1rem] sm:mt-[1.5rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
+                                                mt-[1rem] sm:mt-[1.3rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                                                 text-[1.5em] sm:text-[1.8rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
                                             " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }} />
                                             <p className="
