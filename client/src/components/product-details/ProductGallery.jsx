@@ -22,9 +22,9 @@ const ProductGallery = () => {
     const sizeParam = searchParams.get("size")?.toLowerCase();
 
     const defaultSize =
-    product.sizes.find(
-        s => s.size.replace(" ", "").toLowerCase() === sizeParam
-    ) || product.sizes[0];
+        product.sizes.find(
+            s => s.size.replace(" ", "").toLowerCase() === sizeParam
+        ) || product.sizes[0];
 
     const [selectedSize, setSelectedSize] = useState(defaultSize);
     const [activeKey, setActiveKey] = useState("0");
@@ -33,6 +33,60 @@ const ProductGallery = () => {
 
     const { addToCart } = useCart();
     const navigate = useNavigate();
+
+    // Razorpay Payment Integration
+    const handlePayment = async () => {
+        try {
+            const res = await fetch("/.netlify/functions/create-order", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    amount: selectedSize.price,
+                }),
+            });
+
+            const order = await res.json();
+
+            const options = {
+                key: import.meta.env.VITE_RAZORPAY_KEY_ID,
+                amount: order.amount,
+                currency: "INR",
+                order_id: order.id,
+                name: product.name,
+
+                handler: async function (response) {
+                    const verifyRes = await fetch("/.netlify/functions/verify-payment", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(response),
+                    });
+
+                    const data = await verifyRes.json();
+
+                    if (data.success) {
+                        alert("Payment Successful ✅");
+                    } else {
+                        alert("Payment verification failed ❌");
+                    }
+                },
+            };
+
+            const rzp = new window.Razorpay(options);
+
+            rzp.on("payment.failed", () => {
+                alert("Payment Failed ❌");
+            });
+
+            rzp.open();
+        } catch (err) {
+            console.error(err);
+            alert("Something went wrong");
+        }
+    };
 
     return (
         <>
@@ -208,7 +262,7 @@ const ProductGallery = () => {
                             }}>
                             Add to Cart
                         </button>
-                        <Link to="/checkout" className="
+                        {/* <Link to="/checkout" className="
                             bg-[#becb0c] hover:bg-[#aeba05] text-[#fff] transition w-[46%] sm:w-auto
                             px-[1rem] sm:px-[1.8rem] lg:px-[1.6rem] xl:px-[1.7rem] 2xl:px-[1.8rem]
                             py-[0.6rem] sm:py-[0.5rem] lg:py-[0.45rem] xl:py-[0.5rem] 2xl:py-[0.55rem]
@@ -216,7 +270,16 @@ const ProductGallery = () => {
                             text-[1.2rem] sm:text-[1rem] lg:text-[1.05rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                         ">
                             Buy Now
-                        </Link>
+                        </Link> */}
+                        <button onClick={handlePayment} className="
+                            bg-[#becb0c] hover:bg-[#aeba05] text-[#fff] transition w-[46%] sm:w-auto
+                            px-[1rem] sm:px-[1.8rem] lg:px-[1.6rem] xl:px-[1.7rem] 2xl:px-[1.8rem]
+                            py-[0.6rem] sm:py-[0.5rem] lg:py-[0.45rem] xl:py-[0.5rem] 2xl:py-[0.55rem]
+                            rounded-[10px] text-center
+                            text-[1.2rem] sm:text-[1rem] lg:text-[1.05rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
+                        ">
+                            Buy Now
+                        </button>
                     </div>
                 </div>
 
