@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 import MyNavbar from "./components/Navbar";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import ScrollToTop from './components/ScrollToTop';
 import PageTitle from './components/PageTitle';
 import { ToastContainer } from "react-toastify";
