@@ -13,6 +13,7 @@ import ProductDetails from './pages/ProductDetails.jsx';
 import Cart from './pages/Cart.jsx';
 import ComingSoon from './pages/ComingSoon';
 import Contact from './pages/Contact';
+import Checkout from './pages/Checkout';
 
 import { CartProvider } from "./context/CartContext";
 
@@ -28,6 +29,7 @@ let routers = createBrowserRouter([
       { path: "/products/:slug", element: <ProductDetails /> },
       { path: "/cart", element: <Cart /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/checkout", element: <Checkout /> },
       { path: "*", element: <ComingSoon /> },
     ]
   }
