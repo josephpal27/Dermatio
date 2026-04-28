@@ -2,6 +2,7 @@ import ActiveCompounds from "../components/tazman/ActiveCompounds"
 import Safety from "../components/tazman/Safety"
 import SkinExperience from "../components/tazman/SkinExperience"
 import TazmanBanner from "../components/tazman/TazmanBanner"
+import TazmanBenefits from "../components/tazman/TazmanBenefits"
 import TazmanScience from "../components/tazman/TazmanScience"
 import TazmanStory from "../components/tazman/TazmanStory"
 import WhyTazman from "../components/tazman/WhyTazman"
@@ -16,6 +17,7 @@ const TazmanPepperDetails = () => {
             <ActiveCompounds />
             <SkinExperience />
             <Safety />
+            <TazmanBenefits />
         </>
     )
 }
