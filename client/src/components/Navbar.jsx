@@ -56,8 +56,8 @@ const MyNavbar = () => {
                         <Nav.Link as={NavLink} to="/the-science" onClick={handleClose}>
                             The Science
                         </Nav.Link>
-                        <Nav.Link as={NavLink} to="/offers" onClick={handleClose}>
-                            Offers
+                        <Nav.Link as={NavLink} to="/ingredients" onClick={handleClose}>
+                            Ingredients
                         </Nav.Link>
                     </Nav>
 
