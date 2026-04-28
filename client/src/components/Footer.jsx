@@ -23,7 +23,7 @@ let footerData = [
             { label: "About Us", to: "/about" },
             { label: "Products", to: "/products" },
             { label: "The Science", to: "/the-science" },
-            { label: "Offers", to: "/offers" },
+            { label: "Ingredients", to: "/ingredients" },
             { label: "Cart", to: "/cart" },
         ],
         type: "link",
