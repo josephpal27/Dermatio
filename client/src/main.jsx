@@ -10,6 +10,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails.jsx';
+import TheScience from './pages/TheScience.jsx';
 import Ingredients from './pages/Ingredients.jsx';
 import TazmanPepperDetails from './pages/TazmanPepperDetails.jsx';
 import Cart from './pages/Cart.jsx';
@@ -29,6 +30,7 @@ let routers = createBrowserRouter([
       { path: "/about", element: <About /> },
       { path: "/products", element: <Products /> },
       { path: "/products/:slug", element: <ProductDetails /> },
+      { path: "/the-science", element: <TheScience /> },
       { path: "/ingredients", element: <Ingredients /> },
       { path: "/tazman-pepper", element: <TazmanPepperDetails /> },
       { path: "/cart", element: <Cart /> },
