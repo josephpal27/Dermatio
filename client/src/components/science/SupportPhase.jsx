@@ -21,7 +21,7 @@ const SupportPhase = () => {
                     </h4>
                     <p className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                        mt-[2rem] sm:mt-[1rem] lg:mt-[2.3rem] xl:mt-[2.4rem] 2xl:mt-[2.5rem]
+                        mt-[2rem] sm:mt-[1rem] lg:mt-1.8rem] xl:mt-[1.9rem] 2xl:mt-[2rem]
                         text-[#363636] text-center
                     ">
                         In the acute phase, Dermatio's active complex works to calm cytokine driven inflammation and cool the neural itch signal rapidly. In the subacute and chronic phases, it focuses on barrier restoration replenishing ceramides, reducing transepidermal water loss (TEWL), and modulating the sensitised nerve response to prevent re-entry into flare.
