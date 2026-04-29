@@ -43,9 +43,9 @@ const SkinExperience = () => {
                             <div key={item.id} className="
                                 w-[48%]
                                 p-[2.5rem]
-                                bg-[#f6f1ea] rounded-[15px] shadow-sm
+                                bg-[#f6f1ea] rounded-[15px] shadow-md
                                 mb-[3rem]
-                                hover:scale-[1.02] transition duration-300 hover:shadow-xl
+                                hover:scale-[1.02] transition duration-300 hover:shadow-lg
                             ">
                                 <span className="
                                     text-[2rem]

@@ -1,3 +1,4 @@
+import DistinctPhases from "../components/science/DistinctPhases"
 import ScienceBanner from "../components/science/ScienceBanner"
 import UnderstandingEczema from "../components/science/UnderstandingEczema"
 
@@ -6,6 +7,7 @@ const TheScience = () => {
         <>
             <ScienceBanner />
             <UnderstandingEczema />
+            <DistinctPhases />
         </>
     )
 }

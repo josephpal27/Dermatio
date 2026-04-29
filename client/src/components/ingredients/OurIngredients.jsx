@@ -4,8 +4,8 @@ const OurIngredients = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%] bg-[#fbf4ea]
-                py-[3rem]
-                mt-[2.5rem]
+                py-[5rem]
+                mt-[1rem]
                 rounded-[15px] sm:rounded-[20px] lg:rounded-[35px] xl:rounded-[40px] 2xl:rounded-[45px]
             ">
                 {/* Top */}
