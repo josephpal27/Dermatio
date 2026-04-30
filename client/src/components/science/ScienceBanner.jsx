@@ -21,7 +21,7 @@ const ScienceBanner = () => {
                     flex flex-col justify-center items-end
                     px-[1rem] sm:px-[5%] lg:px-[7%]
                 ">
-                    <div className="w-[35%]">
+                    <div className="w-[40%]">
                         <h1 className="
                             text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[6rem]
                             mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]

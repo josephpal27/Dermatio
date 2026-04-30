@@ -15,7 +15,7 @@ const eczemaSkinData = [
         id: 3,
         head: "NEUROSENSORY",
         title: "Nerve Sensitisation & Pruriceptor Density",
-        desc: "Eczema increases nerve fibre density in the skin. These fibres (via TRPA1 channels) become highly reactive to inflammation. Elevated Substance P and NGF (nerve growth factor) lower the itch threshold — making skin extremely itch-sensitive.",
+        desc: "Eczema increases nerve fibre density in the skin. These fibres (via TRPA1 channels) become highly reactive to inflammation. Elevated Substance P and NGF (nerve growth factor) lower the itch threshold - making skin extremely itch-sensitive.",
     },
     {
         id: 4,
@@ -36,7 +36,7 @@ const SkinPhysiology = () => {
                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                     text-[#363636]
                 ">
-                    - SKIN PHYSIOLOGY & BIOCHEMISTRY
+                    — SKIN PHYSIOLOGY & BIOCHEMISTRY
                 </span>
                 <h5 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
@@ -61,7 +61,7 @@ const SkinPhysiology = () => {
                         return (
                             <div key={item.id} className="
                                 w-[48.5%] bg-[#fbf4ea]
-                                p-[1.3rem]
+                                p-[2.5rem]
                                 mb-[2.5rem]
                                 rounded-2xl shadow-md hover:shadow-lg
                                 hover:scale-[1.02] transition duration-300

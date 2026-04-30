@@ -1,3 +1,4 @@
+import ActiveHero from "../components/science/ActiveHero"
 import DistinctPhases from "../components/science/DistinctPhases"
 import InterruptCycle from "../components/science/InterruptCycle"
 import ScienceBanner from "../components/science/ScienceBanner"
@@ -16,6 +17,7 @@ const TheScience = () => {
             <ScratchCycle />
             <InterruptCycle />
             <SkinPhysiology />
+            <ActiveHero />
         </>
     )
 }
