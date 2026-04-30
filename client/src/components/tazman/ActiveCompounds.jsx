@@ -62,12 +62,12 @@ const ActiveCompounds = () => {
                 </h5>
 
                 {/* List */}
-                <div className="mt-[2.5rem]">
+                <div className="mt-[2.5rem] sm:mt-[2rem] lg:mt-[2.1rem] xl:mt-[2.3rem] 2xl:mt-[2.5rem]">
                     {compoundsList.map((item, index) => {
                         return (
                             <p key={index} className="
                                 text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                                mb-[0.5rem] sm:mb-[0.5rem] lg:mb-[0.3rem] xl:mb-[0.4rem] 2xl:mb-[0.5rem]
+                                mb-[0.5rem] sm:mb-[0.5rem] lg:mb-[0.4rem] xl:mb-[0.45rem] 2xl:mb-[0.5rem]
                                 text-[#363636]
                             ">
                                 <b>{item.title}</b> - {item.desc}
@@ -77,7 +77,7 @@ const ActiveCompounds = () => {
                 </div>
 
                 {/* Chart */}
-                <div className="mt-[3rem]">
+                <div className="mt-[3rem] sm:mt-[2rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]">
                     {compoundChart.map((item) => {
 
                         const isThird = item.id === 3;
@@ -85,9 +85,9 @@ const ActiveCompounds = () => {
                         return (
                             <div key={item.id} className="
                                 flex justify-between flex-wrap bg-[#ebe8e2]
-                                p-[2.5rem]
+                                p-[2.5rem] sm:p-[2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
                                 rounded-3xl last:mb-0
-                                mb-[2rem]
+                                mb-[2rem] sm:mb-[1.5rem] lg:mb-[1.6rem] xl:mb-[1.8rem] 2xl:mb-[2rem]
                             ">
 
                                 <div className="w-[50%]">
@@ -96,7 +96,7 @@ const ActiveCompounds = () => {
 
                                 <div className="w-[7%] flex justify-center items-center">
                                     <RiArrowRightWideLine className="
-                                        text-[7rem] 
+                                        text-[7rem] sm:text-[1.5rem] lg:text-[6rem] xl:text-[6.5rem] 2xl:text-[7rem]
                                         text-[#e6b89d] scale-[1.5]
                                     " />
                                 </div>
@@ -109,24 +109,27 @@ const ActiveCompounds = () => {
                                             flex items-center gap-[2rem]
                                         ">
                                             <span className="
-                                                text-[4rem]
+                                                text-[4rem] sm:text-[3rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
                                                 font-[800] 
                                             ">
                                                 {item.title}
                                             </span>
                                             <div className="
                                                 aspect-square bg-[#379df1] rounded-2xl
-                                                p-[0.5rem]
-                                                mt-[-0.6rem]
+                                                p-[0.5rem] sm:p-[0.5rem] lg:p-[0.3rem] xl:p-[0.4rem] 2xl:p-[0.5rem]
+                                                mt-[-0.6rem] sm:mt-[-0.5rem] lg:mt-[-0.5rem] xl:mt-[-0.55rem] 2xl:mt-[-0.6rem]
                                             ">
-                                                <IoIosArrowDown className="text-[2.8rem] text-white" />
+                                                <IoIosArrowDown className="
+                                                    text-[2.8rem] sm:text-[2rem] lg:text-[2.4rem] xl:text-[2.6rem] 2xl:text-[2.8rem]
+                                                    text-white" 
+                                                />
                                             </div>
                                         </div>
                                     )}
 
                                     {/* For 3rd box */}
                                     {isThird && (
-                                        <div className="flex justify-center mb-[1.5rem]">
+                                        <div className="flex justify-center mb-[1.5rem] sm:mb-[1.5rem] lg:mb-[1.3rem] xl:mb-[1.4rem] 2xl:mb-[1.5rem]">
                                             <img
                                                 src="/images/tazman/redness.png"
                                                 alt="redness"
@@ -136,9 +139,9 @@ const ActiveCompounds = () => {
                                     )}
 
                                     <p className="
-                                        text-[1.6rem]
+                                        text-[1.6rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.45rem] 2xl:text-[1.6rem]
                                         text-center
-                                        mt-[1rem]
+                                        mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                                     ">
                                         {item.desc}
                                     </p>

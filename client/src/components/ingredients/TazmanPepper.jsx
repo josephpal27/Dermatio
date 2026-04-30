@@ -6,7 +6,7 @@ const TazmanPepper = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[5rem]
+                py-[5rem] sm:py-[4rem] lg:py-[4rem] xl:py-[4.5rem] 2xl:py-[5rem]
                 flex justify-between flex-wrap
             ">
                 <div className="w-[48%]">

@@ -4,7 +4,7 @@ const TazmanStory = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[4rem]
+                py-[4rem] sm:py-[2rem] lg:py-[3.4rem] xl:py-[3.7rem] 2xl:py-[4rem]
                 flex justify-between items-center flex-wrap
             ">
                 <div className="w-[55%]">

@@ -34,7 +34,7 @@ const IngredientHighlights = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[2rem]
+                py-[2rem] sm:py-[1.5rem] lg:py-[1rem] xl:py-[1.5rem] 2xl:py-[2rem]
                 flex justify-between flex-wrap
             ">
                 {ingredientHighlightsData.map((item) => {
@@ -42,18 +42,18 @@ const IngredientHighlights = () => {
                         <div key={item.id} className="
                             w-[46%]
                             flex justify-between
-                            mb-[4rem]
+                            mb-[4rem] sm:mb-[3rem] lg:mb-[3.2rem] xl:mb-[3.6rem] 2xl:mb-[4rem]
                         ">
                             <div className="w-[15%]">
                                 <img src={item.image} alt={item.title} loading="lazy" className="
-                                    w-[75px]
-                                    h-[75px]
+                                    w-[75px] sm:w-[60px] lg:w-[58px] xl:w-[67px] 2xl:w-[75px]
+                                    h-[75px] sm:h-[60px] lg:h-[58px] xl:h-[67px] 2xl:h-[75px]
                                     object-contain
                                 " />
                             </div>
                             <div className="w-[83%]">
                                 <span className="
-                                    text-[2rem]
+                                    text-[2rem] sm:text-[2rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem]
                                     block text-[#000]
                                 " style={{fontFamily: `"OrdinaryBoys", sans-serif`}}>
                                     {item.title}

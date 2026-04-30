@@ -13,7 +13,7 @@ const WhyTazman = () => {
                     Why Tazman Pepper™ for <br /> Atopic & Eczema Skin?
                 </h3>
                 <p className="
-                    text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                    text-[1.1rem] sm:text-[1.2rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                     mt-[1rem] sm:mt-[1rem] lg:mt-[1.8rem] xl:mt-[1.9rem] 2xl:mt-[2rem]
                     text-[#363636] text-center w-[80%]
                 ">

@@ -4,7 +4,7 @@ const OurIngredients = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%] bg-[#fbf4ea]
-                py-[5rem]
+                py-[5rem] sm:py-[4rem] lg:py-[4rem] xl:py-[4.5rem] 2xl:py-[5rem]
                 mt-[1rem]
                 rounded-[15px] sm:rounded-[20px] lg:rounded-[35px] xl:rounded-[40px] 2xl:rounded-[45px]
             ">
@@ -13,7 +13,7 @@ const OurIngredients = () => {
                     <div className="
                         w-[50%] 
                         flex flex-col justify-center
-                        pr-[5rem]
+                        pr-[5rem] sm:pr-[4rem] lg:pr-[4rem] xl:pr-[4.5rem] 2xl:pr-[5rem]
                     ">
                         <h2 className="
                             text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
@@ -66,7 +66,7 @@ const OurIngredients = () => {
                     <div className="
                         w-[50%] 
                         flex flex-col justify-center
-                        pl-[5rem]
+                        pl-[5rem] sm:pl-[4rem] lg:pl-[4rem] xl:pl-[4.5rem] 2xl:pl-[5rem]
                     ">
                         <h3 className="
                             text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]

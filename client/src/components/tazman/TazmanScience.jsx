@@ -4,7 +4,7 @@ const TazmanScience = () => {
         <>
             <section className="
                 pr-[1rem] sm:pr-[5%] lg:pr-[7%]
-                py-[4rem]
+                py-[4rem] sm:py-[2rem] lg:py-[3.4rem] xl:py-[3.7rem] 2xl:py-[4rem]
                 flex justify-between items-center flex-wrap
             ">
                 <div className="w-[45%]">

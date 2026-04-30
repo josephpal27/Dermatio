@@ -26,8 +26,8 @@ const SkinExperience = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                pt-[4rem]
-                pb-[2.5rem]
+                pt-[4rem] sm:pt-[3rem] lg:pt-[3.4rem] xl:pt-[3.7rem] 2xl:pt-[4rem]
+                pb-[2.5rem] sm:pb-[2rem] lg:pb-[1.9rem] xl:pb-[2.2rem] 2xl:pb-[2.5rem]
             ">
                 <h6 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
@@ -36,19 +36,19 @@ const SkinExperience = () => {
                 </h6>
                 <div className="
                     flex justify-between flex-wrap
-                    mt-[3rem]
+                    mt-[3rem] sm:mt-[2rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                 ">
                     {skinExpData.map((item) => {
                         return (
                             <div key={item.id} className="
                                 w-[48%]
-                                p-[2.5rem]
+                                p-[2.5rem] sm:p-[2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
                                 bg-[#f6f1ea] rounded-[15px] shadow-md
-                                mb-[3rem]
+                                mb-[3rem] sm:mb-[2rem] lg:mb-[2.4rem] xl:mb-[2.8rem] 2xl:mb-[3rem]
                                 hover:scale-[1.02] transition duration-300 hover:shadow-lg
                             ">
                                 <span className="
-                                    text-[2rem]
+                                    text-[2rem] sm:text-[1.5rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem]
                                     block text-[#000]
                                 " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }}>
                                     {item.title}
