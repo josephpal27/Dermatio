@@ -6,7 +6,7 @@ const IngredientsBanner = () => {
                 relative
             ">
                 <img
-                    src="/images/banners/ingredients-banner.png"
+                    src="/images/banners/ingredients-banner.avif"
                     alt="Ingredients Banner"
                     loading="eager"
                     className="

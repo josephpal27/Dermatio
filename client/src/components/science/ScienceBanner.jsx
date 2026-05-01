@@ -6,7 +6,7 @@ const ScienceBanner = () => {
                 relative
             ">
                 <img
-                    src="/images/banners/science-banner.png"
+                    src="/images/banners/science-banner.avif"
                     alt="Science Banner"
                     loading="eager"
                     className="

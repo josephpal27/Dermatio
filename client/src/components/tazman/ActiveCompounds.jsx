@@ -28,21 +28,21 @@ const compoundChart = [
     {
         id: 1,
         head: "Reduces Itching",
-        chartImage: "/images/tazman/chart-1.png",
+        chartImage: "/images/tazman/chart-1.avif",
         title: "79%",
         desc: "Up to 79% reduction in itching within 5 minutes",
     },
     {
         id: 2,
         head: "Reduction of BurNing Sensations",
-        chartImage: "/images/tazman/chart-1.png",
+        chartImage: "/images/tazman/chart-1.avif",
         title: "58%",
         desc: "Up to 58% reduction in burning within 5 minutes",
     },
     {
         id: 3,
         head: "Skin Redness Reduction",
-        chartImage: "/images/tazman/chart-2.png",
+        chartImage: "/images/tazman/chart-2.avif",
         title: "",
         desc: "Up to 30% reduction in redness in 30 minutes. Up to 35% reduction after 24 hours",
     },
@@ -57,7 +57,7 @@ const ActiveCompounds = () => {
             ">
                 <h5 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
-                ">
+                " data-aos="fade-up">
                     Active Compounds in the Berry
                 </h5>
 
@@ -69,7 +69,7 @@ const ActiveCompounds = () => {
                                 text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                 mb-[0.5rem] sm:mb-[0.5rem] lg:mb-[0.4rem] xl:mb-[0.45rem] 2xl:mb-[0.5rem]
                                 text-[#363636]
-                            ">
+                            " data-aos="fade" data-aos-once="true">
                                 <b>{item.title}</b> - {item.desc}
                             </p>
                         )
@@ -107,7 +107,7 @@ const ActiveCompounds = () => {
                                     {!isThird && (
                                         <div className="
                                             flex items-center gap-[2rem]
-                                        ">
+                                        " data-aos="zoom-in" data-aos-once="true">
                                             <span className="
                                                 text-[4rem] sm:text-[3rem] lg:text-[3.4rem] xl:text-[3.7rem] 2xl:text-[4rem]
                                                 font-[800] 
@@ -131,7 +131,7 @@ const ActiveCompounds = () => {
                                     {isThird && (
                                         <div className="flex justify-center mb-[1.5rem] sm:mb-[1.5rem] lg:mb-[1.3rem] xl:mb-[1.4rem] 2xl:mb-[1.5rem]">
                                             <img
-                                                src="/images/tazman/redness.png"
+                                                src="/images/tazman/redness.avif"
                                                 alt="redness"
                                                 className="w-[80%] rounded-xl"
                                             />
@@ -142,7 +142,7 @@ const ActiveCompounds = () => {
                                         text-[1.6rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.45rem] 2xl:text-[1.6rem]
                                         text-center
                                         mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
-                                    ">
+                                    " data-aos="fade" data-aos-once="true">
                                         {item.desc}
                                     </p>
                                 </div>

@@ -39,6 +39,18 @@ const PageTitle = () => {
           title = "Products - Dermatio";
           break;
 
+        case "/the-science":
+          title = "The Science - Dermatio";
+          break;
+
+        case "/ingredients":
+          title = "Ingredients - Dermatio";
+          break;
+
+        case "/tazman-pepper":
+          title = "Tazman Pepper - Dermatio";
+          break;
+
         case "/contact":
           title = "Contact Us - Dermatio";
           break;

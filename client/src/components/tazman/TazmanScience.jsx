@@ -9,7 +9,7 @@ const TazmanScience = () => {
             ">
                 <div className="w-[45%]">
                     <img
-                        src="/images/tazman/tazman-science.png"
+                        src="/images/tazman/tazman-science.avif"
                         alt="Tazman Science"
                         loading="lazy"
                         className="
@@ -21,14 +21,14 @@ const TazmanScience = () => {
                 <div className="w-[48%]">
                     <h4 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
-                    ">
+                    " data-aos="fade-up">
                         The Science: <br /> How It Works
                     </h4>
                     <p className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         mt-[1rem] sm:mt-[1rem] lg:mt-[1.8rem] xl:mt-[1.9rem] 2xl:mt-[2rem]
                         text-[#363636]
-                    ">
+                    " data-aos="fade" data-aos-once="true">
                         TRPV1 (Transient Receptor Potential Vanilloid 1) is a channel found in skin keratinocytes and sensory neurons. In sensitive and inflamed skin, TRPV1 becomes overactive triggering pro-inflammatory cytokine release, burning sensations, and itching. The more it is activated, the more inflamed the skin becomes,
                         creating a vicious cycle. <br /> <br />
                         <b className="block mb-[1rem]">

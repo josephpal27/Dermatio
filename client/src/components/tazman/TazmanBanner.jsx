@@ -6,7 +6,7 @@ const TazmanBanner = () => {
                 relative
             ">
                 <img
-                    src="/images/banners/tazman-pepper-banner.png"
+                    src="/images/banners/tazman-pepper-banner.avif"
                     alt="Tazman Pepper Banner"
                     loading="eager"
                     className="

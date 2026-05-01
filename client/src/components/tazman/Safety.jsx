@@ -29,7 +29,7 @@ const Safety = () => {
       ">
         <h6 className="
           text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
-        ">
+        " data-aos="fade-up">
           Safety & Sustainability
         </h6>
         <div className="
@@ -40,7 +40,7 @@ const Safety = () => {
           <b className="
             text-[1.3rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
             text-[#151515]
-          ">
+          " data-aos="fade" data-aos-once="true">
             Tazman Pepper™ has undergone extensive safety testing and carries an excellent safety profile:
           </b>
           <div className="mt-[2rem] sm:mt-[1.5rem] lg:mt-[1.8rem] xl:mt-[1.9rem] 2xl:mt-[2rem]">
@@ -50,7 +50,7 @@ const Safety = () => {
                   text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                   mb-[1rem] sm:mb-[0.5rem] lg:mb-[0.4rem] xl:mb-[0.45rem] 2xl:mb-[0.5rem]
                   text-[#363636] last:mb-0
-                ">
+                " data-aos="fade" data-aos-once="true">
                   <b>{item.desc}</b> - {item.desc}
                 </p>
               )

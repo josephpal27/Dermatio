@@ -35,20 +35,20 @@ const SkinPhysiology = () => {
                 <span className="
                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                     text-[#363636]
-                ">
+                " data-aos="fade" data-aos-once="true">
                     — SKIN PHYSIOLOGY & BIOCHEMISTRY
                 </span>
                 <h5 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
                     mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
-                ">
+                " data-aos="fade-up">
                     What is Actually <br /> Broken in Eczema Skin
                 </h5>
                 <p className="
                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                     mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                     text-[#363636]
-                ">
+                " data-aos="fade" data-aos-once="true">
                     Eczema is fundamentally a barrier disease. Four interconnected systems fail and each breakdown feeds the others in a cascade that makes eczema self-perpetuating without targeted intervention.
                 </p>
 
@@ -60,7 +60,7 @@ const SkinPhysiology = () => {
                     {eczemaSkinData.map((item) => {
                         return (
                             <div key={item.id} className="
-                                w-[48.5%] bg-[#fbf4ea]
+                                w-[48.5%] bg-[#fbf4ea] overflow-hidden
                                 p-[2.5rem] sm:p-[2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
                                 mb-[2.5rem] sm:mb-[2rem] lg:mb-[2.1rem] xl:mb-[2.3rem] 2xl:mb-[2.5rem]
                                 rounded-2xl shadow-md hover:shadow-lg
@@ -68,20 +68,20 @@ const SkinPhysiology = () => {
                             ">
                                 <span className="
                                     block text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
-                                ">
+                                " data-aos="fade" data-aos-once="true">
                                     {item.head}
                                 </span>
                                 <span className="
                                     block text-[1.7rem] sm:text-[1.2rem] lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem]
                                     mt-[0.5rem]
-                                " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }}>
+                                " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }} data-aos="fade-right" data-aos-once="true">
                                     {item.title}
                                 </span>
                                 <p className="
                                     text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                                     mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                                     text-[#363636]
-                                ">
+                                " data-aos="fade" data-aos-once="true">
                                     {item.desc}
                                 </p>
                             </div>

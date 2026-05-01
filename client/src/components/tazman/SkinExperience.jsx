@@ -31,7 +31,7 @@ const SkinExperience = () => {
             ">
                 <h6 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
-                ">
+                " data-aos="fade-up">
                     What Your <br /> Skin Experiences
                 </h6>
                 <div className="
@@ -41,7 +41,7 @@ const SkinExperience = () => {
                     {skinExpData.map((item) => {
                         return (
                             <div key={item.id} className="
-                                w-[48%]
+                                w-[48%] overflow-hidden
                                 p-[2.5rem] sm:p-[2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
                                 bg-[#f6f1ea] rounded-[15px] shadow-md
                                 mb-[3rem] sm:mb-[2rem] lg:mb-[2.4rem] xl:mb-[2.8rem] 2xl:mb-[3rem]
@@ -50,14 +50,14 @@ const SkinExperience = () => {
                                 <span className="
                                     text-[2rem] sm:text-[1.5rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem]
                                     block text-[#000]
-                                " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }}>
+                                " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }} data-aos="fade-right" data-aos-once="true">
                                     {item.title}
                                 </span>
                                 <p className="
                                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                     mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                                     text-[#363636] w-[80%]
-                                ">
+                                " data-aos="fade" data-aos-once="true">
                                     {item.desc}
                                 </p>
                             </div>

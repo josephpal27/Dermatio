@@ -12,21 +12,21 @@ const TazmanPepper = () => {
                 <div className="w-[48%]">
                     <h4 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
-                    ">
+                    " data-aos="fade-up">
                         Tazman Pepper
                     </h4>
                     <span className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         mt-[1rem] sm:mt-[1.5rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                         text-[#363636] block font-[700]
-                    ">
+                    " data-aos="fade" data-aos-once="true">
                         Our hero of calm
                     </span>
                     <p className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                         text-[#363636]
-                    ">
+                    " data-aos="fade" data-aos-once="true">
                         Extracted from Tasmannia lanceolata fruit, Tazman Pepper is rich in natural anti-inflammatory
                         compounds, it helps reduce redness, calm itching, and ease skin discomfort, all common concerns
                         associated with eczema-prone skin.
@@ -66,7 +66,7 @@ const TazmanPepper = () => {
                 </div>
                 <div className="w-[48%]">
                     <img
-                        src="/images/ingredients/tazman.png"
+                        src="/images/ingredients/tazman.avif"
                         alt="Tazman Pepper"
                         loading="lazy"
                         className="
