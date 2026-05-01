@@ -21,19 +21,19 @@ const ScienceBanner = () => {
                     flex flex-col justify-center items-end
                     px-[1rem] sm:px-[5%] lg:px-[7%]
                 ">
-                    <div className="w-[40%]">
+                    <div className="w-full sm:w-[40%]">
                         <h1 className="
-                            text-[1.8rem] sm:text-[5rem] lg:text-[4.8rem] xl:text-[5.4rem] 2xl:text-[6rem]
-                            mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
+                            text-[2.3rem] sm:text-[5rem] lg:text-[4.8rem] xl:text-[5.4rem] 2xl:text-[6rem]
+                            mt-[1rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
                             leading-[1]
                         " data-aos="fade-up">
                             The <br /> Science
                         </h1>
                         <p className="
                             text-[1.1rem] sm:text-[1.2rem] lg:text-[1.2rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
-                            mt-[1.2rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                            mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                         " data-aos="fade">
-                            Understanding <br /> the eczema journey
+                            Understanding <br className="hidden sm:block" /> the eczema journey
                         </p>
                     </div>
                 </div>

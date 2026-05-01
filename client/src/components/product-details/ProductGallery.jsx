@@ -216,7 +216,7 @@ const ProductGallery = () => {
                             py-[0.6rem] sm:py-[0.5rem] lg:py-[0.45rem] xl:py-[0.5rem] 2xl:py-[0.55rem]
                             rounded-[10px] text-center
                             text-[1.2rem] sm:text-[1rem] lg:text-[1.05rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
-                        " onClick={() => {navigate("/checkout")}}>
+                        " onClick={() => {navigate("/coming-soon")}}>
                             Buy Now
                         </button>
                     </div>

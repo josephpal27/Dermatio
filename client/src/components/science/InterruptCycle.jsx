@@ -5,16 +5,16 @@ const InterruptCycle = () => {
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%] bg-[#e4e0d5]
                 py-[1rem]
-                mt-[7rem] sm:mt-[3rem] lg:mt-[6rem] xl:mt-[6.5rem] 2xl:mt-[7rem]
+                mt-[0] sm:mt-[3rem] lg:mt-[6rem] xl:mt-[6.5rem] 2xl:mt-[7rem]
                 flex justify-between items-center flex-wrap relative
             ">
-                <div className="w-[20%]">
+                <div className="w-full sm:w-[20%]">
                     <img src="/images/science/interrupt.avif" alt="Interrupts Cycle" loading="lazy" className="
-                        w-full rounded-3xl scale-[1.5]
-                        ml-[4rem] sm:ml-[3rem] lg:ml-[3.3rem] xl:ml-[3.6rem] 2xl:ml-[4rem]
+                        w-full rounded-2xl sm:rounded-3xl scale-[1] sm:scale-[1.5]
+                        ml-[0] sm:ml-[3rem] lg:ml-[3.3rem] xl:ml-[3.6rem] 2xl:ml-[4rem]
                     " />
                 </div>
-                <div className="w-[60%]">
+                <div className="w-full sm:w-[60%] mt-[2rem] sm:mt-0">
                     <h6 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
                     " data-aos="fade-up">

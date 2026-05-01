@@ -30,7 +30,7 @@ const SkinPhysiology = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                mt-[10rem] sm:mt-[5rem] lg:mt-[8rem] xl:mt-[9rem] 2xl:mt-[10rem]
+                mt-[3rem] sm:mt-[5rem] lg:mt-[8rem] xl:mt-[9rem] 2xl:mt-[10rem]
             ">
                 <span className="
                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
@@ -40,13 +40,13 @@ const SkinPhysiology = () => {
                 </span>
                 <h5 className="
                     text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
-                    mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                    mt-[1.5rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                 " data-aos="fade-up">
                     What is Actually <br /> Broken in Eczema Skin
                 </h5>
                 <p className="
                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                    mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                    mt-[1rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                     text-[#363636]
                 " data-aos="fade" data-aos-once="true">
                     Eczema is fundamentally a barrier disease. Four interconnected systems fail and each breakdown feeds the others in a cascade that makes eczema self-perpetuating without targeted intervention.
@@ -54,15 +54,15 @@ const SkinPhysiology = () => {
 
                 {/* Row */}
                 <div className="
-                    mt-[3rem] sm:mt-[2rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
+                    mt-[2rem] sm:mt-[2rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                     flex justify-between flex-wrap
                 ">
                     {eczemaSkinData.map((item) => {
                         return (
                             <div key={item.id} className="
-                                w-[48.5%] bg-[#fbf4ea] overflow-hidden
-                                p-[2.5rem] sm:p-[2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
-                                mb-[2.5rem] sm:mb-[2rem] lg:mb-[2.1rem] xl:mb-[2.3rem] 2xl:mb-[2.5rem]
+                                w-full sm:w-[48.5%] bg-[#fbf4ea] overflow-hidden
+                                p-[1.1rem] sm:p-[2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
+                                mb-[1.2rem] sm:mb-[2rem] lg:mb-[2.1rem] xl:mb-[2.3rem] 2xl:mb-[2.5rem]
                                 rounded-2xl shadow-md hover:shadow-lg
                                 hover:scale-[1.02] transition duration-300
                             ">
@@ -72,14 +72,14 @@ const SkinPhysiology = () => {
                                     {item.head}
                                 </span>
                                 <span className="
-                                    block text-[1.7rem] sm:text-[1.2rem] lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem]
+                                    block text-[1.5rem] sm:text-[1.2rem] lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem]
                                     mt-[0.5rem]
                                 " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }} data-aos="fade-right" data-aos-once="true">
                                     {item.title}
                                 </span>
                                 <p className="
                                     text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
-                                    mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                                    mt-[1rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                                     text-[#363636]
                                 " data-aos="fade" data-aos-once="true">
                                     {item.desc}
