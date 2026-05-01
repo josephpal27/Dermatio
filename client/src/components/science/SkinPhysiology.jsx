@@ -30,7 +30,7 @@ const SkinPhysiology = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                mt-[10rem]
+                mt-[10rem] sm:mt-[5rem] lg:mt-[8rem] xl:mt-[9rem] 2xl:mt-[10rem]
             ">
                 <span className="
                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
@@ -54,15 +54,15 @@ const SkinPhysiology = () => {
 
                 {/* Row */}
                 <div className="
-                    mt-[3rem]
+                    mt-[3rem] sm:mt-[2rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                     flex justify-between flex-wrap
                 ">
                     {eczemaSkinData.map((item) => {
                         return (
                             <div key={item.id} className="
                                 w-[48.5%] bg-[#fbf4ea]
-                                p-[2.5rem]
-                                mb-[2.5rem]
+                                p-[2.5rem] sm:p-[2rem] lg:p-[2.1rem] xl:p-[2.3rem] 2xl:p-[2.5rem]
+                                mb-[2.5rem] sm:mb-[2rem] lg:mb-[2.1rem] xl:mb-[2.3rem] 2xl:mb-[2.5rem]
                                 rounded-2xl shadow-md hover:shadow-lg
                                 hover:scale-[1.02] transition duration-300
                             ">
@@ -72,7 +72,7 @@ const SkinPhysiology = () => {
                                     {item.head}
                                 </span>
                                 <span className="
-                                    block text-[1.7rem]
+                                    block text-[1.7rem] sm:text-[1.2rem] lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.7rem]
                                     mt-[0.5rem]
                                 " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }}>
                                     {item.title}

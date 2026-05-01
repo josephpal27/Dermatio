@@ -4,7 +4,7 @@ const SupportPhase = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[3rem]
+                py-[3rem] sm:py-[2rem] lg:py-[2.3rem] xl:py-[2.7rem] 2xl:py-[3rem]
                 flex justify-between items-center flex-wrap
             ">
                 <div className="w-[23%]">

@@ -5,13 +5,13 @@ const InterruptCycle = () => {
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%] bg-[#e4e0d5]
                 py-[1rem]
-                mt-[7rem]
+                mt-[7rem] sm:mt-[3rem] lg:mt-[6rem] xl:mt-[6.5rem] 2xl:mt-[7rem]
                 flex justify-between items-center flex-wrap relative
             ">
                 <div className="w-[20%]">
                     <img src="/images/science/interrupt.png" alt="Interrupts Cycle" loading="lazy" className="
                         w-full rounded-3xl scale-[1.5]
-                        ml-[4rem]
+                        ml-[4rem] sm:ml-[3rem] lg:ml-[3.3rem] xl:ml-[3.6rem] 2xl:ml-[4rem]
                     " />
                 </div>
                 <div className="w-[60%]">

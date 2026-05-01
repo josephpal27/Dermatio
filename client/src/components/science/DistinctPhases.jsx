@@ -21,14 +21,14 @@ const DistinctPhases = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[5rem]
+                py-[5rem] sm:py-[3rem] lg:py-[4.3rem] xl:py-[4.7rem] 2xl:py-[5rem]
                 flex justify-end relative
             ">
                 {/* Box */}
                 <div className="
                     w-[60%] h-[85dvh] bg-[#e4e0d5]
                     rounded-[15px] sm:rounded-[20px] lg:rounded-[35px] xl:rounded-[40px] 2xl:rounded-[45px]
-                    p-[3rem]
+                    p-[3rem] sm:p-[2rem] lg:p-[2.5rem] xl:p-[2.8rem] 2xl:p-[3rem]
                 ">
                     <h3 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
@@ -49,24 +49,24 @@ const DistinctPhases = () => {
                 <div className="
                     pr-[2rem] sm:pr-[8%] lg:pr-[10%]
                     pl-[4rem] sm:pl-[20%] lg:pl-[30%]
-                    absolute bottom-[3rem] left-0
+                    absolute bottom-[3rem] sm:bottom-[2rem] lg:bottom-[2.6rem] xl:bottom-[2.8rem] 2xl:bottom-[3rem] left-0
                     flex justify-between flex-wrap
                 ">
                     {distinctData.map((item) => {
                         return(
                             <div key={item.id} className="
                                 w-[31.7%] bg-[#fbf4ea]
-                                p-[1.3rem]
+                                p-[1.3rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem]
                                 rounded-2xl shadow-md hover:shadow-lg shadow-[#a6a6a6] hover:shadow-[#b5b4b4]
                                 hover:translate-y-[-5px] transition duration-300
                             ">
                                 <span className="
-                                    block text-[1.8rem]
+                                    block text-[1.8rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
                                 ">
                                     0{item.id}
                                 </span>
                                 <span className="
-                                    block text-[1.6rem]
+                                    block text-[1.6rem] sm:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.5rem] 2xl:text-[1.6rem]
                                     mt-[0.1rem]
                                 " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }}>
                                     {item.title}

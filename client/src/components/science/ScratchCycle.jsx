@@ -26,7 +26,7 @@ const ScratchCycle = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[2rem]
+                py-[2rem] sm:py-[1.5rem] lg:py-[1.3rem] xl:py-[1.7rem] 2xl:py-[2rem]
             ">
                 <span className="
                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
@@ -50,24 +50,24 @@ const ScratchCycle = () => {
 
                 {/* Row */}
                 <div className="
-                    mt-[3rem]
+                    mt-[3rem] sm:mt-[2.5rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                     flex justify-between flex-wrap
                 ">
                     {scratchCycleData.map((item) => {
                         return (
                             <div key={item.id} className="
                                 w-[23%] bg-[#fbf4ea]
-                                p-[1.3rem]
+                                p-[1.3rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem]
                                 rounded-2xl shadow-md hover:shadow-lg
                                 hover:scale-[1.02] transition duration-300
                             ">
                                 <span className="
-                                    block text-[1.8rem]
+                                    block text-[1.8rem] sm:text-[1.5rem] lg:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[1.8rem]
                                 ">
                                     0{item.id}
                                 </span>
                                 <span className="
-                                    block text-[1.6rem]
+                                    block text-[1.6rem] sm:text-[1.2rem] lg:text-[1.4rem] xl:text-[1.5rem] 2xl:text-[1.6rem]
                                     mt-[0.1rem]
                                 " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }}>
                                     {item.title}
