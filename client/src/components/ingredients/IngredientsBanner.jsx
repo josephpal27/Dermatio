@@ -16,16 +16,16 @@ const IngredientsBanner = () => {
                 "/>
                 {/* Layer */}
                 <div className="
-                    relative sm:absolute
-                    top-0 left-0 w-full h-full text-[#363636] sm:text-[#fff]
+                    absolute
+                    top-0 left-0 w-full h-full text-[#fff]
                     flex flex-col justify-end
                     px-[1rem] sm:px-[5%] lg:px-[7%]
-                    pb-[1rem] sm:pb-[3rem] lg:pb-[6rem] xl:pb-[7rem] 2xl:pb-[8rem]
+                    pb-[1.2rem] sm:pb-[3rem] lg:pb-[6rem] xl:pb-[7rem] 2xl:pb-[8rem]
                 ">
                     <h1 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
-                        leading-[1] w-[60%]
+                        leading-[1] w-full lg:w-[60%]
                     " data-aos="fade-up">
                         Calm starts here With ingredients your skin trusts
                     </h1>

@@ -15,7 +15,7 @@ const WhyTazman = () => {
                 <p className="
                     text-[1.1rem] sm:text-[1.2rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                     mt-[1rem] sm:mt-[1rem] lg:mt-[1.8rem] xl:mt-[1.9rem] 2xl:mt-[2rem]
-                    text-[#363636] text-center w-[80%]
+                    text-[#363636] text-center w-full sm:w-[80%]
                 " data-aos="fade" data-aos-once="true">
                     Atopic and eczema-prone skin lives in a constant state of heightened sensitivity. Because the skin’s inflammation threshold is already lowered, everyday triggers like heat, allergens, friction, or environmental stress can ignite a cascade of discomforts redness, itching, burning, and flare-ups. Tazman PepperTM works at the root of this cycle by targeting the skin’s discomfort sensor directly.
                 </p>

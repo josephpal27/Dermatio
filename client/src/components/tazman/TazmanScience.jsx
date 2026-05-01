@@ -4,10 +4,11 @@ const TazmanScience = () => {
         <>
             <section className="
                 pr-[1rem] sm:pr-[5%] lg:pr-[7%]
-                py-[4rem] sm:py-[2rem] lg:py-[3.4rem] xl:py-[3.7rem] 2xl:py-[4rem]
+                pl-[1rem] sm:pl-0
+                py-[2rem] sm:py-[2rem] lg:py-[3.4rem] xl:py-[3.7rem] 2xl:py-[4rem]
                 flex justify-between items-center flex-wrap
             ">
-                <div className="w-[45%]">
+                <div className="w-full sm:w-[45%]">
                     <img
                         src="/images/tazman/tazman-science.avif"
                         alt="Tazman Science"
@@ -15,10 +16,11 @@ const TazmanScience = () => {
                         className="
                             w-full
                             rounded-r-[15px] sm:rounded-r-[20px] lg:rounded-r-[30px] xl:rounded-r-[35px] 2xl:rounded-r-[40px]
+                            rounded-l-[15px] sm:rounded-l-[0] 
                         "
                     />
                 </div>
-                <div className="w-[48%]">
+                <div className="w-full sm:w-[48%] mt-[2rem] sm:mt-0">
                     <h4 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
                     " data-aos="fade-up">

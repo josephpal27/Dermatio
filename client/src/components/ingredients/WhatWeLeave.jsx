@@ -4,11 +4,11 @@ const WhatWeLeave = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%] bg-[#f6f1eb]
-                py-[3rem] sm:py-[2rem] lg:py-[2.3rem] xl:py-[2.7rem] 2xl:py-[3rem]
+                py-[2rem] sm:py-[2rem] lg:py-[2.3rem] xl:py-[2.7rem] 2xl:py-[3rem]
                 flex justify-between items-center flex-wrap
-                mb-[1rem] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
+                mb-[0.5rem] sm:mb-[1rem] lg:mb-[0.8rem] xl:mb-[0.9rem] 2xl:mb-[1rem]
             ">
-                <div className="w-[46%]">
+                <div className="w-full sm:w-[46%]">
                     <h5 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
                     " data-aos="fade-up">
@@ -22,7 +22,7 @@ const WhatWeLeave = () => {
                         Just as important as what goes into our formulas is what we choose to leave out. Our products are thoughtfully formulated to be gentle, safe, and suitable for sensitive, eczema-prone skin. To irritants. To unnecessary additives. Just skin-first care you can trust.
                     </p>
                 </div>
-                <div className="w-[48%]">
+                <div className="w-full sm:w-[48%] mt-[1.5rem] sm:mt-0">
                     <img
                         src="/images/ingredients/what-we-leave.avif"
                         alt="What We Leave"

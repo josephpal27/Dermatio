@@ -24,8 +24,8 @@ const TazmanBanner = () => {
                 ">
                     <h1 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
-                        mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
-                        leading-[1] w-[60%]
+                        mt-[1rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
+                        leading-[1] w-full sm:w-[60%]
                     " data-aos="fade-up">
                         Australia’s Alpine Secret for Calm, Comfortable Skin
                     </h1>

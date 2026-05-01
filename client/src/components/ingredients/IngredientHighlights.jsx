@@ -34,40 +34,40 @@ const IngredientHighlights = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[2rem] sm:py-[1.5rem] lg:py-[1rem] xl:py-[1.5rem] 2xl:py-[2rem]
+                py-[1.5rem] sm:py-[1.5rem] lg:py-[1rem] xl:py-[1.5rem] 2xl:py-[2rem]
                 flex justify-between flex-wrap
             ">
                 {ingredientHighlightsData.map((item) => {
                     return(
                         <div key={item.id} className="
-                            w-[46%]
+                            w-full sm:w-[46%]
                             flex justify-between
-                            mb-[4rem] sm:mb-[3rem] lg:mb-[3.2rem] xl:mb-[3.6rem] 2xl:mb-[4rem]
+                            mb-[2rem] sm:mb-[3rem] lg:mb-[3.2rem] xl:mb-[3.6rem] 2xl:mb-[4rem]
                         ">
                             <div className="w-[15%]">
                                 <img src={item.image} alt={item.title} loading="lazy" className="
-                                    w-[75px] sm:w-[60px] lg:w-[58px] xl:w-[67px] 2xl:w-[75px]
-                                    h-[75px] sm:h-[60px] lg:h-[58px] xl:h-[67px] 2xl:h-[75px]
+                                    w-[50px] sm:w-[60px] lg:w-[58px] xl:w-[67px] 2xl:w-[75px]
+                                    h-[50px] sm:h-[60px] lg:h-[58px] xl:h-[67px] 2xl:h-[75px]
                                     object-contain
                                 " data-aos="zoom-in" data-aos-once="true" />
                             </div>
-                            <div className="w-[83%]">
+                            <div className="w-[80%] sm:w-[83%]">
                                 <span className="
-                                    text-[2rem] sm:text-[2rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem]
+                                    text-[1.7rem] sm:text-[2rem] lg:text-[1.8rem] xl:text-[1.9rem] 2xl:text-[2rem]
                                     block text-[#000]
                                 " style={{fontFamily: `"OrdinaryBoys", sans-serif`}} data-aos="fade-right" data-aos-once="true">
                                     {item.title}
                                 </span>
                                 <span className="
                                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                                    mt-[1rem] sm:mt-[1.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                                    mt-[0.3rem] sm:mt-[1.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                                     text-[#363636] block font-[600]
                                 " data-aos="fade" data-aos-once="true">
                                     {item.subTitle}
                                 </span>
                                 <p className="
                                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                                    mt-[1rem] sm:mt-[1rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
+                                    mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                                     text-[#363636]
                                 " data-aos="fade" data-aos-once="true">
                                     {item.desc}

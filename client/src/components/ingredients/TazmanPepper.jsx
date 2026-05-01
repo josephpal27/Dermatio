@@ -6,10 +6,10 @@ const TazmanPepper = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[5rem] sm:py-[4rem] lg:py-[4rem] xl:py-[4.5rem] 2xl:py-[5rem]
+                py-[2rem] sm:py-[4rem] lg:py-[4rem] xl:py-[4.5rem] 2xl:py-[5rem]
                 flex justify-between flex-wrap
             ">
-                <div className="w-[48%]">
+                <div className="w-full sm:w-[48%]">
                     <h4 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
                     " data-aos="fade-up">
@@ -64,7 +64,7 @@ const TazmanPepper = () => {
                         "/>
                     </Link>
                 </div>
-                <div className="w-[48%]">
+                <div className="w-full sm:w-[48%] mt-[2.5rem] sm:mt-[0]">
                     <img
                         src="/images/ingredients/tazman.avif"
                         alt="Tazman Pepper"

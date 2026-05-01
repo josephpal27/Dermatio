@@ -4,10 +4,10 @@ const TazmanStory = () => {
         <>
             <section className="
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[4rem] sm:py-[2rem] lg:py-[3.4rem] xl:py-[3.7rem] 2xl:py-[4rem]
+                py-[1.5rem] sm:py-[2rem] lg:py-[3.4rem] xl:py-[3.7rem] 2xl:py-[4rem]
                 flex justify-between items-center flex-wrap
             ">
-                <div className="w-[55%]">
+                <div className="w-full sm:w-[55%]">
                     <h2 className="
                         text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
                     " data-aos="fade-up">
@@ -28,7 +28,7 @@ const TazmanStory = () => {
                         Deep in the cold, rugged mountains of Tasmania Island, a rare botanical has been used by Australia’s Aboriginal people for centuries. Known as “mourao”, the Tasmanian pepper berry (Tasmannia lanceolata) was traditionally prized for calming inflammation. Today, this ancestral bushfood is at the heart of our most advanced formulation for sensitive, atopic, and eczema-prone skin.
                     </p>
                 </div>
-                <div className="w-[30%]">
+                <div className="w-full sm:w-[30%] mt-[2rem] sm:mt-0">
                     <img
                         src="/images/tazman/tazman-story.avif" 
                         alt="Tazman Stoyry" 
