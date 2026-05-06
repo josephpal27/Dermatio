@@ -1,8 +1,29 @@
+import { useState } from "react"
 
 const CheckoutForm = () => {
+
+    const [selectedType, setSelectedType] = useState("Home")
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        const formData = new FormData(e.target)
+
+        const data = Object.fromEntries(formData)
+
+        const isEmpty = Object.values(data).some(value => value === "")
+
+        if (isEmpty) {
+            alert("Please fill all required fields")
+            return
+        }
+
+        alert("Proceeding to payment")
+    }
+
     return (
         <>
-            <form action="" className="
+            <form onSubmit={handleSubmit} className="
                 checkout-form
                 mt-[1.5rem]
             ">
@@ -31,23 +52,40 @@ const CheckoutForm = () => {
                 </div>
                 {/* Address Type */}
                 <div>
-                    <label>Address Type :</label>
+                    <label className="
+                        text-[1.05rem]
+                        mt-[0.5rem]
+                    ">
+                        Address Type :
+                    </label>
                     <div className="
                         mt-[0.8rem] flex items-center gap-[1rem] 
                     ">
-                        {["Home", "Office", "Others"].map((type) => (
-                            <button
-                                key={type}
-                                type="button"
-                                className="
-                                    bg-[#becb0c] text-white rounded-full
-                                    px-[1rem]
-                                    py-[0.3rem]
-                                "
-                            >
-                                {type}
-                            </button>
-                        ))}
+                        {["Home", "Office", "Others"].map((type) => {
+
+                            const isActive = selectedType === type
+
+                            return (
+                                <button
+                                    key={type}
+                                    type="button"
+                                    onClick={() => setSelectedType(type)}
+                                    className={`
+                                        rounded-full
+                                        px-[1rem]
+                                        py-[0.3rem]
+                                        shadow-sm
+                                        transition-all duration-300
+                                        ${isActive
+                                            ? "bg-[#becb0c] text-white"
+                                            : "bg-white"
+                                        }
+                                    `}
+                                >
+                                    {type}
+                                </button>
+                            )
+                        })}
                     </div>
                 </div>
             </form>

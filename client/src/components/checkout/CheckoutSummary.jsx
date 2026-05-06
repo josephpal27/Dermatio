@@ -1,5 +1,15 @@
 
-const CheckoutSummary = () => {
+const CheckoutSummary = ({ product, quantity }) => {
+
+    const subtotal = product.selectedSize.price * quantity
+
+    // const cgst = subtotal * 0.09
+    // const sgst = subtotal * 0.09
+    // const igst = 0
+    
+    // const total = subtotal + cgst + sgst + igst
+    const total = subtotal
+
     return (
         <>
             <div className="
@@ -21,10 +31,10 @@ const CheckoutSummary = () => {
                     text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                 ">
                     <span>
-                        Subtotal (1 item)
+                        Subtotal ({quantity} item)
                     </span>
                     <span className="font-[600]">
-                        ₹ 0
+                        ₹ {subtotal.toLocaleString("en-IN")}
                     </span>
                 </div>
                 <span className="
@@ -81,7 +91,10 @@ const CheckoutSummary = () => {
                         Total
                     </span>
                     <span>
-                        ₹ 0
+                        ₹ {total.toLocaleString("en-IN", {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2
+                        })}
                     </span>
                 </div>
                 <button

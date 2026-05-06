@@ -1,6 +1,20 @@
+import { useState } from "react"
 import { FaMinus, FaPlus } from "react-icons/fa6";
 
-const CheckoutProducts = () => {
+const CheckoutProducts = ({ product, quantity, setQuantity }) => {
+
+    const increaseQty = () => {
+        if (quantity < 10) {
+            setQuantity(prev => prev + 1)
+        }
+    }
+
+    const decreaseQty = () => {
+        if (quantity > 1) {
+            setQuantity(prev => prev - 1)
+        }
+    }
+
     return (
         <div className="
             flex justify-between
@@ -14,8 +28,8 @@ const CheckoutProducts = () => {
                     flex justify-center items-center
                 ">
                 <img
-                    src="/images/products/1-main-100ml.avif"
-                    alt="Product Image"
+                    src={product.selectedImage}
+                    alt={product.name}
                     loading="lazy"
                     className="w-full"
                 />
@@ -34,19 +48,19 @@ const CheckoutProducts = () => {
                         text-[1.1rem] sm:text-[1.1rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         truncate sm:whitespace-normal
                     ">
-                        Advance Dermal Therapy
+                        {product.name}
                     </span>
                     <span className="
                         block text-[#565656] mt-[0.2rem]
                         text-[0.9rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                     ">
-                        Lotion - 100 ml
+                        {product.type} - {product.selectedSize.size}
                     </span>
                     <span className="
                         block font-[600] mt-[0.5rem]
                         text-[1.2rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                     ">
-                        ₹ 799
+                        ₹ {(product.selectedSize.price * quantity).toLocaleString("en-IN")}
                     </span>
                 </div>
                 {/* Quantity Selector */}
@@ -61,7 +75,10 @@ const CheckoutProducts = () => {
                         py-[0.25rem] sm:py-[0.3rem] lg:py-[0.23rem] xl:py-[0.28rem] 2xl:py-[0.3rem]
                         rounded-full
                     ">
-                        <button>
+                        <button
+                            onClick={decreaseQty}
+                            disabled={quantity === 1}
+                        >
                             <FaMinus className="
                                 text-[0.9rem] sm:text-[0.8rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                             " />
@@ -69,9 +86,12 @@ const CheckoutProducts = () => {
                         <span className="
                             text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] select-none
                         ">
-                            1
+                            {quantity}
                         </span>
-                        <button>
+                        <button
+                            onClick={increaseQty}
+                            disabled={quantity === 10}
+                        >
                             <FaPlus className="
                                 text-[0.9rem] sm:text-[0.8rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                             " />
