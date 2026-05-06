@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom"
-import { useState } from "react"
+import { useRef, useState } from "react"
 
 import CheckoutForm from "../components/checkout/CheckoutForm"
 import CheckoutProducts from "../components/checkout/CheckoutProducts"
@@ -13,12 +13,78 @@ const Checkout = () => {
 
     const [quantity, setQuantity] = useState(1)
 
+    const [shippingData, setShippingData] = useState({
+        firstName: "",
+        lastName: "",
+        address: "",
+        area: "",
+        landmark: "",
+        city: "",
+        state: "",
+        pincode: "",
+        phone: "",
+        addressType: "Home"
+    })
+
+    const inputRefs = {
+        firstName: useRef(null),
+        lastName: useRef(null),
+        address: useRef(null),
+        area: useRef(null),
+        city: useRef(null),
+        state: useRef(null),
+        pincode: useRef(null),
+        phone: useRef(null),
+    }
+
     if (!product) {
         return (
-            <div className="py-[5rem] text-center">
+            <div className="h-[50dvh] flex justify-center items-center text-2xl font-bold">
                 No Product Found
             </div>
         )
+    }
+
+    // Shipping Data
+    const handleCheckout = () => {
+
+        const {
+            firstName,
+            lastName,
+            address,
+            area,
+            city,
+            state,
+            pincode,
+            phone
+        } = shippingData
+
+        const requiredFields = [
+            { key: "firstName", value: firstName },
+            { key: "lastName", value: lastName },
+            { key: "address", value: address },
+            { key: "area", value: area },
+            { key: "city", value: city },
+            { key: "state", value: state },
+            { key: "pincode", value: pincode },
+            { key: "phone", value: phone },
+        ]
+
+        const emptyField = requiredFields.find(
+            field => !field.value.trim()
+        )
+
+        if (emptyField) {
+            inputRefs[emptyField.key]?.current?.focus()
+            return
+        }
+
+        console.log("PRODUCT :", product)
+        console.log("QUANTITY :", quantity)
+        console.log("SHIPPING :", shippingData)
+
+        // Razorpay Logic Here Later
+        alert("Proceeding to payment")
     }
 
     return (
@@ -45,7 +111,12 @@ const Checkout = () => {
                     ">
                         Enter Shipping Details
                     </h1>
-                    <CheckoutForm />
+
+                    <CheckoutForm
+                        shippingData={shippingData}
+                        setShippingData={setShippingData}
+                        inputRefs={inputRefs}
+                    />
                 </div>
 
                 {/* Right */}
@@ -55,6 +126,7 @@ const Checkout = () => {
                     <CheckoutSummary
                         product={product}
                         quantity={quantity}
+                        handleCheckout={handleCheckout}
                     />
                 </div>
             </section>

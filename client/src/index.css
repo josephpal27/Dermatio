@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .checkout-form input:focus{
   box-shadow: #ded3bf 0px 3px 5px -1px, #e4dbc5 0px 2px 3px -1px;
+  background-color: #f9f9f9;
 }
 .checkout-form input[type="number"]::-webkit-inner-spin-button{
   display: none;

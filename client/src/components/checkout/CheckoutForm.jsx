@@ -1,54 +1,134 @@
 import { useState } from "react"
 
-const CheckoutForm = () => {
-
-    const [selectedType, setSelectedType] = useState("Home")
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-
-        const formData = new FormData(e.target)
-
-        const data = Object.fromEntries(formData)
-
-        const isEmpty = Object.values(data).some(value => value === "")
-
-        if (isEmpty) {
-            alert("Please fill all required fields")
-            return
-        }
-
-        alert("Proceeding to payment")
-    }
+const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
 
     return (
         <>
-            <form onSubmit={handleSubmit} className="
+            <form className="
                 checkout-form
                 mt-[1.5rem]
             ">
                 <div className="flex gap-[1rem]">
-                    <input type="text" placeholder="First Name" required />
-                    <input type="text" placeholder="Last Name" required />
+                    <input
+                        type="text"
+                        placeholder="First Name"
+                        ref={inputRefs.firstName}
+                        value={shippingData.firstName}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                firstName: e.target.value
+                            }))
+                        }
+                    />
+                    <input
+                        type="text"
+                        placeholder="Last Name"
+                        ref={inputRefs.lastName}
+                        value={shippingData.lastName}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                lastName: e.target.value
+                            }))
+                        }
+                    />
                 </div>
                 <div>
-                    <input type="text" placeholder="Flat, Building, Floor, House No." required />
+                    <input
+                        type="text"
+                        placeholder="Flat, Building, Floor, House No."
+                        ref={inputRefs.address}
+                        value={shippingData.address}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                address: e.target.value
+                            }))
+                        }
+                    />
                 </div>
                 <div>
-                    <input type="text" placeholder="Area, Street, Sector" required />
+                    <input
+                        type="text"
+                        placeholder="Area, Street, Sector"
+                        ref={inputRefs.area}
+                        value={shippingData.area}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                area: e.target.value
+                            }))
+                        }
+                    />
                 </div>
                 <div>
-                    <input type="text" placeholder="Landmark (Optional)" />
+                    <input
+                        type="text"
+                        placeholder="Landmark (Optional)"
+                        ref={inputRefs.landmark}
+                        value={shippingData.landmark}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                landmark: e.target.value
+                            }))
+                        }
+                    />
                 </div>
                 <div className="flex gap-[1rem]">
-                    <input type="text" placeholder="City" required />
-                    <input type="text" placeholder="State" required />
+                    <input
+                        type="text"
+                        placeholder="City"
+                        ref={inputRefs.city}
+                        value={shippingData.city}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                city: e.target.value
+                            }))
+                        }
+                    />
+                    <input
+                        type="text"
+                        placeholder="State"
+                        ref={inputRefs.state}
+                        value={shippingData.state}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                state: e.target.value
+                            }))
+                        }
+                    />
                 </div>
                 <div>
-                    <input type="number" placeholder="PIN Code" required />
+                    <input
+                        type="number"
+                        placeholder="PIN Code"
+                        ref={inputRefs.pincode}
+                        value={shippingData.pincode}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                pincode: e.target.value
+                            }))
+                        }
+                    />
                 </div>
                 <div>
-                    <input type="number" placeholder="Phone No." required />
+                    <input
+                        type="number"
+                        placeholder="Phone No."
+                        ref={inputRefs.phone}
+                        value={shippingData.phone}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                phone: e.target.value
+                            }))
+                        }
+                    />
                 </div>
                 {/* Address Type */}
                 <div>
@@ -63,13 +143,18 @@ const CheckoutForm = () => {
                     ">
                         {["Home", "Office", "Others"].map((type) => {
 
-                            const isActive = selectedType === type
+                            const isActive = shippingData.addressType === type
 
                             return (
                                 <button
                                     key={type}
                                     type="button"
-                                    onClick={() => setSelectedType(type)}
+                                    onClick={() =>
+                                        setShippingData(prev => ({
+                                            ...prev,
+                                            addressType: type
+                                        }))
+                                    }
                                     className={`
                                         rounded-full
                                         px-[1rem]

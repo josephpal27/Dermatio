@@ -1,12 +1,12 @@
 
-const CheckoutSummary = ({ product, quantity }) => {
+const CheckoutSummary = ({ product, quantity, handleCheckout }) => {
 
     const subtotal = product.selectedSize.price * quantity
 
     // const cgst = subtotal * 0.09
     // const sgst = subtotal * 0.09
     // const igst = 0
-    
+
     // const total = subtotal + cgst + sgst + igst
     const total = subtotal
 
@@ -98,6 +98,7 @@ const CheckoutSummary = ({ product, quantity }) => {
                     </span>
                 </div>
                 <button
+                    onClick={handleCheckout}
                     className="
                         mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                         bg-[#becb0c] hover:bg-[#aeba05] text-[#fff] text-center transition rounded-full select-none
