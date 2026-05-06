@@ -92,8 +92,8 @@ const CartSummary = () => {
                     </span>
                 </div>
                 <Link 
-                    to="/coming-soon" 
-                    onClick={() => navigate("/coming-soon", { state: { cart } })}
+                    to="/checkout" 
+                    onClick={() => navigate("/checkout", { state: { cart } })}
                     className="
                         mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                         block bg-[#becb0c] hover:bg-[#aeba05] text-[#fff] text-center transition rounded-full select-none

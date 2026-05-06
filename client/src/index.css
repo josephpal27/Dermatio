@@ -134,7 +134,6 @@ h1, h2, h3, h4, h5, h6{
   width: 100%;
   margin-bottom: 1rem;
   padding: 1rem 1rem;
-  /* background-color: #ece8df; */
   background-color: #fff;
   color: #000;
   border: 2px solid #ece8df;
@@ -145,6 +144,12 @@ h1, h2, h3, h4, h5, h6{
 }
 .checkout-form input::placeholder{
   color: rgb(126, 126, 126);
+}
+.checkout-form input:focus{
+  box-shadow: #ded3bf 0px 3px 5px -1px, #e4dbc5 0px 2px 3px -1px;
+}
+.checkout-form input[type="number"]::-webkit-inner-spin-button{
+  display: none;
 }
 
 /* Home Page Advisory Board Modal Transition */

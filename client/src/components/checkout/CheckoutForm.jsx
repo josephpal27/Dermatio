@@ -4,7 +4,7 @@ const CheckoutForm = () => {
         <>
             <form action="" className="
                 checkout-form
-                mt-[2rem]
+                mt-[1.5rem]
             ">
                 <div className="flex gap-[1rem]">
                     <input type="text" placeholder="First Name" required />
@@ -24,7 +24,7 @@ const CheckoutForm = () => {
                     <input type="text" placeholder="State" required />
                 </div>
                 <div>
-                    <input type="text" placeholder="PIN Code" required />
+                    <input type="number" placeholder="PIN Code" required />
                 </div>
                 <div>
                     <input type="number" placeholder="Phone No." required />
@@ -32,11 +32,18 @@ const CheckoutForm = () => {
                 {/* Address Type */}
                 <div>
                     <label>Address Type :</label>
-                    <div>
+                    <div className="
+                        mt-[0.8rem] flex items-center gap-[1rem] 
+                    ">
                         {["Home", "Office", "Others"].map((type) => (
                             <button
                                 key={type}
                                 type="button"
+                                className="
+                                    bg-[#becb0c] text-white rounded-full
+                                    px-[1rem]
+                                    py-[0.3rem]
+                                "
                             >
                                 {type}
                             </button>

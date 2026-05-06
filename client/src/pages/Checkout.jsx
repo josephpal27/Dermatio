@@ -1,4 +1,5 @@
 import CheckoutForm from "../components/checkout/CheckoutForm"
+import CheckoutProducts from "../components/checkout/CheckoutProducts"
 import CheckoutSummary from "../components/checkout/CheckoutSummary"
 
 const Checkout = () => {
@@ -14,8 +15,11 @@ const Checkout = () => {
                 <div className="
                     w-[52%]
                 ">
+                    <CheckoutProducts />
+
                     <h1 className="
-                        text-[2rem]
+                        text-[1.8rem]
+                        mt-[2.5rem]
                     ">
                         Enter Shipping Details
                     </h1>

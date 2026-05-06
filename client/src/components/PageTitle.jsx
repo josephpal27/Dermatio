@@ -59,6 +59,10 @@ const PageTitle = () => {
           title = "Cart - Dermatio";
           break;
 
+        case "/checkout":
+          title = "Checkout - Dermatio";
+          break;
+
         default:
           title = "Dermatio";
 

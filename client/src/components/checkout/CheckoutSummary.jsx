@@ -5,18 +5,18 @@ const CheckoutSummary = () => {
             <div className="
                 bg-[#eee7dd]
                 rounded-[15px] sm:rounded-[12px] lg:rounded-[11px] xl:rounded-[13px] 2xl:rounded-[15px]
-                p-[1.2rem] sm:p-[1.2rem] lg:p-[1.2rem] xl:p-[1.35rem] 2xl:p-[1.5rem]
+                p-[1.2rem] sm:p-[1.5rem] lg:p-[1.8rem] xl:p-[1.9rem] 2xl:p-[2rem]
             ">
                 <span className="
                     text-[1.2rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                     font-[600]
-                    pb-[0.6rem] sm:pb-[0.5rem] lg:pb-[0.3rem] xl:pb-[0.4rem] 2xl:pb-[0.5rem]
+                    pb-[0.8rem] sm:pb-[0.8rem] lg:pb-[0.8rem] xl:pb-[0.9rem] 2xl:pb-[1rem]
                     block border-b-[#b2b2b2] border-[1px]
                 ">
-                    Your Order
+                    Order Summary
                 </span>
                 <div className="
-                    py-[0.9rem] sm:py-[0.8rem] lg:py-[0.6rem] xl:py-[0.7rem] 2xl:py-[0.8rem]
+                    py-[0.9rem] sm:py-[0.8rem] lg:py-[0.8rem] xl:py-[0.9rem] 2xl:py-[1rem]
                     border-b-[#949494] border-[2px] border-dashed flex justify-between items-center
                     text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                 ">
@@ -72,7 +72,7 @@ const CheckoutSummary = () => {
                     </span>
                 </div>
                 <div className="
-                    mt-[0.7rem] sm:mt-[0.8rem] lg:mt-[0.6rem] xl:mt-[0.7rem] 2xl:mt-[0.8rem]
+                    mt-[0.7rem] sm:mt-[0.8rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                     border-t-[#949494] border-[2px] border-dashed flex justify-between items-center font-[600]
                     pt-[1rem] sm:pt-[1rem] lg:pt-[0.8rem] xl:pt-[0.9rem] 2xl:pt-[1rem]
                     text-[1.3rem] sm:text-[1.2rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
