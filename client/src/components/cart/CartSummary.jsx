@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom"
 import { useCart } from "../../context/CartContext";
-import { useNavigate } from "react-router-dom";
 
 const CartSummary = () => {
 
     const { cart, getTotal } = useCart();
-    const navigate = useNavigate();
 
     return (
         <>
@@ -28,7 +26,7 @@ const CartSummary = () => {
                     text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                 ">
                     <span>
-                        Subtotal ({cart.length} items)
+                        Subtotal ({cart.length} item{cart.length > 1 ? "s" : ""})
                     </span>
                     <span className="font-[600]">
                         ₹ {getTotal().toLocaleString("en-IN")}
@@ -93,7 +91,7 @@ const CartSummary = () => {
                 </div>
                 <Link 
                     to="/checkout" 
-                    onClick={() => navigate("/checkout", { state: { cart } })}
+                    state={{ cart }}
                     className="
                         mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
                         block bg-[#becb0c] hover:bg-[#aeba05] text-[#fff] text-center transition rounded-full select-none

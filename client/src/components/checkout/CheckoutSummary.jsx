@@ -1,13 +1,12 @@
 
-const CheckoutSummary = ({ product, quantity, handleCheckout }) => {
+const CheckoutSummary = ({ products, quantities, handleCheckout }) => {
 
-    const subtotal = product.selectedSize.price * quantity
+    const subtotal = products.reduce((acc, product, index) => {
+        return acc + product.selectedSize.price * quantities[index]
+    }, 0)
 
-    // const cgst = subtotal * 0.09
-    // const sgst = subtotal * 0.09
-    // const igst = 0
+    const totalQty = quantities.reduce((acc, q) => acc + q, 0)
 
-    // const total = subtotal + cgst + sgst + igst
     const total = subtotal
 
     return (
@@ -31,7 +30,7 @@ const CheckoutSummary = ({ product, quantity, handleCheckout }) => {
                     text-[1.1rem] sm:text-[1.1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                 ">
                     <span>
-                        Subtotal ({quantity} item)
+                        Subtotal ({totalQty} item{totalQty > 1 ? "s" : ""})
                     </span>
                     <span className="font-[600]">
                         ₹ {subtotal.toLocaleString("en-IN")}

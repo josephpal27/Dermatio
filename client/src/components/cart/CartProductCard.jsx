@@ -7,6 +7,13 @@ const CartProductCard = ({ item }) => {
 
     const { removeFromCart, updateQuantity } = useCart();
 
+    // Normalize cart item for checkout page
+    const normalizedItem = {
+        ...item,
+        selectedSize: { size: item.size, price: item.price },
+        selectedImage: item.selectedImage || item.image?.[item.size] || ""
+    }
+
     return (
         <>
             <div className="
@@ -97,7 +104,7 @@ const CartProductCard = ({ item }) => {
                         {/* Buy Now */}
                         <Link
                             to="/checkout"
-                            state={{ singleProduct: item }}
+                            state={{ product: normalizedItem }}
                             className="
                                 bg-[#005aed] hover:bg-[#004ecb] text-[#fff] transition select-none
                                 px-[0.9rem] sm:px-[1.1rem] lg:px-[0.9rem] xl:px-[1rem] 2xl:px-[1.1rem]

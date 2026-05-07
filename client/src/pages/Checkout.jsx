@@ -1,17 +1,31 @@
-import { useLocation } from "react-router-dom"
-import { useRef, useState } from "react"
+import { useLocation } from "react-router-dom";
+import { useRef, useState } from "react";
 
-import CheckoutForm from "../components/checkout/CheckoutForm"
-import CheckoutProducts from "../components/checkout/CheckoutProducts"
-import CheckoutSummary from "../components/checkout/CheckoutSummary"
+import CheckoutForm from "../components/checkout/CheckoutForm";
+import CheckoutProducts from "../components/checkout/CheckoutProducts";
+import CheckoutSummary from "../components/checkout/CheckoutSummary";
 
 const Checkout = () => {
 
     const location = useLocation()
 
-    const product = location.state?.product
+    const singleProduct = location.state?.product || location.state?.singleProduct
+    const cartItems = location.state?.cart
 
-    const [quantity, setQuantity] = useState(1)
+    const rawProducts = singleProduct
+        ? [singleProduct]
+        : cartItems || []
+
+    // Normalize: cart items have flat size/price, Buy Now has selectedSize
+    const products = rawProducts.map(p => ({
+        ...p,
+        selectedSize: p.selectedSize || { size: p.size, price: p.price },
+        selectedImage: p.selectedImage || p.image?.[p.size] || ""
+    }))
+
+    const [quantities, setQuantities] = useState(
+        () => products.map(p => p.quantity || 1)
+    )
 
     const [shippingData, setShippingData] = useState({
         firstName: "",
@@ -37,7 +51,7 @@ const Checkout = () => {
         phone: useRef(null),
     }
 
-    if (!product) {
+    if (products.length === 0) {
         return (
             <div className="h-[50dvh] flex justify-center items-center text-2xl font-bold">
                 No Product Found
@@ -45,7 +59,6 @@ const Checkout = () => {
         )
     }
 
-    // Shipping Data
     const handleCheckout = () => {
 
         const {
@@ -79,9 +92,9 @@ const Checkout = () => {
             return
         }
 
-        console.log("PRODUCT :", product)
-        console.log("QUANTITY :", quantity)
-        console.log("SHIPPING :", shippingData)
+        console.log("PRODUCTS:", products)
+        console.log("QUANTITIES:", quantities)
+        console.log("SHIPPING:", shippingData)
 
         // Razorpay Logic Here Later
         alert("Proceeding to payment")
@@ -98,15 +111,30 @@ const Checkout = () => {
                 <div className="
                     w-[52%]
                 ">
-                    <CheckoutProducts
-                        product={product}
-                        quantity={quantity}
-                        setQuantity={setQuantity}
-                    />
+                    {products.map((product, index) => (
+                        <div
+                            key={index}
+                            className="mb-[1.1rem] pb-[1.1rem] border-b-[1px] border-[#d0d0d0] last:border-none"
+                        >
+                            <CheckoutProducts
+                                product={product}
+                                quantity={quantities[index]}
+                                setQuantity={(updater) => {
+                                    setQuantities(prev => {
+                                        const updated = [...prev]
+                                        updated[index] = typeof updater === "function"
+                                            ? updater(prev[index])
+                                            : updater
+                                        return updated
+                                    })
+                                }}
+                            />
+                        </div>
+                    ))}
 
                     <h1 className="
                         text-[1.8rem]
-                        mt-[2.5rem]
+                        mt-[2rem]
                         select-none
                     ">
                         Enter Shipping Details
@@ -124,8 +152,8 @@ const Checkout = () => {
                     w-[43%]
                 ">
                     <CheckoutSummary
-                        product={product}
-                        quantity={quantity}
+                        products={products}
+                        quantities={quantities}
                         handleCheckout={handleCheckout}
                     />
                 </div>
