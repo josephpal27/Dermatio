@@ -1,13 +1,21 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
+import { useCart } from "../context/CartContext";
 
 import CheckoutForm from "../components/checkout/CheckoutForm";
 import CheckoutProducts from "../components/checkout/CheckoutProducts";
 import CheckoutSummary from "../components/checkout/CheckoutSummary";
 
+const RAZORPAY_KEY_ID = import.meta.env.VITE_RAZORPAY_KEY_ID
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY
+const OWNER_EMAIL = import.meta.env.VITE_OWNER_EMAIL
+const BRAND_NAME = import.meta.env.VITE_BRAND_NAME
+
 const Checkout = () => {
 
     const location = useLocation()
+    const navigate = useNavigate()
+    const { clearCart } = useCart()
 
     const singleProduct = location.state?.product || location.state?.singleProduct
     const cartItems = location.state?.cart
@@ -16,7 +24,6 @@ const Checkout = () => {
         ? [singleProduct]
         : cartItems || []
 
-    // Normalize: cart items have flat size/price, Buy Now has selectedSize
     const products = rawProducts.map(p => ({
         ...p,
         selectedSize: p.selectedSize || { size: p.size, price: p.price },
@@ -37,6 +44,7 @@ const Checkout = () => {
         state: "",
         pincode: "",
         phone: "",
+        email: "",
         addressType: "Home"
     })
 
@@ -49,6 +57,7 @@ const Checkout = () => {
         state: useRef(null),
         pincode: useRef(null),
         phone: useRef(null),
+        email: useRef(null),
     }
 
     if (products.length === 0) {
@@ -59,6 +68,62 @@ const Checkout = () => {
         )
     }
 
+    const totalAmount = products.reduce((acc, product, index) => {
+        return acc + product.selectedSize.price * quantities[index]
+    }, 0)
+
+    // Web3Forms Email Send Function
+    const sendMail = async (paymentId) => {
+
+        const productLines = products.map((p, i) =>
+            `${p.name} (${p.type} - ${p.selectedSize.size}) x${quantities[i]} @ ₹${p.selectedSize.price.toLocaleString("en-IN")} each`
+        ).join("\n")
+
+        const address = `${shippingData.firstName} ${shippingData.lastName}, ${shippingData.address}, ${shippingData.area}${shippingData.landmark ? ", " + shippingData.landmark : ""}, ${shippingData.city}, ${shippingData.state} - ${shippingData.pincode}`
+
+        const orderDetails = `
+Order / Payment ID: ${paymentId}
+
+Products:
+${productLines}
+
+Total Paid: ₹${totalAmount.toLocaleString("en-IN")}
+
+Shipping Address:
+${address}
+Phone: ${shippingData.phone}
+Address Type: ${shippingData.addressType}
+        `.trim()
+
+        // Mail to Owner
+        await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                access_key: WEB3FORMS_KEY,
+                subject: `New Order Received - ${paymentId}`,
+                from_name: `${shippingData.firstName} ${shippingData.lastName}`,
+                email: OWNER_EMAIL,
+                message: orderDetails
+            })
+        })
+
+        // Mail to Customer
+        await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                access_key: WEB3FORMS_KEY,
+                subject: `Your Order is Confirmed! - ${paymentId}`,
+                from_name: BRAND_NAME,
+                email: shippingData.email,
+                message: `Hi ${shippingData.firstName},\n\nThank you for your order! Here are your details:\n\n${orderDetails}\n\nWe'll process your order shortly.\n\nThank you,\n${BRAND_NAME}`
+            })
+        })
+    }
+
+
+    // Checkout Function
     const handleCheckout = () => {
 
         const {
@@ -69,7 +134,8 @@ const Checkout = () => {
             city,
             state,
             pincode,
-            phone
+            phone,
+            email,
         } = shippingData
 
         const requiredFields = [
@@ -81,6 +147,7 @@ const Checkout = () => {
             { key: "state", value: state },
             { key: "pincode", value: pincode },
             { key: "phone", value: phone },
+            { key: "email", value: email },
         ]
 
         const emptyField = requiredFields.find(
@@ -92,12 +159,50 @@ const Checkout = () => {
             return
         }
 
-        console.log("PRODUCTS:", products)
-        console.log("QUANTITIES:", quantities)
-        console.log("SHIPPING:", shippingData)
+        const options = {
+            key: RAZORPAY_KEY_ID,
+            amount: totalAmount * 100,
+            currency: "INR",
+            name: BRAND_NAME,
+            description: "Order Payment",
+            handler: async (response) => {
+                const paymentId = response.razorpay_payment_id
 
-        // Razorpay Logic Here Later
-        alert("Proceeding to payment")
+                try {
+                    await sendMail(paymentId)
+                } catch (err) {
+                    console.error("Mail error:", err)
+                }
+
+                if (cartItems) clearCart()
+
+                navigate("/success", {
+                    state: {
+                        paymentId,
+                        products,
+                        quantities,
+                        totalAmount,
+                        shippingData
+                    }
+                })
+            },
+            prefill: {
+                name: `${firstName} ${lastName}`,
+                email: email,
+                contact: phone
+            },
+            theme: {
+                color: "#becb0c"
+            },
+            modal: {
+                ondismiss: () => {
+                    console.log("Payment dismissed by user")
+                }
+            }
+        }
+
+        const rzp = new window.Razorpay(options)
+        rzp.open()
     }
 
     return (

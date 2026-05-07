@@ -17,6 +17,7 @@ import Cart from './pages/Cart.jsx';
 import ComingSoon from './pages/ComingSoon';
 import Contact from './pages/Contact';
 import Checkout from './pages/Checkout';
+import Success from './pages/Success.jsx';
 
 import { CartProvider } from "./context/CartContext";
 
@@ -36,6 +37,7 @@ let routers = createBrowserRouter([
       { path: "/cart", element: <Cart /> },
       { path: "/contact", element: <Contact /> },
       { path: "/checkout", element: <Checkout /> },
+      { path: "/success", element: <Success /> },
       { path: "*", element: <ComingSoon /> },
     ]
   }

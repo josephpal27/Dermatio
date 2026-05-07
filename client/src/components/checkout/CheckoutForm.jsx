@@ -130,6 +130,20 @@ const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
                         }
                     />
                 </div>
+                <div>
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        ref={inputRefs.email}
+                        value={shippingData.email}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                email: e.target.value
+                            }))
+                        }
+                    />
+                </div>
                 {/* Address Type */}
                 <div>
                     <label className="
