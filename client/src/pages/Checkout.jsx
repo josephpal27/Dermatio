@@ -1,15 +1,19 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
 import { useCart } from "../context/CartContext";
+import emailjs from "@emailjs/browser";
 
 import CheckoutForm from "../components/checkout/CheckoutForm";
 import CheckoutProducts from "../components/checkout/CheckoutProducts";
 import CheckoutSummary from "../components/checkout/CheckoutSummary";
 
 const RAZORPAY_KEY_ID = import.meta.env.VITE_RAZORPAY_KEY_ID
-const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY
-const OWNER_EMAIL = import.meta.env.VITE_OWNER_EMAIL
 const BRAND_NAME = import.meta.env.VITE_BRAND_NAME
+const OWNER_EMAIL = import.meta.env.VITE_OWNER_EMAIL
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_OWNER_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_OWNER_TEMPLATE_ID
+const EMAILJS_CUSTOMER_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CUSTOMER_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 const Checkout = () => {
 
@@ -62,7 +66,7 @@ const Checkout = () => {
 
     if (products.length === 0) {
         return (
-            <div className="h-[50dvh] flex justify-center items-center text-2xl font-bold">
+            <div className="h-[50dvh] flex justify-center items-center text-2xl font-semibold">
                 No Product Found
             </div>
         )
@@ -72,54 +76,44 @@ const Checkout = () => {
         return acc + product.selectedSize.price * quantities[index]
     }, 0)
 
-    // Web3Forms Email Send Function
+
+    // Email Send Function
     const sendMail = async (paymentId) => {
 
         const productLines = products.map((p, i) =>
-            `${p.name} (${p.type} - ${p.selectedSize.size}) x${quantities[i]} @ ₹${p.selectedSize.price.toLocaleString("en-IN")} each`
+            `${p.name} (${p.type} - ${p.selectedSize.size}) x ${quantities[i]} @ ₹${p.selectedSize.price.toLocaleString("en-IN")} each`
         ).join("\n")
 
         const address = `${shippingData.firstName} ${shippingData.lastName}, ${shippingData.address}, ${shippingData.area}${shippingData.landmark ? ", " + shippingData.landmark : ""}, ${shippingData.city}, ${shippingData.state} - ${shippingData.pincode}`
 
-        const orderDetails = `
-            Order / Payment ID: ${paymentId}
-
-            Products:
-            ${productLines}
-
-            Total Paid: ₹${totalAmount.toLocaleString("en-IN")}
-
-            Shipping Address:
-            ${address}
-            Phone: ${shippingData.phone}
-            Address Type: ${shippingData.addressType}
-        `.trim()
+        const templateParams = {
+            payment_id: paymentId,
+            customer_name: shippingData.firstName,
+            customer_email: shippingData.email,
+            products: productLines,
+            total: `₹${totalAmount.toLocaleString("en-IN")}`,
+            address: address,
+            phone: shippingData.phone,
+            address_type: shippingData.addressType,
+            brand_name: BRAND_NAME,
+            owner_email: OWNER_EMAIL,
+        }
 
         // Mail to Owner
-        await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                access_key: WEB3FORMS_KEY,
-                subject: `New Order Received - ${paymentId}`,
-                from_name: `${shippingData.firstName} ${shippingData.lastName}`,
-                email: OWNER_EMAIL,
-                message: orderDetails
-            })
-        })
+        await emailjs.send(
+            EMAILJS_SERVICE_ID,
+            EMAILJS_OWNER_TEMPLATE_ID,
+            templateParams,
+            EMAILJS_PUBLIC_KEY
+        )
 
         // Mail to Customer
-        await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                access_key: WEB3FORMS_KEY,
-                subject: `Your Order is Confirmed! - ${paymentId}`,
-                from_name: BRAND_NAME,
-                email: shippingData.email,
-                message: `Hi ${shippingData.firstName},\n\nThank you for your order! Here are your details:\n\n${orderDetails}\n\nWe'll process your order shortly.\n\nThank you,\n${BRAND_NAME}`
-            })
-        })
+        await emailjs.send(
+            EMAILJS_SERVICE_ID,
+            EMAILJS_CUSTOMER_TEMPLATE_ID,
+            templateParams,
+            EMAILJS_PUBLIC_KEY
+        )
     }
 
 
