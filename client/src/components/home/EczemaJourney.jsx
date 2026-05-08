@@ -1,5 +1,3 @@
-import eczemaImage from '../../assets/images/eczema.avif';
-import rightArrow from "../../assets/images/icons/arrow.png";
 import { Link } from "react-router-dom"
 
 const EczemaJourney = () => {
@@ -26,7 +24,7 @@ const EczemaJourney = () => {
                     <div className="
                         w-full sm:w-[40%]
                     " data-aos="fade-right" data-aos-once="true">
-                        <img src={eczemaImage} alt="Eczema Journey" loading="lazy" className="w-full" />
+                        <img src="/images/eczema.avif" alt="Eczema Journey" loading="lazy" className="w-full" />
                     </div>
                     {/* Content */}
                     <div className="
@@ -54,7 +52,7 @@ const EczemaJourney = () => {
                         ">
                             Read More
                             <img
-                                src={rightArrow}
+                                src="/images/icons/arrow.png"
                                 alt="Arrow"
                                 loading="lazy"
                                 className=" 

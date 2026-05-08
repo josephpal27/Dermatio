@@ -1,4 +1,3 @@
-import rightArrow from "../../assets/images/icons/arrow.png";
 import { Link } from "react-router-dom"
 
 const AdvancedLotion = () => {
@@ -68,7 +67,7 @@ const AdvancedLotion = () => {
                     " data-aos="fade" data-aos-once="true">
                         Shop Now
                         <img
-                            src={rightArrow}
+                            src="/images/icons/arrow.png"
                             alt="Arrow"
                             loading="lazy"
                             className=" 

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import rightArrow from "../../assets/images/icons/arrow.png";
 
 const TazmanPepper = () => {
     return (
@@ -48,7 +47,7 @@ const TazmanPepper = () => {
                     ">
                         Read More
                         <img
-                            src={rightArrow}
+                            src="/images/icons/arrow.png"
                             alt="Arrow"
                             loading="lazy"
                             className=" 

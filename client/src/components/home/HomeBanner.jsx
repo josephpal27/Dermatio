@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom"
-import rightArrow from "../../assets/images/icons/arrow.png";
+import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
     return (
@@ -72,7 +71,7 @@ const HomeBanner = () => {
                         ">
                             Read More 
                             <img 
-                                src={rightArrow} 
+                                src="/images/icons/arrow.png"
                                 alt="Arrow" 
                                 loading="lazy"
                                 className=" 

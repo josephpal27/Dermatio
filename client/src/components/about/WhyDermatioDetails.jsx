@@ -1,44 +1,38 @@
-import icon1 from '../../assets/images/icons/ph.png';
-import icon2 from '../../assets/images/icons/steroid.png';
-import icon3 from '../../assets/images/icons/proven.png';
-import icon4 from '../../assets/images/icons/formula.png';
-import icon5 from '../../assets/images/icons/360deg.png';
-import icon6 from '../../assets/images/icons/leg.png';
 
 const whyDermatioData = [
     {
         id: 1,
-        icon: icon1,
+        icon: "/images/icons/ph.png",
         title: "Hypoallergenic & pH Balanced",
         desc: "Formulated to minimize allergic reactions, with each ingredient chosen for its gentleness on reactive skin."
     },
     {
         id: 2,
-        icon: icon2,
+        icon: "/images/icons/steroid.png",
         title: "Steroid-Free & Fragrance-Free",
         desc: "Formulated without steroids or added fragrances because eczema-prone skin deserves the safest, purest care for long-term use."
     },
     {
         id: 3,
-        icon: icon3,
+        icon: "/images/icons/proven.png",
         title: "Clinically Proven Ingredients",
         desc: "Each ingredient is clinically studied and selected for proven efficacy and safety, especially for children’s sensitive and eczema-prone skin."
     },
     {
         id: 4,
-        icon: icon4,
+        icon: "/images/icons/formula.png",
         title: "Dermatologist & Paediatrician Developed",
         desc: "Every formula is developed in collaboration with dermatologists and paediatricians who specialize in paediatric skin conditions."
     },
     {
         id: 5,
-        icon: icon5,
+        icon: "/images/icons/360deg.png",
         title: "360° Eczema Support",
         desc: " A complete eczema wellness platform offering topical care, supplements, dietary guidance, and expert consultations,  all in one place."
     },
     {
         id: 6,
-        icon: icon6,
+        icon: "/images/icons/leg.png",
         title: "Made for Atopic Skin",
         desc: "Specifically designed to address the unique needs of atopic dermatitis, not a generic skincare formula repurposed for sensitive skin."
     },

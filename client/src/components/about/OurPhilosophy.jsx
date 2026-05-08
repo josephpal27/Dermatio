@@ -1,6 +1,3 @@
-import coloredLogo from '../../assets/images/logo/colored-logo.avif';
-import drop1 from '../../assets/images/icons/water-drop-1.avif';
-import drop2 from '../../assets/images/icons/water-drop-2.avif';
 
 const ourPhilosophyData = {
     leftItems: [
@@ -89,15 +86,15 @@ const OurPhilosophy = () => {
                         flex flex-col items-center
                         mt-[2rem] sm:mt-0
                     ">
-                        <img src={drop1} alt="Water Drop 1" loading="lazy" className="
+                        <img src="/images/icons/water-drop-1.avif" alt="Water Drop 1" loading="lazy" className="
                             w-[10%]
                             ml-[-40%]
                         " data-aos="zoom-in" data-aos-once="true" />
-                        <img src={coloredLogo} alt="Dermatio" loading="lazy" className="
+                        <img src="/images/logo/colored-logo.avif" alt="Dermatio" loading="lazy" className="
                             w-[65%]
                             mt-[1.5rem]
                         " />
-                        <img src={drop2} alt="Water Drop 2" loading="lazy" className="
+                        <img src="/images/icons/water-drop-2.avif" alt="Water Drop 2" loading="lazy" className="
                             w-[25%]
                             ml-[4rem]
                         " data-aos="zoom-in" data-aos-once="true" />

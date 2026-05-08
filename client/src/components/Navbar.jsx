@@ -4,7 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "../css/Navbar.css";
-import logo from "../assets/images/logo/logo.avif";
 import { FaRegUser } from "react-icons/fa";
 import { BiShoppingBag } from "react-icons/bi";
 import { useCart } from "../context/CartContext";
@@ -21,7 +20,7 @@ const MyNavbar = () => {
     return (
         <Navbar expand="lg" className="navbar">
             <Navbar.Brand as={NavLink} to="/" className="nav-brand">
-                <img src={logo} alt="logo" loading="eager" />
+                <img src="/images/logo/logo.avif" alt="logo" loading="eager" />
             </Navbar.Brand>
 
             {/* Toggle button opens Offcanvas */}
@@ -37,7 +36,7 @@ const MyNavbar = () => {
                 <Offcanvas.Header>
                     <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
                         <Nav.Link as={NavLink} to="/" onClick={handleClose} style={{ border: 'none' }} >
-                            <img src={logo} alt="logo" className="offCanvasLogo" />
+                            <img src="/images/logo/logo.avif" alt="logo" className="offCanvasLogo" />
                         </Nav.Link>
                     </Offcanvas.Title>
                 </Offcanvas.Header>

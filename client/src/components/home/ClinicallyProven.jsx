@@ -1,7 +1,4 @@
-import rightArrow from "../../assets/images/icons/arrow.png";
 import { Link } from "react-router-dom"
-import grapesImage from '../../assets/images/grapes.avif';
-import provenImage from '../../assets/images/proven.avif';
 
 const ClinicallyProven = () => {
     return (
@@ -30,7 +27,7 @@ const ClinicallyProven = () => {
                         <div className="
                             w-[35%]
                         " data-aos="zoom-in" data-aos-once="true" >
-                            <img src={grapesImage} alt="Grapes" loading="lazy" className="w-full" />
+                            <img src="/images/grapes.avif" alt="Grapes" loading="lazy" className="w-full" />
                         </div>
                         <div className="
                             w-[60%]
@@ -53,7 +50,7 @@ const ClinicallyProven = () => {
                         <div className="
                             w-[19%]
                         " data-aos="zoom-in" data-aos-once="true" >
-                            <img src={provenImage} alt="Proven" loading="lazy" className="w-full" />
+                            <img src="/images/proven.avif" alt="Proven" loading="lazy" className="w-full" />
                         </div>
                         <div className="
                             w-[75%]
@@ -84,7 +81,7 @@ const ClinicallyProven = () => {
                             ">
                                 Read More
                                 <img
-                                    src={rightArrow}
+                                    src="/images/icons/arrow.png"
                                     alt="Arrow"
                                     loading="lazy"
                                     className=" 

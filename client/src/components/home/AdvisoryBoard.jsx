@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { Link } from "react-router-dom";
-import rightArrow from "../../assets/images/icons/arrow.png";
 import { IoClose } from "react-icons/io5";
 
 let AdvisoryBoardData = [
@@ -137,7 +136,7 @@ const AdvisoryBoard = () => {
                                                 text-[1.1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.95rem] 2xl:text-[1rem]
                                             " />
                                             <img
-                                                src={rightArrow}
+                                                src="/images/icons/arrow.png"
                                                 alt="Arrow"
                                                 loading="lazy"
                                                 className="

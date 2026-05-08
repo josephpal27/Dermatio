@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo/logo.avif';
 import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 import '../css/Footer.css';
 
@@ -79,7 +78,7 @@ const Footer = () => {
                     <div className="
                         w-[100%] sm:w-[30%]
                     ">
-                        <img src={logo} alt="Logo" loading="lazy" className="
+                        <img src="/images/logo/logo.avif" alt="Logo" loading="lazy" className="
                             w-[130px] sm:w-[170px] lg:w-[150px] xl:w-[160px] 2xl:w-[170px]
                         " />
                         <span className="

@@ -1,27 +1,23 @@
-import highLight1 from '../../assets/images/icons/doctor.png';
-import highLight2 from '../../assets/images/icons/injection.png';
-import highLight3 from '../../assets/images/icons/clinic.png';
-import highLight4 from '../../assets/images/icons/safe.png';
 
 let highLightsData = [
     {
         id: 1,
-        image: highLight1,
+        image: "/images/icons/doctor.png",
         title: "Dermatologist <br/> Guide",
     },
     {
         id: 2,
-        image: highLight2,
+        image: "/images/icons/injection.png",
         title: "Steroid-Free <br/> & Gentle",
     },
     {
         id: 3,
-        image: highLight3,
+        image: "/images/icons/clinic.png",
         title: "Clinically <br/> Active Relief",
     },
     {
         id: 4,
-        image: highLight4,
+        image: "/images/icons/safe.png",
         title: "Safe for <br/> All Ages",
     },
 ]
