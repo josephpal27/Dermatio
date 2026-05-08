@@ -1,4 +1,3 @@
-import careImage from '../../assets/images/care.avif';
 
 const CareMeetsScience = () => {
     return (
@@ -48,7 +47,7 @@ const CareMeetsScience = () => {
                     <div className="
                         w-[100%] sm:w-[40%]
                     ">
-                        <img src={careImage} alt="Care Meets Science" loading="lazy" className="w-full" />
+                        <img src="/images/care.avif" alt="Care Meets Science" loading="lazy" className="w-full" />
                     </div>
                 </div>
             </section>

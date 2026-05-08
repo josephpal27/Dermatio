@@ -1,5 +1,3 @@
-import ourStory1 from '../../assets/images/our-story-1.avif';
-import ourStory2 from '../../assets/images/our-story-2.avif';
 
 const OurStory = () => {
     return (
@@ -24,7 +22,7 @@ const OurStory = () => {
                     <div className="
                         w-[100%] sm:w-[24%]
                     ">
-                        <img src={ourStory1} alt="Our Story 1" loading="lazy" className="
+                        <img src="/images/our-story-1.avif" alt="Our Story 1" loading="lazy" className="
                             w-full z-1 relative shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
                             rounded-[35px] sm:rounded-[30px] lg:rounded-[25px] xl:rounded-[30px] 2xl:rounded-[35px]
                         " data-aos="fade" data-aos-once="true" />
@@ -54,7 +52,7 @@ const OurStory = () => {
                         w-[100%] sm:w-[24%]
                         mt-[1.5rem] sm:mt-0
                     ">
-                        <img src={ourStory2} alt="Our Story 2" loading="lazy" className="
+                        <img src="/images/our-story-2.avif" alt="Our Story 2" loading="lazy" className="
                             w-full z-1 relative shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
                             rounded-[35px] sm:rounded-[30px] lg:rounded-[25px] xl:rounded-[30px] 2xl:rounded-[35px]
                         " data-aos="fade" data-aos-once="true" />

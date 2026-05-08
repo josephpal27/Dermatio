@@ -1,8 +1,5 @@
 import rightArrow from "../../assets/images/icons/arrow.png";
 import { Link } from "react-router-dom"
-import whyDermatio1 from '../../assets/images/why-dermatio/1.avif';
-import whyDermatio2 from '../../assets/images/why-dermatio/2.avif';
-import whyDermatio3 from '../../assets/images/why-dermatio/3.avif';
 
 const WhyDermatio = () => {
     return (
@@ -18,19 +15,19 @@ const WhyDermatio = () => {
                     w-[100%] sm:w-[40%]
                     relative
                 ">
-                    <img src={whyDermatio1} alt="Why Dermatio Main" loading="lazy" className="
+                    <img src="images/why-dermatio/1.avif" alt="Why Dermatio Main" loading="lazy" className="
                         w-[80%] sm:w-[100%]
                         mx-[auto] sm:mx-0
                         rounded-[35px] sm:rounded-[50px] lg:rounded-[50px] xl:rounded-[55px] 2xl:rounded-[60px]
                     " />
-                    <img src={whyDermatio2} alt="Why Dermatio 1" loading="lazy" className="
+                    <img src="/images/why-dermatio/2.avif" alt="Why Dermatio 1" loading="lazy" className="
                         w-[37%] sm:w-[40%]
                         rounded-[25px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         absolute
                         top-[-8%]
                         right-[0] sm:right-[-20%]
                     " data-aos="fade-down" data-aos-once="true" />
-                    <img src={whyDermatio3} alt="Why Dermatio 2" loading="lazy" className="
+                    <img src="/images/why-dermatio/3.avif" alt="Why Dermatio 2" loading="lazy" className="
                         w-[30%] sm:w-[32%]
                         rounded-[18px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         absolute

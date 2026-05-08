@@ -1,24 +1,20 @@
-import playIcon from "../../assets/images/icons/play-button.png";
-import careImage1 from "../../assets/images/choose-care/1.avif";
-import careImage2 from "../../assets/images/choose-care/2.avif";
-import careImage3 from "../../assets/images/choose-care/3.avif";
 
 let chooseCareData = [
     {
         id: 1,
-        image: careImage1,
+        image: "/images/choose-care/1.avif",
         title: "Repairaderm",
         desc: "Daily hydration and itch relief lotion and oil.",
     },
     {
         id: 2,
-        image: careImage2,
+        image: "/images/choose-care/2.avif",
         title: "Cleansaderm",
         desc: "Ultra-gentle cleansing bodywash and shampoo.",
     },
     {
         id: 3,
-        image: careImage3,
+        image: "/images/choose-care/3.avif",
         title: "Target Care",
         desc: "For flare-ups and sensitive areas.",
     },
