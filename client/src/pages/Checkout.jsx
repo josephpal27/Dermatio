@@ -66,7 +66,7 @@ const Checkout = () => {
 
     if (products.length === 0) {
         return (
-            <div className="h-[50dvh] flex justify-center items-center text-2xl font-semibold">
+            <div className="h-[100dvh] sm:h-[50dvh] flex justify-center items-center text-[1.1rem] font-[500]">
                 No Product Found
             </div>
         )
