@@ -6,9 +6,9 @@ const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
         <>
             <form className="
                 checkout-form
-                mt-[1.5rem] sm:mt-[1.2rem] lg:mt-[1.15rem] xl:mt-[1.35rem] 2xl:mt-[1.5rem]
+                mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1.15rem] xl:mt-[1.35rem] 2xl:mt-[1.5rem]
             ">
-                <div className="flex gap-[1rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]">
+                <div className="flex gap-[0.7rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]">
                     <input
                         type="text"
                         placeholder="First Name"
@@ -30,6 +30,32 @@ const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
                             setShippingData(prev => ({
                                 ...prev,
                                 lastName: e.target.value
+                            }))
+                        }
+                    />
+                </div>
+                <div className="flex gap-[0.7rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]">
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        ref={inputRefs.email}
+                        value={shippingData.email}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                email: e.target.value
+                            }))
+                        }
+                    />
+                    <input
+                        type="number"
+                        placeholder="Phone No."
+                        ref={inputRefs.phone}
+                        value={shippingData.phone}
+                        onChange={(e) =>
+                            setShippingData(prev => ({
+                                ...prev,
+                                phone: e.target.value
                             }))
                         }
                     />
@@ -76,7 +102,7 @@ const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
                         }
                     />
                 </div>
-                <div className="flex gap-[1rem]">
+                <div className="flex gap-[0.7rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]">
                     <input
                         type="text"
                         placeholder="City"
@@ -116,34 +142,7 @@ const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
                         }
                     />
                 </div>
-                <div>
-                    <input
-                        type="number"
-                        placeholder="Phone No."
-                        ref={inputRefs.phone}
-                        value={shippingData.phone}
-                        onChange={(e) =>
-                            setShippingData(prev => ({
-                                ...prev,
-                                phone: e.target.value
-                            }))
-                        }
-                    />
-                </div>
-                <div>
-                    <input
-                        type="email"
-                        placeholder="Email Address"
-                        ref={inputRefs.email}
-                        value={shippingData.email}
-                        onChange={(e) =>
-                            setShippingData(prev => ({
-                                ...prev,
-                                email: e.target.value
-                            }))
-                        }
-                    />
-                </div>
+
                 {/* Address Type */}
                 <div>
                     <label className="
@@ -153,7 +152,7 @@ const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
                         Address Type :
                     </label>
                     <div className="
-                        mt-[0.8rem] flex items-center gap-[1rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]
+                        mt-[0.5rem] sm:mt-[0.8rem] flex items-center gap-[1rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]
                     ">
                         {["Home", "Office", "Others"].map((type) => {
 
@@ -170,7 +169,7 @@ const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
                                         }))
                                     }
                                     className={`
-                                        text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                                        text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                                         rounded-full
                                         px-[1rem]
                                         py-[0.3rem]

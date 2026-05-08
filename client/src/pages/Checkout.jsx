@@ -210,11 +210,11 @@ const Checkout = () => {
             <section className="
                 flex justify-between flex-wrap
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[4rem] sm:py-[3rem] lg:py-[3.2rem] xl:py-[3.6rem] 2xl:py-[4rem]
+                py-[1.5rem] sm:py-[3rem] lg:py-[3.2rem] xl:py-[3.6rem] 2xl:py-[4rem]
             ">
                 {/* Left */}
                 <div className="
-                    w-[52%]
+                    w-full sm:w-[52%]
                 ">
                     {products.map((product, index) => (
                         <div
@@ -242,8 +242,8 @@ const Checkout = () => {
                     ))}
 
                     <h1 className="
-                        text-[1.8rem] sm:text-[1.5rem] lg:text-[1.45rem] xl:text-[1.65rem] 2xl:text-[1.8rem]
-                        mt-[2rem] sm:mt-[1.5rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
+                        text-[1.5rem] sm:text-[1.5rem] lg:text-[1.45rem] xl:text-[1.65rem] 2xl:text-[1.8rem]
+                        mt-[1.5rem] sm:mt-[1.5rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                         select-none
                     ">
                         Enter Shipping Details
@@ -258,7 +258,7 @@ const Checkout = () => {
 
                 {/* Right */}
                 <div className="
-                    w-[43%]
+                    w-full sm:w-[43%] mt-[2rem] sm:mt-0 pb-[2rem] sm:pb-0
                 ">
                     <CheckoutSummary
                         products={products}

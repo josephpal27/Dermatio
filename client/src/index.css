@@ -2,36 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: unset !important;
 }
 
-@font-face{
+@font-face {
   font-family: "OliGroteskL";
   src: url("/fonts/Oli\ Grotesk\ L\ Regular.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
 
-@font-face{
+@font-face {
   font-family: "OrdinaryBoys";
   src: url("/fonts/OrdinaryBoys-Sans.woff2") format("woff2");
   font-style: normal;
   font-display: swap;
 }
 
-body{
+body {
   font-family: "OliGroteskL", sans-serif;
   background-color: #fdfaf5;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "OrdinaryBoys", sans-serif !important;
 }
 
@@ -40,6 +45,7 @@ h1, h2, h3, h4, h5, h6{
 .swiper-wrapper {
   align-items: stretch;
 }
+
 .swiper-slide {
   height: auto !important;
 }
@@ -49,30 +55,35 @@ h1, h2, h3, h4, h5, h6{
   background-color: #c7cad0;
   border-radius: 20px;
 }
+
 .progress-bar::-webkit-progress-value {
   background-color: #b4c104;
   border-radius: 20px;
 }
+
 .progress-bar::-moz-progress-bar {
-  background-color: #becb0c; /* firefox */
+  background-color: #becb0c;
+  /* firefox */
 }
 
 /* Product Details Page */
 .product-desc-tabbing .nav-link {
   color: #868686;
 }
+
 .product-desc-tabbing .nav-link.active {
   color: #005aed;
 }
 
 /* Contact Form */
-.contact-form label{
+.contact-form label {
   display: block;
   color: #363636;
   font-size: 1.2rem;
 }
+
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea {
   width: 100%;
   color: #363636;
   font-size: 1.1rem;
@@ -85,17 +96,19 @@ h1, h2, h3, h4, h5, h6{
   border-bottom: 1px solid #a0a0a0;
   resize: none;
 }
+
 .contact-form input:focus,
-.contact-form textarea:focus{
+.contact-form textarea:focus {
   border-bottom: 1px solid #444343;
 }
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
-  .contact-form label{
+  .contact-form label {
     font-size: 1.1rem;
   }
+
   .contact-form input,
-  .contact-form textarea{
+  .contact-form textarea {
     font-size: 1rem;
     padding: 0.6rem 0;
     margin-top: 0.4rem;
@@ -104,11 +117,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
-  .contact-form label{
+  .contact-form label {
     font-size: 1rem;
   }
+
   .contact-form input,
-  .contact-form textarea{
+  .contact-form textarea {
     font-size: 0.9rem;
     padding: 0.5rem 0;
     margin-top: 0.3rem;
@@ -117,11 +131,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @media screen and (max-width: 640px) {
-  .contact-form label{
+  .contact-form label {
     font-size: 1.2rem;
   }
+
   .contact-form input,
-  .contact-form textarea{
+  .contact-form textarea {
     font-size: 1.1rem;
     padding: 0.4rem 0;
     margin-top: 0.3rem;
@@ -130,7 +145,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Checkout Page */
-.checkout-form input{
+.checkout-form input {
   width: 100%;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -142,19 +157,22 @@ h1, h2, h3, h4, h5, h6{
   font-size: 1.05rem;
   box-shadow: #eae3d5 0px 2px 5px -1px, #ece7db 0px 1px 3px -1px;
 }
-.checkout-form input::placeholder{
+
+.checkout-form input::placeholder {
   color: rgb(126, 126, 126);
 }
-.checkout-form input:focus{
+
+.checkout-form input:focus {
   box-shadow: #ded3bf 0px 3px 5px -1px, #e4dbc5 0px 2px 3px -1px;
   background-color: #f9f9f9;
 }
-.checkout-form input[type="number"]::-webkit-inner-spin-button{
+
+.checkout-form input[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
 @media screen and (min-width: 1230px) and (max-width: 1399px) {
-  .checkout-form input{
+  .checkout-form input {
     margin-bottom: 0.9rem;
     padding: 0.9rem;
     border: 1.5px solid #ece8df;
@@ -164,7 +182,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @media screen and (min-width: 992px) and (max-width: 1229px) {
-  .checkout-form input{
+  .checkout-form input {
     margin-bottom: 0.8rem;
     padding: 0.8rem;
     border: 1px solid #ece8df;
@@ -174,7 +192,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @media screen and (max-width: 640px) {
-  
+  .checkout-form input {
+    margin-bottom: 0.8rem;
+    padding: 0.75rem 0.6rem;
+    border: 1px solid #ece8df;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
 }
 
 /* Home Page Advisory Board Modal Transition */
@@ -183,9 +207,9 @@ h1, h2, h3, h4, h5, h6{
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
-
