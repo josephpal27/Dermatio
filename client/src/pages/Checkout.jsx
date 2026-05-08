@@ -82,17 +82,17 @@ const Checkout = () => {
         const address = `${shippingData.firstName} ${shippingData.lastName}, ${shippingData.address}, ${shippingData.area}${shippingData.landmark ? ", " + shippingData.landmark : ""}, ${shippingData.city}, ${shippingData.state} - ${shippingData.pincode}`
 
         const orderDetails = `
-Order / Payment ID: ${paymentId}
+            Order / Payment ID: ${paymentId}
 
-Products:
-${productLines}
+            Products:
+            ${productLines}
 
-Total Paid: ₹${totalAmount.toLocaleString("en-IN")}
+            Total Paid: ₹${totalAmount.toLocaleString("en-IN")}
 
-Shipping Address:
-${address}
-Phone: ${shippingData.phone}
-Address Type: ${shippingData.addressType}
+            Shipping Address:
+            ${address}
+            Phone: ${shippingData.phone}
+            Address Type: ${shippingData.addressType}
         `.trim()
 
         // Mail to Owner
@@ -210,7 +210,7 @@ Address Type: ${shippingData.addressType}
             <section className="
                 flex justify-between flex-wrap
                 px-[1rem] sm:px-[5%] lg:px-[7%]
-                py-[4rem]
+                py-[4rem] sm:py-[3rem] lg:py-[3.2rem] xl:py-[3.6rem] 2xl:py-[4rem]
             ">
                 {/* Left */}
                 <div className="
@@ -219,7 +219,11 @@ Address Type: ${shippingData.addressType}
                     {products.map((product, index) => (
                         <div
                             key={index}
-                            className="mb-[1.1rem] pb-[1.1rem] border-b-[1px] border-[#d0d0d0] last:border-none"
+                            className="
+                                mb-[1.1rem] sm:mb-[1rem] lg:mb-[0.9rem] xl:mb-[1rem] 2xl:mb-[1.1rem]
+                                pb-[1.1rem] sm:pb-[1rem] lg:pb-[0.9rem] xl:pb-[1rem] 2xl:pb-[1.1rem]
+                                border-b-[1px] border-[#d0d0d0] last:border-none
+                            "
                         >
                             <CheckoutProducts
                                 product={product}
@@ -238,8 +242,8 @@ Address Type: ${shippingData.addressType}
                     ))}
 
                     <h1 className="
-                        text-[1.8rem]
-                        mt-[2rem]
+                        text-[1.8rem] sm:text-[1.5rem] lg:text-[1.45rem] xl:text-[1.65rem] 2xl:text-[1.8rem]
+                        mt-[2rem] sm:mt-[1.5rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                         select-none
                     ">
                         Enter Shipping Details

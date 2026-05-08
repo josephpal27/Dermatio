@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6{
 .checkout-form input{
   width: 100%;
   margin-bottom: 1rem;
-  padding: 1rem 1rem;
+  padding: 1rem;
   background-color: #fff;
   color: #000;
   border: 2px solid #ece8df;
@@ -151,6 +151,30 @@ h1, h2, h3, h4, h5, h6{
 }
 .checkout-form input[type="number"]::-webkit-inner-spin-button{
   display: none;
+}
+
+@media screen and (min-width: 1230px) and (max-width: 1399px) {
+  .checkout-form input{
+    margin-bottom: 0.9rem;
+    padding: 0.9rem;
+    border: 1.5px solid #ece8df;
+    border-radius: 9px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1229px) {
+  .checkout-form input{
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
+    border: 1px solid #ece8df;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  
 }
 
 /* Home Page Advisory Board Modal Transition */

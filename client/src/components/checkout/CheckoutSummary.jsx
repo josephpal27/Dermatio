@@ -14,7 +14,7 @@ const CheckoutSummary = ({ products, quantities, handleCheckout }) => {
             <div className="
                 bg-[#eee7dd]
                 rounded-[15px] sm:rounded-[12px] lg:rounded-[11px] xl:rounded-[13px] 2xl:rounded-[15px]
-                p-[1.2rem] sm:p-[1.5rem] lg:p-[1.8rem] xl:p-[1.9rem] 2xl:p-[2rem]
+                p-[1.2rem] sm:p-[1.5rem] lg:p-[1.6rem] xl:p-[1.8rem] 2xl:p-[2rem]
             ">
                 <span className="
                     text-[1.2rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
