@@ -29,7 +29,7 @@ const ProductsBanner = () => {
                         Clinically Backed · Steroid-Free · Child-Safe
                     </span>
                     <h1 className="
-                        text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                        text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         mt-[0.5rem] sm:mt-[1rem] lg:mt-[0.6rem] xl:mt-[0.8rem] 2xl:mt-[1rem]
                         leading-[1]
                     " data-aos="fade-up" data-aos-once="true">

@@ -83,7 +83,7 @@ const ProductsTabbing = () => {
             ">
 
                 {/* Filters */}
-                <div className="w-[100%] sm:w-[20%]">
+                <div className="w-[100%] sm:w-[25%] lg:w-[20%]">
 
                     <span className="
                         text-[1.3rem] sm:text-[1.2rem] lg:text-[1.15rem] xl:text-[1.3rem] 2xl:text-[1.4rem]
@@ -131,7 +131,7 @@ const ProductsTabbing = () => {
 
                 {/* Products */}
                 <div className="
-                    w-[100%] sm:w-[75%]
+                    w-[100%] sm:w-[70%] lg:w-[75%]
                     flex flex-wrap justify-between sm:justify-normal
                     gap-[0] sm:gap-[2.5%]
                     mt-[1.5rem] sm:mt-0
@@ -141,7 +141,7 @@ const ProductsTabbing = () => {
                             product.sizes.map((sizeObj) => (
                                 <div
                                     key={`${product.id}-${sizeObj.size}`}
-                                    className="w-[47.5%] sm:w-[31.5%]"
+                                    className="w-[47.5%] lg:w-[31.5%]"
                                 >
                                     <ProductCard product={product} size={sizeObj} />
                                 </div>

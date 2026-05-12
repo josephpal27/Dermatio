@@ -28,7 +28,7 @@ const ProductCard = ({ product, size }) => {
             ">
 
                 <span className="
-                    text-[1.1rem] sm:text-[1rem] lg:text-[1rem] xl:text-[1.15rem] 2xl:text-[1.25rem]
+                    text-[1.1rem] sm:text-[1.1rem] lg:text-[1rem] xl:text-[1.15rem] 2xl:text-[1.25rem]
                     text-[#363636]
                 ">
                     {product.name}
@@ -43,7 +43,7 @@ const ProductCard = ({ product, size }) => {
                 </span>
 
                 <span className="
-                    text-[1.2rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                    text-[1.2rem] sm:text-[1.4rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                     font-[600] 
                     mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                 ">

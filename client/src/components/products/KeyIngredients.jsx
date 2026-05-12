@@ -39,7 +39,7 @@ const KeyIngredients = () => {
             ">
 
                 <h2 className="
-                    text-[1.5rem] sm:text-[1rem] lg:text-[2.2rem] xl:text-[2.6rem] 2xl:text-[3rem]
+                    text-[1.5rem] sm:text-[2.5rem] lg:text-[2.2rem] xl:text-[2.6rem] 2xl:text-[3rem]
                     leading-[1]
                 " data-aos="fade-right" data-aos-once="true">
                     Key Ingredients We Trust
@@ -69,7 +69,7 @@ const KeyIngredients = () => {
                             },
                             640: {
                                 slidesPerView: 3, // tablet
-                                spaceBetween: 50,
+                                spaceBetween: 30,
                             },
                             991: {
                                 slidesPerView: 4, // tablet and up
