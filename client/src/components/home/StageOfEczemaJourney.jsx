@@ -31,7 +31,7 @@ const StageOfEczemaJourney = () => {
                 overflow-hidden
             ">
                 <h5 className="
-                    text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                    text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1] text-center
                 " data-aos="fade-up" data-aos-once="true">
                     We're Here For <br className="hidden sm:block" /> Every <br className="sm:hidden" /> Stage of Eczema  Journey
@@ -58,7 +58,7 @@ const StageOfEczemaJourney = () => {
                                         w-[15%]
                                     ">
                                         <span className="
-                                            text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                                            text-[1.8rem] sm:text-[2.2rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                                             block
                                         " data-aos="zoom-in" data-aos-once="true">
                                             0{item.id}
@@ -69,7 +69,7 @@ const StageOfEczemaJourney = () => {
                                         w-[80%]
                                     ">
                                         <span className="
-                                            text-[1.7rem] sm:text-[2.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
+                                            text-[1.7rem] sm:text-[2rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
                                             block
                                         " style={{ fontFamily: `"OrdinaryBoys", sans-serif` }} data-aos="fade-right" data-aos-once="true">
                                             {item.title}

@@ -76,7 +76,7 @@ const Footer = () => {
                 ">
                     {/* Left */}
                     <div className="
-                        w-[100%] sm:w-[30%]
+                        w-[100%] lg:w-[30%]
                     ">
                         <img src="/images/logo/logo.avif" alt="Logo" loading="lazy" className="
                             w-[130px] sm:w-[170px] lg:w-[150px] xl:w-[160px] 2xl:w-[170px]
@@ -89,7 +89,7 @@ const Footer = () => {
                             We See You, We Support You
                         </span>
                         <p className="
-                            text-[0.95rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                            text-[0.95rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                             text-[#363636]
                             mt-[0.5rem]
                         ">
@@ -99,8 +99,8 @@ const Footer = () => {
 
                     {/* Right */}
                     <div className="
-                        w-[100%] sm:w-[60%]
-                        mt-[0.7rem] sm:mt-0
+                        w-[100%] lg:w-[60%]
+                        mt-[0.7rem] sm:mt-[1.5rem] lg:mt-0
                     ">
                         {/* Content */}
                         <div className="

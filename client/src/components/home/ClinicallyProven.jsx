@@ -8,7 +8,7 @@ const ClinicallyProven = () => {
                 py-[2.2rem] sm:py-[2rem] lg:py-[1.5rem] xl:py-[1.8rem] 2xl:py-[2rem]
             ">
                 <h6 className="
-                    text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                    text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1.2]
                 " data-aos="fade-up" data-aos-once="true">
                     Clinically Proven Ingredient <br /> Tazman Pepper™

@@ -28,7 +28,7 @@ const ChooseCare = () => {
                 py-[1rem] sm:py-[3rem] lg:py-[2.4rem] xl:py-[2.7rem] 2xl:py-[3rem]
             ">
                 <h6 className="
-                    text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                    text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1]
                 " data-aos="fade-up" data-aos-once="true">
                     Choose Your Care
@@ -48,7 +48,7 @@ const ChooseCare = () => {
                 ">
                     {/* Video */}
                     <div className="
-                        w-[100%] sm:w-[48%]
+                        w-[100%] lg:w-[48%]
                         rounded-[25px] sm:rounded-[30px] lg:rounded-[30px] xl:rounded-[35px] 2xl:rounded-[40px]
                         bg-[#eeeeee] flex justify-center items-center overflow-hidden
                     ">
@@ -64,7 +64,7 @@ const ChooseCare = () => {
                     </div>
                     {/* Images */}
                     <div className="
-                        w-[100%] sm:w-[46%]
+                        w-[100%] lg:w-[46%]
                         py-[1.5rem] sm:py-[2rem] lg:py-[1.5rem] xl:py-[1.8rem] 2xl:py-[2rem]
                         flex justify-between flex-wrap
                     ">
@@ -82,13 +82,13 @@ const ChooseCare = () => {
                                             p-[1.4rem] sm:p-[1rem] lg:p-[0.8rem] xl:p-[0.9rem] 2xl:p-[1rem]
                                         ">
                                             <span className="
-                                                text-[1.3rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                                                text-[1.3rem] sm:text-[1.4rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                                                 block text-center text-[#000]
                                             ">
                                                 {item.title}
                                             </span>
                                             <p className="
-                                                text-[1.1rem] sm:text-[0.8rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem]
+                                                text-[1.1rem] sm:text-[1rem] lg:text-[0.6rem] xl:text-[0.7rem] 2xl:text-[0.8rem]
                                                 text-[#363636] text-center leading-[1.3] mt-[0.5rem] sm:mt-[0.3rem]
                                             ">
                                                 {item.desc}

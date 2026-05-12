@@ -68,7 +68,7 @@ const AdvisoryBoard = () => {
                     px-[1rem] sm:px-[5%] lg:px-[7%]
                 ">
                     <h6 className="
-                        text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                        text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
                     " data-aos="fade-up" data-aos-once="true">
                         Our Advisory Board
@@ -107,7 +107,7 @@ const AdvisoryBoard = () => {
                             },
                             640: {
                                 slidesPerView: 3, // tablet
-                                spaceBetween: 60,
+                                spaceBetween: 30,
                             },
                             991: {
                                 slidesPerView: 4, // tablet and up
@@ -176,7 +176,7 @@ const AdvisoryBoard = () => {
                         <button
                             className="
                                 absolute top-[0.7rem] lg:top-[1rem] right-[0.7rem] lg:right-[1rem] text-black 
-                                text-[1.4rem] sm:text-[1.5rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
+                                text-[1.4rem] sm:text-[1.9rem] lg:text-[1.3rem] xl:text-[1.4rem] 2xl:text-[1.5rem]
                             "
                             onClick={() => setSelectedItem(null)}
                         >
@@ -184,7 +184,7 @@ const AdvisoryBoard = () => {
                         </button>
 
                         {/* Left Image */}
-                        <div className="w-full lg:w-[50%]">
+                        <div className="w-full sm:w-[50%]">
                             <img
                                 src={selectedItem.image}
                                 alt={selectedItem.title}
@@ -194,7 +194,7 @@ const AdvisoryBoard = () => {
 
                         {/* Right Content */}
                         <div className="
-                            w-full lg:w-[50%] flex items-center
+                            w-full sm:w-[50%] flex items-center
                             p-[1rem] sm:p-[1.2rem] lg:p-[1rem] xl:p-[1.1rem] 2xl:p-[1.2rem]
                         ">
                             <div>
