@@ -46,7 +46,7 @@ const WhyDermatioDetails = () => {
                 px-[1rem] sm:px-[5%] lg:px-[7%]
             ">
                 <h6 className="
-                    text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                    text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1]
                 " data-aos="fade-up">
                     Why Dermatio
@@ -54,7 +54,7 @@ const WhyDermatioDetails = () => {
                 <p className="
                     text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                     mt-[1rem] sm:mt-[1.2rem] lg:mt-[1.3rem] xl:mt-[1.4rem] 2xl:mt-[1.5rem]
-                    text-[#363636] w-[100%] sm:w-[40%]
+                    text-[#363636] w-[100%] sm:w-[60%] lg:w-[40%]
                 " data-aos="fade" data-aos-once="true">
                     Six commitments that guide every product, every formulation, and every decision we make.
                 </p>
@@ -68,10 +68,10 @@ const WhyDermatioDetails = () => {
                         whyDermatioData.map((item, index) => {
                             return (
                                 <div className="
-                                    w-[100%] sm:w-[32.4%]
+                                    w-[100%] sm:w-[48.5%] lg:w-[32.4%]
                                     bg-[#f6f1ea] rounded-[10px]
                                     p-[1.1rem] sm:p-[1.7rem] lg:p-[1.5rem] xl:p-[1.6rem] 2xl:p-[1.7rem]
-                                    mb-[1.1rem] sm:mb-[1.2rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
+                                    mb-[1.1rem] sm:mb-[1.4rem] lg:mb-[1rem] xl:mb-[1.1rem] 2xl:mb-[1.2rem]
                                     hover:scale-[1.02] transition duration-300 hover:shadow-[0px_3px_8px_rgba(0,0,0,0.10)]
                                 " key={index}>
                                     <div className="
@@ -87,7 +87,7 @@ const WhyDermatioDetails = () => {
                                     <span className="
                                         mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1.1rem] xl:mt-[1.2rem] 2xl:mt-[1.3rem]
                                         block font-bold
-                                        text-[1.1rem] sm:text-[1.1rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                                        text-[1.1rem] sm:text-[1.15rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
                                     " data-aos="fade" data-aos-once="true" >
                                         {item.title}
                                     </span>

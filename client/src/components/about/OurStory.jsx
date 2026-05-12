@@ -8,7 +8,7 @@ const OurStory = () => {
                 relative overflow-hidden
             ">
                 <h3 className="
-                    text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                    text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     leading-[1]
                 " data-aos="fade-up">
                     Our Story
@@ -20,7 +20,7 @@ const OurStory = () => {
                 ">
                     {/* Left Image */}
                     <div className="
-                        w-[100%] sm:w-[24%]
+                        w-[100%] sm:w-[38%] lg:w-[24%]
                     ">
                         <img src="/images/our-story-1.avif" alt="Our Story 1" loading="lazy" className="
                             w-full z-1 relative shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
@@ -29,7 +29,7 @@ const OurStory = () => {
                     </div>
                     {/* Content */}
                     <div className="
-                        w-[100%] sm:w-[44%]
+                        w-[100%] sm:w-[59%] lg:w-[44%]
                         mt-[1.5rem] sm:mt-0
                     ">
                         <p className="
@@ -49,8 +49,8 @@ const OurStory = () => {
                     </div>
                     {/* Right Image */}
                     <div className="
-                        w-[100%] sm:w-[24%]
-                        mt-[1.5rem] sm:mt-0
+                        w-[100%] lg:w-[24%]
+                        mt-[1.5rem] lg:mt-0
                     ">
                         <img src="/images/our-story-2.avif" alt="Our Story 2" loading="lazy" className="
                             w-full z-1 relative shadow-[0px_3px_8px_rgba(0,0,0,0.24)]
@@ -66,9 +66,9 @@ const OurStory = () => {
                     Because we understand: eczema doesn't just affect skin — it affects lives.
                 </p>
                 <span className="
-                    text-[4rem] sm:text-[7rem] lg:text-[7.6rem] xl:text-[7.8rem] 2xl:text-[8rem]
+                    text-[4rem] sm:text-[4.5rem] lg:text-[7.6rem] xl:text-[7.8rem] 2xl:text-[8rem]
                     font-[400] text-[#e4e2dd] absolute right-0 z-0
-                    top-[2.5rem] sm:top-[3rem] lg:top-[2.2rem] xl:top-[2.6rem] 2xl:top-[3rem]
+                    top-[2.5rem] sm:top-[2rem] lg:top-[2.2rem] xl:top-[2.6rem] 2xl:top-[3rem]
                 " style={{fontFamily: `"OrdinaryBoys", sans-serif`}} >
                     Story
                 </span>

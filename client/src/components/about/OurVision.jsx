@@ -9,7 +9,7 @@ const OurVision = () => {
             ">
                 {/* Image */}
                 <div className="
-                    w-[100%] sm:w-[40%]
+                    w-[100%] lg:w-[40%]
                 ">
                     <div>
                         <img src="/images/vision/1.avif" alt="Our Vision 1" loading="lazy" className="
@@ -33,11 +33,11 @@ const OurVision = () => {
                 </div>
                 {/* Content */}
                 <div className="
-                    w-[100%] sm:w-[53%]
-                    mt-[2rem] sm:mt-0
+                    w-[100%] lg:w-[53%]
+                    mt-[2rem] lg:mt-0
                 ">
                     <h5 className="
-                        text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                        text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                         leading-[1]
                     " data-aos="fade-up">
                         Our Vision

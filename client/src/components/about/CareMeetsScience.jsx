@@ -11,10 +11,10 @@ const CareMeetsScience = () => {
                 ">
                     {/* Content */}
                     <div className="
-                        w-[100%] sm:w-[55%]
+                        w-[100%] lg:w-[55%]
                     ">
                         <h2 className="
-                            text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                            text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                             leading-[1]
                             mt-[1.8rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                         " data-aos="fade-up">
@@ -45,7 +45,7 @@ const CareMeetsScience = () => {
                     </div>
                     {/* Image */}
                     <div className="
-                        w-[100%] sm:w-[40%]
+                        w-[100%] lg:w-[40%]
                     ">
                         <img src="/images/care.avif" alt="Care Meets Science" loading="lazy" className="w-full" />
                     </div>
