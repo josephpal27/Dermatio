@@ -6,7 +6,7 @@ const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
         <>
             <form className="
                 checkout-form
-                mt-[1.2rem] sm:mt-[1.2rem] lg:mt-[1.15rem] xl:mt-[1.35rem] 2xl:mt-[1.5rem]
+                mt-[1.2rem] sm:mt-[1.5rem] lg:mt-[1.15rem] xl:mt-[1.35rem] 2xl:mt-[1.5rem]
             ">
                 <div className="flex gap-[0.7rem] sm:gap-[1rem] lg:gap-[0.8rem] xl:gap-[0.9rem] 2xl:gap-[1rem]">
                     <input
@@ -146,7 +146,7 @@ const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
                 {/* Address Type */}
                 <div>
                     <label className="
-                        text-[1.05rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.05rem]
+                        text-[1.05rem] sm:text-[1.2rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.05rem]
                         mt-[0.5rem]
                     ">
                         Address Type :
@@ -169,7 +169,7 @@ const CheckoutForm = ({ shippingData, setShippingData, inputRefs }) => {
                                         }))
                                     }
                                     className={`
-                                        text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                                        text-[0.9rem] sm:text-[1.2rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                                         rounded-full
                                         px-[1rem]
                                         py-[0.3rem]

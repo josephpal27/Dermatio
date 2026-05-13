@@ -66,7 +66,7 @@ const Checkout = () => {
 
     if (products.length === 0) {
         return (
-            <div className="h-[100dvh] sm:h-[50dvh] flex justify-center items-center text-[1.1rem] font-[500]">
+            <div className="h-[100dvh] lg:h-[50dvh] flex justify-center items-center text-[1.1rem] font-[500]">
                 No Product Found
             </div>
         )
@@ -208,14 +208,14 @@ const Checkout = () => {
             ">
                 {/* Left */}
                 <div className="
-                    w-full sm:w-[52%]
+                    w-full lg:w-[52%]
                 ">
                     {products.map((product, index) => (
                         <div
                             key={index}
                             className="
-                                mb-[1.1rem] sm:mb-[1rem] lg:mb-[0.9rem] xl:mb-[1rem] 2xl:mb-[1.1rem]
-                                pb-[1.1rem] sm:pb-[1rem] lg:pb-[0.9rem] xl:pb-[1rem] 2xl:pb-[1.1rem]
+                                mb-[1.1rem] sm:mb-[1.3rem] lg:mb-[0.9rem] xl:mb-[1rem] 2xl:mb-[1.1rem]
+                                pb-[1.1rem] sm:pb-[1.3rem] lg:pb-[0.9rem] xl:pb-[1rem] 2xl:pb-[1.1rem]
                                 border-b-[1px] border-[#d0d0d0] last:border-none
                             "
                         >
@@ -236,8 +236,8 @@ const Checkout = () => {
                     ))}
 
                     <h1 className="
-                        text-[1.5rem] sm:text-[1.5rem] lg:text-[1.45rem] xl:text-[1.65rem] 2xl:text-[1.8rem]
-                        mt-[1.5rem] sm:mt-[1.5rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
+                        text-[1.5rem] sm:text-[2.2rem] lg:text-[1.45rem] xl:text-[1.65rem] 2xl:text-[1.8rem]
+                        mt-[1.5rem] sm:mt-[2rem] lg:mt-[1.6rem] xl:mt-[1.8rem] 2xl:mt-[2rem]
                         select-none
                     ">
                         Enter Shipping Details
@@ -252,7 +252,7 @@ const Checkout = () => {
 
                 {/* Right */}
                 <div className="
-                    w-full sm:w-[43%] mt-[2rem] sm:mt-0 pb-[2rem] sm:pb-0
+                    w-full lg:w-[43%] mt-[2rem] lg:mt-0 pb-[2rem] sm:pb-0
                 ">
                     <CheckoutSummary
                         products={products}

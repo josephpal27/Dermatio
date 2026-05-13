@@ -45,20 +45,20 @@ const CheckoutProducts = ({ product, quantity, setQuantity }) => {
                 ">
                     <span className="
                         block text-[#131313]
-                        text-[1.1rem] sm:text-[1.1rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
+                        text-[1.1rem] sm:text-[1.4rem] lg:text-[1rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
                         truncate sm:whitespace-normal
                     ">
                         {product.name}
                     </span>
                     <span className="
                         block text-[#565656] mt-[0] sm:mt-[0.2rem]
-                        text-[0.85rem] sm:text-[0.9rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                        text-[0.85rem] sm:text-[1.1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                     ">
                         {product.type} - {product.selectedSize.size}
                     </span>
                     <span className="
                         block font-[600] mt-[0.2rem] sm:mt-[0.5rem]
-                        text-[1.1rem] sm:text-[1.2rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
+                        text-[1.1rem] sm:text-[1.4rem] lg:text-[1.1rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                     ">
                         ₹ {(product.selectedSize.price * quantity).toLocaleString("en-IN")}
                     </span>
@@ -80,11 +80,11 @@ const CheckoutProducts = ({ product, quantity, setQuantity }) => {
                             disabled={quantity === 1}
                         >
                             <FaMinus className="
-                                text-[0.9rem] sm:text-[0.8rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                                text-[0.9rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                             " />
                         </button>
                         <span className="
-                            text-[1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] select-none
+                            text-[1rem] sm:text-[1.2rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem] select-none
                         ">
                             {quantity}
                         </span>
@@ -93,7 +93,7 @@ const CheckoutProducts = ({ product, quantity, setQuantity }) => {
                             disabled={quantity === 10}
                         >
                             <FaPlus className="
-                                text-[0.9rem] sm:text-[0.8rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                                text-[0.9rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                             " />
                         </button>
                     </div>

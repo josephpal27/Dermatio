@@ -89,7 +89,7 @@ const Footer = () => {
                             We See You, We Support You
                         </span>
                         <p className="
-                            text-[0.95rem] sm:text-[1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
+                            text-[0.95rem] sm:text-[1.05rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.9rem]
                             text-[#363636]
                             mt-[0.5rem]
                         ">

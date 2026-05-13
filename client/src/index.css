@@ -201,6 +201,12 @@ h6 {
   }
 }
 
+@media screen and (min-width: 641px) and (max-width: 991px) {
+  .checkout-form input {
+    font-size: 1.1rem;
+  }
+}
+
 /* Home Page Advisory Board Modal Transition */
 @keyframes fadeIn {
   from {

@@ -46,7 +46,7 @@ const ProductGallery = () => {
 
                 {/* Product Gallery */}
                 <div className="
-                    w-[100%] sm:w-[50%]
+                    w-[100%] lg:w-[50%]
                 ">
                     <Tab.Container activeKey={activeKey} onSelect={(k) => setActiveKey(k)}>
                         <div className="flex flex-wrap justify-between flex-col-reverse sm:flex-row">
@@ -91,25 +91,25 @@ const ProductGallery = () => {
 
                 {/* Product Details */}
                 <div className="
-                    w-[100%] sm:w-[47%]
-                    mt-[2rem] sm:mt-0
+                    w-[100%] lg:w-[47%]
+                    mt-[2rem] lg:mt-0
                 ">
                     <span className="
-                        text-[1rem] sm:text-[1.1rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                        text-[1rem] sm:text-[1.2rem] lg:text-[0.85rem] xl:text-[1rem] 2xl:text-[1.1rem]
                         tracking-[1px]
                         text-[#becb0c] font-[600]
                     ">
                         {product.tag}
                     </span>
                     <h2 className="
-                        text-[1.7rem] sm:text-[2rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
+                        text-[1.7rem] sm:text-[2.5rem] lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]
                         mt-[0.5rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                         text-[#131313]
                     ">
                         {product.name}
                     </h2>
                     <span className="
-                        text-[1.4rem] sm:text-[2rem] lg:text-[1.5rem] xl:text-[1.75rem] 2xl:text-[2rem]
+                        text-[1.4rem] sm:text-[1.4rem] lg:text-[1.5rem] xl:text-[1.75rem] 2xl:text-[2rem]
                         uppercase font-[600]
                     ">
                         {product.type}
@@ -121,7 +121,7 @@ const ProductGallery = () => {
                     ">
                         {product.desc.intro.map((text, i) => (
                             <p key={i} className="
-                                text-[1rem] sm:text-[0.9rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]
+                                text-[1rem] sm:text-[1.2rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]
                                 mb-[0.5rem] sm:mb-[0.3rem]
                                 text-[#4b4b4b]
                             ">
@@ -133,7 +133,7 @@ const ProductGallery = () => {
                             mt-[0.7rem] sm:mt-[0.5rem] lg:mt-[0.3rem] xl:mt-[0.4rem] 2xl:mt-[0.5rem]
                             list-disc 
                             pl-[1rem] sm:pl-[1rem] lg:pl-[0.8rem] xl:pl-[0.9rem] 2xl:pl-[1rem]
-                            text-[1rem] sm:text-[0.9rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]
+                            text-[1rem] sm:text-[1.2rem] lg:text-[0.75rem] xl:text-[0.85rem] 2xl:text-[0.95rem]
                             text-[#4b4b4b]
                         ">
                             {product.desc.points.map((point, i) => (
@@ -143,7 +143,7 @@ const ProductGallery = () => {
                     </div>
 
                     <span className="
-                        text-[2.1rem] sm:text-[2rem] lg:text-[1.6rem] xl:text-[1.9rem] 2xl:text-[2.2rem]
+                        text-[2.1rem] sm:text-[2.4rem] lg:text-[1.6rem] xl:text-[1.9rem] 2xl:text-[2.2rem]
                         mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                         font-[600] text-[#131313] block
                     ">
@@ -156,7 +156,7 @@ const ProductGallery = () => {
                         flex items-center
                     ">
                         <span className="
-                            text-[1.1rem] sm:text-[1rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
+                            text-[1.1rem] sm:text-[1.2rem] lg:text-[0.8rem] xl:text-[0.9rem] 2xl:text-[1rem]
                         ">
                             Size :
                         </span>
@@ -172,7 +172,7 @@ const ProductGallery = () => {
                                     pt-[0.35rem] sm:pt-[0.4rem] lg:pt-[0.3rem] xl:pt-[0.38rem] 2xl:pt-[0.4rem]
                                     pb-[0.25rem] sm:pb-[0.2rem] lg:pb-[0.26rem] xl:pb-[0.24rem] 2xl:pb-[0.25rem]
                                     rounded-full
-                                    text-[1rem] sm:text-[0.8rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.85rem]
+                                    text-[1rem] sm:text-[1.1rem] lg:text-[0.7rem] xl:text-[0.8rem] 2xl:text-[0.85rem]
                                     ml-[1rem] sm:ml-[1rem] lg:ml-[0.8rem] xl:ml-[0.9rem] 2xl:ml-[1rem]
                                     transition
                                     ${selectedSize.size === item.size
@@ -196,7 +196,7 @@ const ProductGallery = () => {
                             px-[1rem] sm:px-[1.8rem] lg:px-[1.6rem] xl:px-[1.7rem] 2xl:px-[1.8rem]
                             py-[0.6rem] sm:py-[0.5rem] lg:py-[0.45rem] xl:py-[0.5rem] 2xl:py-[0.55rem]
                             rounded-[10px] text-center
-                            text-[1.2rem] sm:text-[1rem] lg:text-[1.05rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
+                            text-[1.2rem] sm:text-[1.5rem] lg:text-[1.05rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                         " onClick={() => {
                                 // addToCart(product, selectedSize);
                                 addToCart(
@@ -215,7 +215,7 @@ const ProductGallery = () => {
                             px-[1rem] sm:px-[1.8rem] lg:px-[1.6rem] xl:px-[1.7rem] 2xl:px-[1.8rem]
                             py-[0.6rem] sm:py-[0.5rem] lg:py-[0.45rem] xl:py-[0.5rem] 2xl:py-[0.55rem]
                             rounded-[10px] text-center
-                            text-[1.2rem] sm:text-[1rem] lg:text-[1.05rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
+                            text-[1.2rem] sm:text-[1.5rem] lg:text-[1.05rem] xl:text-[1.2rem] 2xl:text-[1.3rem]
                         "
                             // onClick={() => {navigate("/checkout")}}
                             onClick={() => {

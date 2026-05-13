@@ -19,7 +19,7 @@ const ProductDetailsBanner = () => {
                     px-[1rem] sm:px-[5%] lg:px-[7%]
                 ">
                     <h1 className="
-                        text-[2rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
+                        text-[2rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem]
                     " data-aos="fade-up">
                         Shop
                     </h1>

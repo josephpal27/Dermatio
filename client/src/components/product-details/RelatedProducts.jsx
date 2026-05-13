@@ -41,7 +41,7 @@ const RelatedProducts = () => {
                             },
                             640: {
                                 slidesPerView: 3, // tablet
-                                spaceBetween: 50,
+                                spaceBetween: 30,
                             },
                             991: {
                                 slidesPerView: 4, // tablet and up

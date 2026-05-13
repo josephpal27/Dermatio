@@ -24,11 +24,11 @@ const ProductDescription = () => {
                 <Tab.Container defaultActiveKey="description">
 
                     {/* Head */}
-                    <Nav className="gap-[1rem] sm:gap-[2rem] lg:gap-[2.1rem] xl:gap-[2.3rem] 2xl:gap-[2.5rem]">
+                    <Nav className="gap-[1rem] sm:gap-[1.8rem] lg:gap-[2.1rem] xl:gap-[2.3rem] 2xl:gap-[2.5rem]">
                         {tabs.map(tab => (
                             <Nav.Item key={tab.key}>
                                 <Nav.Link eventKey={tab.key} className="
-                                    text-[1.1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                                    text-[1.1rem] sm:text-[1.3rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                                     p-0 text-[#666666]
                                 ">
                                     {tab.label}
@@ -40,14 +40,14 @@ const ProductDescription = () => {
                     {/* Content */}
                     <Tab.Content className="
                         bg-[#fbf4ea]
-                        p-[0.8rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
+                        p-[0.8rem] sm:p-[1.1rem] lg:p-[1.1rem] xl:p-[1.3rem] 2xl:p-[1.5rem]
                         rounded-[6px] sm:rounded-[5px]
                         mt-[1rem] sm:mt-[1rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                     ">
                         {tabs.map(tab => (
                             <Tab.Pane key={tab.key} eventKey={tab.key}>
                                 <p className="
-                                    text-[1rem] sm:text-[1rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
+                                    text-[1rem] sm:text-[1.2rem] lg:text-[0.9rem] xl:text-[1rem] 2xl:text-[1.1rem]
                                 ">
                                     {product.details[tab.key]}
                                 </p>
