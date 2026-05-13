@@ -31,13 +31,13 @@ const DistinctPhases = () => {
                     p-[1rem] sm:p-[2rem] lg:p-[2.5rem] xl:p-[2.8rem] 2xl:p-[3rem]
                 ">
                     <h3 className="
-                        text-[1.8rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
+                        text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
                     " data-aos="fade-up">
                         Three distinct phases, oneshared root
                     </h3>
                     <p className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
-                        mt-[1.5rem] sm:mt-[0.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
+                        mt-[1.5rem] lg:mt-[0.8rem] xl:mt-[0.9rem] 2xl:mt-[1rem]
                         text-[#363636]
                     " data-aos="fade" data-aos-once="true">
                         Eczema (a topic dermatitis) progresses through recognisable phases, each with its own biochemical signature. The phase determines what is happening in the skin, and what kind of
@@ -48,16 +48,16 @@ const DistinctPhases = () => {
                 {/* Row */}
                 <div className="
                     pr-[0] sm:pr-[8%] lg:pr-[10%]
-                    pl-[0] sm:pl-[20%] lg:pl-[30%]
+                    pl-[0] sm:pl-[5%] lg:pl-[30%]
                     relative sm:absolute bottom-[0] sm:bottom-[2rem] lg:bottom-[2.6rem] xl:bottom-[2.8rem] 2xl:bottom-[3rem] left-0
                     flex justify-between flex-wrap
-                    mt-[1.5rem] sm:mt-0
+                    mt-[1.5rem] lg:mt-0
                 ">
                     {distinctData.map((item) => {
                         return(
                             <div key={item.id} className="
-                                w-full sm:w-[31.7%] bg-[#fbf4ea] overflow-hidden mb-[1.2rem] sm:mb-0
-                                p-[1.3rem] sm:p-[1.2rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem]
+                                w-full lg:w-[31.7%] bg-[#fbf4ea] overflow-hidden mb-[1.2rem] sm:mb-0
+                                p-[1.3rem] sm:p-[1.5rem] lg:p-[1.1rem] xl:p-[1.2rem] 2xl:p-[1.3rem]
                                 rounded-2xl shadow-md hover:shadow-lg shadow-[#a6a6a6] hover:shadow-[#b5b4b4]
                                 hover:translate-y-[-5px] transition duration-300
                             ">

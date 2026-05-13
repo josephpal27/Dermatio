@@ -11,7 +11,7 @@ const UnderstandingEczema = () => {
             ">
                 <div className="w-full sm:w-[48%]">
                     <h2 className="
-                        text-[1.75rem] sm:text-[1rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
+                        text-[1.75rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
                     " data-aos="fade-up">
                         Understanding eczema, from skin barrier to brain signal
                     </h2>
