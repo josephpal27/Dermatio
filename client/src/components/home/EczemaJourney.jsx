@@ -39,7 +39,7 @@ const EczemaJourney = () => {
                         ">
                             Eczema isn't just a skin condition, it's a daily journey of flare-ups, triggers, healing, and care. <br /> <br /> Each phase needs the right support, not just temporary relief.
                         </p>
-                        <Link to="/" className="
+                        <Link to="/the-science" className="
                             mt-[1.7rem] sm:mt-[1.5rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                             border-[1.5px] sm:border-[1.2px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
                             border-black w-max

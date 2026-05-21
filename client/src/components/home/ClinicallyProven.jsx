@@ -68,7 +68,7 @@ const ClinicallyProven = () => {
                             ">
                                 Clinically backed relief, felt instantly.Up to 79% less itching, up to 35% visible redness reduction, and rapid calming of burning discomfort.
                             </p>
-                            <Link to="/" className="
+                            <Link to="/tazman-pepper" className="
                                 mt-[2rem] sm:mt-[2.5rem] lg:mt-[2.6rem] xl:mt-[2.8rem] 2xl:mt-[3rem]
                                 border-[1.5px] sm:border-[1px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
                                 border-black w-max

@@ -54,7 +54,7 @@ const HomeBanner = () => {
                         ">
                             Eczema relief for <br /> every stage of Childhood
                         </span>
-                        <Link to="/" className="
+                        <Link to="/the-science" className="
                             mt-[1.4rem] sm:mt-[1rem] lg:mt-[1.1rem] xl:mt-[1.3rem] 2xl:mt-[1.5rem]
                             border-[1.5px] sm:border-[1.2px] lg:border-[1.3px] xl:border-[1.5px] 2xl:border-[2px]
                             border-[#000] sm:border-[#fff]

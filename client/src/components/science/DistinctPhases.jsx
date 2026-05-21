@@ -33,7 +33,7 @@ const DistinctPhases = () => {
                     <h3 className="
                         text-[1.8rem] sm:text-[2.5rem] lg:text-[3.2rem] xl:text-[3.6rem] 2xl:text-[4rem] leading-[1]
                     " data-aos="fade-up">
-                        Three distinct phases, oneshared root
+                        Three distinct phases, one shared root
                     </h3>
                     <p className="
                         text-[1.1rem] sm:text-[1.2rem] lg:text-[0.95rem] xl:text-[1.1rem] 2xl:text-[1.2rem]
