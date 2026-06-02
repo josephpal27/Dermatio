@@ -31,8 +31,8 @@ let footerData = [
         title: "Help",
         items: [
             { label: "Customer Support", to: "/contact" },
-            { label: "Terms & Conditions", to: "/terms-and-conditions" },
-            { label: "Privacy Policy", to: "/privacy-policy" },
+            // { label: "Terms & Conditions", to: "/terms-and-conditions" },
+            // { label: "Privacy Policy", to: "/privacy-policy" },
         ],
         type: "link",
     },
